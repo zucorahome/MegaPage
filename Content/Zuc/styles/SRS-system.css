@@ -1,0 +1,2663 @@
+/* variables*/
+/* Default styling*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PublicoHeadline", aktiv-grotesk, Helvetica, sans-serif; }
+
+p {
+  font-family: "aktiv-grotesk", Helvetica, sans-serif;
+  font-size: 18px; }
+
+input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus, select:focus {
+  color: inherit;
+  border-color: #a3acff;
+  background-color: white; }
+
+body {
+  color: #36384B; }
+
+.popup-modals-container .addItem-modal, .popup-modals-container .mainSubmit-modal-container,
+.popup-modals-container .remove-planModal-container, .popup-modals-container .video-modal-container, .shipping-locations-modal, .contacts-form-modal, .cancelation-modal, .cancel-caution-container, .planRegistration-modal-container, .editOrder-modal-container, .oe-add-item-modal-container, .oe-summary-modal-container, .oe-cancel-order-conf-modal-container, .oe-backorder-warning-modal-container, .oe-on-account-summary-modal-container, .oe-redeem-modal-container, .oe-thank-you-modal-container, .oe-sorry-modal-container, .oe-payment-modal-container, .oe-credit-cards-add-modal-container, .popup-modals-container .rp-partner-profile-details-modal-container, .popup-modals-container .rp-agreement-modal-container, .popup-modals-container .rp-financial-details-modal-container, .market-partners-container .mp-add-product-service-modal-container, .market-partners-container .mp-invite-modal-container, .market-partners-container .mp-add-note-modal-container, .market-partners-container .mp-invite-sent-modal-container, .mp-details-contact-add-modal-container, .mp-add-modal-container, .pf-agreement-modal-container, .su-locations-add-modal-container, .su-credit-cards-add-modal-container, .su-credit-cards-edit-modal-container, .su-banking-details-modal-container, .su-agreement-modal-container, .su-submitted-modal-container, .videos-container .as-video, .videos-container .as-under-review-container, .pp-payment-prefs-edit-modal-container, .pp-header-edit-modal-container, .pp-billing-address-edit-modal-container, .pp-ship-to-modal-container, .pp-credit-card-edit-modal-container, .pp-bank-account-edit-modal-container {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.popup-modals-container .addItem-modal .addItem-form, .popup-modals-container .mainSubmit-modal-container .mainSubmit-modal,
+.popup-modals-container .mainSubmit-modal-container .remove-planModal,
+.popup-modals-container .remove-planModal-container .mainSubmit-modal,
+.popup-modals-container .remove-planModal-container .remove-planModal, .popup-modals-container .video-modal-container .video-modal, .shipping-locations-modal .shipping-locations-form, .contacts-form-modal .contacts-form, .cancelation-modal .plan-cancelation-container, .cancel-caution-container .cancel-caution, .planRegistration-modal-container .planRegistration-modal, .editOrder-modal-container .editOrder-modal, .oe-add-item-modal-container .oe-add-item-modal, .oe-add-item-modal-container .oe-summary-modal, .oe-summary-modal-container .oe-add-item-modal, .oe-summary-modal-container .oe-summary-modal, .oe-cancel-order-conf-modal-container .oe-cancel-order-conf-modal, .oe-cancel-order-conf-modal-container .oe-backorder-warning-modal, .oe-backorder-warning-modal-container .oe-cancel-order-conf-modal, .oe-backorder-warning-modal-container .oe-backorder-warning-modal, .oe-on-account-summary-modal-container .oe-on-account-summary-modal, .oe-on-account-summary-modal-container .oe-redeem-modal, .oe-on-account-summary-modal-container .oe-thank-you-modal, .oe-on-account-summary-modal-container .oe-sorry-modal, .oe-redeem-modal-container .oe-on-account-summary-modal, .oe-redeem-modal-container .oe-redeem-modal, .oe-redeem-modal-container .oe-thank-you-modal, .oe-redeem-modal-container .oe-sorry-modal, .oe-thank-you-modal-container .oe-on-account-summary-modal, .oe-thank-you-modal-container .oe-redeem-modal, .oe-thank-you-modal-container .oe-thank-you-modal, .oe-thank-you-modal-container .oe-sorry-modal, .oe-sorry-modal-container .oe-on-account-summary-modal, .oe-sorry-modal-container .oe-redeem-modal, .oe-sorry-modal-container .oe-thank-you-modal, .oe-sorry-modal-container .oe-sorry-modal, .oe-payment-modal-container .oe-payment-modal, .oe-credit-cards-add-modal-container .oe-credit-cards-add-modal, .popup-modals-container .rp-partner-profile-details-modal-container .rp-partner-profile-details-modal, .popup-modals-container .rp-agreement-modal-container .rp-agreement-modal, .popup-modals-container .rp-financial-details-modal-container .rp-financial-details-modal, .market-partners-container .mp-add-product-service-modal-container .mp-add-product-service-modal, .market-partners-container .mp-add-product-service-modal-container .mp-invite-modal, .market-partners-container .mp-add-product-service-modal-container .mp-add-note-modal, .market-partners-container .mp-invite-modal-container .mp-add-product-service-modal, .market-partners-container .mp-invite-modal-container .mp-invite-modal, .market-partners-container .mp-invite-modal-container .mp-add-note-modal, .market-partners-container .mp-add-note-modal-container .mp-add-product-service-modal, .market-partners-container .mp-add-note-modal-container .mp-invite-modal, .market-partners-container .mp-add-note-modal-container .mp-add-note-modal, .market-partners-container .mp-invite-sent-modal-container .mp-invite-sent-modal, .mp-details-contact-add-modal-container .mp-details-contact-add-modal, .mp-details-contact-add-modal-container .mp-add-modal, .mp-add-modal-container .mp-details-contact-add-modal, .mp-add-modal-container .mp-add-modal, .pf-agreement-modal-container .pf-agreement-modal, .su-locations-add-modal-container .su-locations-add-modal, .su-credit-cards-add-modal-container .su-credit-cards-add-modal, .su-credit-cards-edit-modal-container .su-credit-cards-edit-modal, .su-banking-details-modal-container .su-banking-details-modal, .su-agreement-modal-container .su-agreement-modal, .su-submitted-modal-container .su-submitted-modal, .videos-container .as-video .as-video-modal, .videos-container .as-under-review-container .as-under-review, .pp-payment-prefs-edit-modal-container .pp-payment-prefs-edit-modal, .pp-payment-prefs-edit-modal-container .pp-header-edit-modal, .pp-payment-prefs-edit-modal-container .pp-billing-address-edit-modal, .pp-payment-prefs-edit-modal-container .pp-ship-to-modal, .pp-payment-prefs-edit-modal-container .pp-credit-card-edit-modal, .pp-payment-prefs-edit-modal-container .pp-bank-account-edit-modal, .pp-header-edit-modal-container .pp-payment-prefs-edit-modal, .pp-header-edit-modal-container .pp-header-edit-modal, .pp-header-edit-modal-container .pp-billing-address-edit-modal, .pp-header-edit-modal-container .pp-ship-to-modal, .pp-header-edit-modal-container .pp-credit-card-edit-modal, .pp-header-edit-modal-container .pp-bank-account-edit-modal, .pp-billing-address-edit-modal-container .pp-payment-prefs-edit-modal, .pp-billing-address-edit-modal-container .pp-header-edit-modal, .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal, .pp-billing-address-edit-modal-container .pp-ship-to-modal, .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal, .pp-billing-address-edit-modal-container .pp-bank-account-edit-modal, .pp-ship-to-modal-container .pp-payment-prefs-edit-modal, .pp-ship-to-modal-container .pp-header-edit-modal, .pp-ship-to-modal-container .pp-billing-address-edit-modal, .pp-ship-to-modal-container .pp-ship-to-modal, .pp-ship-to-modal-container .pp-credit-card-edit-modal, .pp-ship-to-modal-container .pp-bank-account-edit-modal, .pp-credit-card-edit-modal-container .pp-payment-prefs-edit-modal, .pp-credit-card-edit-modal-container .pp-header-edit-modal, .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal, .pp-credit-card-edit-modal-container .pp-ship-to-modal, .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal, .pp-credit-card-edit-modal-container .pp-bank-account-edit-modal, .pp-bank-account-edit-modal-container .pp-payment-prefs-edit-modal, .pp-bank-account-edit-modal-container .pp-header-edit-modal, .pp-bank-account-edit-modal-container .pp-billing-address-edit-modal, .pp-bank-account-edit-modal-container .pp-ship-to-modal, .pp-bank-account-edit-modal-container .pp-credit-card-edit-modal, .pp-bank-account-edit-modal-container .pp-bank-account-edit-modal {
+  border: 2px solid #36384B;
+  background: white;
+  width: 60%;
+  margin: 15% auto; }
+
+.planRegis-form label, .retailer-profile-container .two-grid-column .retailer-info-form label, .retailer-profile-container .profile-address label, .shipping-locations-modal .shipping-locations-form .planRegis-form label, .contacts-form-modal .contacts-form .planRegis-form label, .plan-inquiry-container .advance-search-container .advance-search-form .planRegis-form label, .market-partners-container .partner-data-container .planRegis-form label, .market-partners-container .partner-data-container .planRegis-form dt, .market-partners-container .partner-data-container .planRegis-form span, .market-partners-container .mp-invite-modal .planRegis-form label, .market-partners-container .mp-invite-modal .planRegis-form dt, .market-partners-container .mp-invite-modal .planRegis-form span, .smartShip-container .right-side label, .smarterPartner-setup-container .profileBox-style .planRegis-form label, .smarterPartner-setup-container .partner-profile-container .payment-methods-container .pp-credit-cards .planRegis-form label, .partner-profile-container .payment-methods-container .smarterPartner-setup-container .pp-credit-cards .planRegis-form label {
+  font-family: "aktiv-grotesk", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  margin-right: 1em; }
+
+.planRegis-form select, .retailer-profile-container .two-grid-column .retailer-info-form select, .retailer-profile-container .profile-address select, .shipping-locations-modal .shipping-locations-form .planRegis-form select, .contacts-form-modal .contacts-form .planRegis-form select, .plan-inquiry-container .advance-search-container .advance-search-form .planRegis-form select, .market-partners-container .partner-data-container .planRegis-form select, .market-partners-container .mp-invite-modal .planRegis-form select {
+  width: 70%;
+  height: 50px;
+  border: 2px solid #36384B;
+  border-radius: 10px;
+  background-color: #A3ACFF;
+  color: #36384B;
+  font-size: 16px;
+  font-family: "aktiv-grotesk", Helvetica, sans-serif; }
+
+.planRegis-form input, .retailer-profile-container .two-grid-column .retailer-info-form input, .retailer-profile-container .profile-address input, .shipping-locations-modal .shipping-locations-form .planRegis-form input, .contacts-form-modal .contacts-form .planRegis-form input, .plan-inquiry-container .advance-search-container .advance-search-form .planRegis-form input, .market-partners-container .partner-data-container .planRegis-form input, .market-partners-container .mp-invite-modal .planRegis-form input {
+  background-color: #FFFFFF;
+  border: 2px solid #36384B;
+  width: 70%;
+  font-size: 16px;
+  font-family: "aktiv-grotesk", Helvetica, sans-serif; }
+
+.simple-link, .smarterPartner-setup-container .su-prev, .planRegis-controls div a {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: "aktiv-grotesk", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #36384B; }
+
+.popup-modals-container .addItem-modal .addItem-form .purple-background h2::after, .popup-modals-container .mainSubmit-modal-container .mainSubmit-modal .cross,
+.popup-modals-container .mainSubmit-modal-container .remove-planModal .cross,
+.popup-modals-container .remove-planModal-container .mainSubmit-modal .cross,
+.popup-modals-container .remove-planModal-container .remove-planModal .cross, .popup-modals-container .video-modal-container .video-modal .cross, .shipping-locations-modal .shipping-locations-form .purple-background h2::after, .contacts-form-modal .contacts-form .purple-background h2::after, .cancelation-modal .plan-cancelation-container .cross, .planRegistration-modal-container .planRegistration-modal .cross, .editOrder-modal-container .editOrder-modal .purple-background h2::after, .oe-add-item-modal-container .oe-add-item-modal .purple-background .close-modal, .oe-add-item-modal-container .oe-summary-modal .purple-background .close-modal, .oe-summary-modal-container .oe-add-item-modal .purple-background .close-modal, .oe-summary-modal-container .oe-summary-modal .purple-background .close-modal, .oe-cancel-order-conf-modal-container .oe-cancel-order-conf-modal .close-modal, .oe-cancel-order-conf-modal-container .oe-backorder-warning-modal .close-modal, .oe-backorder-warning-modal-container .oe-cancel-order-conf-modal .close-modal, .oe-backorder-warning-modal-container .oe-backorder-warning-modal .close-modal, .oe-on-account-summary-modal-container .oe-on-account-summary-modal .purple-background .close-modal, .oe-on-account-summary-modal-container .oe-redeem-modal .purple-background .close-modal, .oe-on-account-summary-modal-container .oe-thank-you-modal .purple-background .close-modal, .oe-on-account-summary-modal-container .oe-sorry-modal .purple-background .close-modal, .oe-redeem-modal-container .oe-on-account-summary-modal .purple-background .close-modal, .oe-redeem-modal-container .oe-redeem-modal .purple-background .close-modal, .oe-redeem-modal-container .oe-thank-you-modal .purple-background .close-modal, .oe-redeem-modal-container .oe-sorry-modal .purple-background .close-modal, .oe-thank-you-modal-container .oe-on-account-summary-modal .purple-background .close-modal, .oe-thank-you-modal-container .oe-redeem-modal .purple-background .close-modal, .oe-thank-you-modal-container .oe-thank-you-modal .purple-background .close-modal, .oe-thank-you-modal-container .oe-sorry-modal .purple-background .close-modal, .oe-sorry-modal-container .oe-on-account-summary-modal .purple-background .close-modal, .oe-sorry-modal-container .oe-redeem-modal .purple-background .close-modal, .oe-sorry-modal-container .oe-thank-you-modal .purple-background .close-modal, .oe-sorry-modal-container .oe-sorry-modal .purple-background .close-modal, .oe-payment-modal-container .oe-payment-modal .purple-background .close-modal, .oe-credit-cards-add-modal-container .oe-credit-cards-add-modal .purple-background .close-modal, .popup-modals-container .rp-partner-profile-details-modal-container .rp-partner-profile-details-modal .purple-background .close-modal, .popup-modals-container .rp-agreement-modal-container .rp-agreement-modal .purple-background .close-modal, .popup-modals-container .rp-financial-details-modal-container .rp-financial-details-modal .purple-background .close-modal, .market-partners-container .mp-add-product-service-modal-container .close-modal, .market-partners-container .mp-invite-modal-container .close-modal, .market-partners-container .mp-add-note-modal-container .close-modal, .market-partners-container .mp-invite-sent-modal-container .mp-invite-sent-modal .close-modal, .mp-details-contact-add-modal-container .mp-details-contact-add-modal .purple-background .close-modal, .mp-details-contact-add-modal-container .mp-add-modal .purple-background .close-modal, .mp-add-modal-container .mp-details-contact-add-modal .purple-background .close-modal, .mp-add-modal-container .mp-add-modal .purple-background .close-modal, .pf-agreement-modal-container .pf-agreement-modal .purple-background .close-modal, .su-locations-add-modal-container .su-locations-add-modal .purple-background h2::after, .su-credit-cards-add-modal-container .su-credit-cards-add-modal .purple-background h2::after, .su-credit-cards-edit-modal-container .su-credit-cards-edit-modal .purple-background h2::after, .su-banking-details-modal-container .su-banking-details-modal .purple-background .close-modal, .su-agreement-modal-container .su-agreement-modal .purple-background .close-modal, .su-submitted-modal-container .su-submitted-modal .close-modal, .videos-container .as-video .as-video-modal .close-modal, .videos-container .as-under-review-container .as-under-review .close-modal, .pp-payment-prefs-edit-modal-container .pp-payment-prefs-edit-modal .purple-background .close-modal, .pp-payment-prefs-edit-modal-container .pp-header-edit-modal .purple-background .close-modal, .pp-payment-prefs-edit-modal-container .pp-billing-address-edit-modal .purple-background .close-modal, .pp-payment-prefs-edit-modal-container .pp-ship-to-modal .purple-background .close-modal, .pp-payment-prefs-edit-modal-container .pp-credit-card-edit-modal .purple-background .close-modal, .pp-payment-prefs-edit-modal-container .pp-bank-account-edit-modal .purple-background .close-modal, .pp-header-edit-modal-container .pp-payment-prefs-edit-modal .purple-background .close-modal, .pp-header-edit-modal-container .pp-header-edit-modal .purple-background .close-modal, .pp-header-edit-modal-container .pp-billing-address-edit-modal .purple-background .close-modal, .pp-header-edit-modal-container .pp-ship-to-modal .purple-background .close-modal, .pp-header-edit-modal-container .pp-credit-card-edit-modal .purple-background .close-modal, .pp-header-edit-modal-container .pp-bank-account-edit-modal .purple-background .close-modal, .pp-billing-address-edit-modal-container .pp-payment-prefs-edit-modal .purple-background .close-modal, .pp-billing-address-edit-modal-container .pp-header-edit-modal .purple-background .close-modal, .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal .purple-background .close-modal, .pp-billing-address-edit-modal-container .pp-ship-to-modal .purple-background .close-modal, .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal .purple-background .close-modal, .pp-billing-address-edit-modal-container .pp-bank-account-edit-modal .purple-background .close-modal, .pp-ship-to-modal-container .pp-payment-prefs-edit-modal .purple-background .close-modal, .pp-ship-to-modal-container .pp-header-edit-modal .purple-background .close-modal, .pp-ship-to-modal-container .pp-billing-address-edit-modal .purple-background .close-modal, .pp-ship-to-modal-container .pp-ship-to-modal .purple-background .close-modal, .pp-ship-to-modal-container .pp-credit-card-edit-modal .purple-background .close-modal, .pp-ship-to-modal-container .pp-bank-account-edit-modal .purple-background .close-modal, .pp-credit-card-edit-modal-container .pp-payment-prefs-edit-modal .purple-background .close-modal, .pp-credit-card-edit-modal-container .pp-header-edit-modal .purple-background .close-modal, .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal .purple-background .close-modal, .pp-credit-card-edit-modal-container .pp-ship-to-modal .purple-background .close-modal, .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .purple-background .close-modal, .pp-credit-card-edit-modal-container .pp-bank-account-edit-modal .purple-background .close-modal, .pp-bank-account-edit-modal-container .pp-payment-prefs-edit-modal .purple-background .close-modal, .pp-bank-account-edit-modal-container .pp-header-edit-modal .purple-background .close-modal, .pp-bank-account-edit-modal-container .pp-billing-address-edit-modal .purple-background .close-modal, .pp-bank-account-edit-modal-container .pp-ship-to-modal .purple-background .close-modal, .pp-bank-account-edit-modal-container .pp-credit-card-edit-modal .purple-background .close-modal, .pp-bank-account-edit-modal-container .pp-bank-account-edit-modal .purple-background .close-modal {
+  content: 'X';
+  float: right;
+  color: #70E9B2;
+  font-weight: 300;
+  cursor: pointer;
+  font-family: cursive; }
+
+/*Common classes*/
+.purple-background {
+  background-color: #434DA0; }
+  .purple-background h2 {
+    color: white;
+    font-size: 18px;
+    padding: 1em;
+    font-family: "aktiv-grotesk", Helvetica, sans-serif;
+    font-weight: 700; }
+
+.purple-text {
+  color: #434DA0;
+  font-weight: 500;
+  font-family: "aktiv-grotesk", Helvetica, sans-serif; }
+
+.grey-text {
+  color: #36384B !important; }
+
+.profileBox-heading {
+  font-family: "aktiv-grotesk", Helvetica, sans-serif;
+  color: #434DA0;
+  font-size: 24px;
+  font-weight: 700; }
+
+.two-grid-column {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+.srs-heading {
+  font-family: "PublicoHeadline", aktiv-grotesk, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #434DA0;
+  font-size: 5vh;
+  margin-top: 10%;
+  text-align: center;
+  margin-bottom: 1%; }
+
+.margin-10 {
+  margin: 10px; }
+
+.u-underline {
+  text-decoration: underline; }
+
+.light-grey-text {
+  color: #898A8D;
+  font-weight: 300; }
+
+/*Header*/
+.srs-nav-container > .zuc-main-nav > .zuc-nav-links > .zuc-nav-dropdown {
+  padding: 3vw 1.5vw; }
+
+.dotted-line-text p {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px dashed #36384B;
+  line-height: 0.1em;
+  margin: 20px 0 20px; }
+  .dotted-line-text p span {
+    background: #fff;
+    padding: 0 10px; }
+
+.warning-text {
+  color: red; }
+
+.grey {
+  color: grey; }
+
+.width-80 {
+  margin: 0 auto; }
+
+.info-text-container {
+  display: none;
+  position: absolute;
+  background-color: #E2FBF0;
+  padding: 10px 15px;
+  top: 42%;
+  left: 81%;
+  width: 30%;
+  z-index: 1000; }
+
+.zuc-btn {
+  padding: 15px 30px; }
+
+.profileBox-style, .partner-profile-container .payment-methods-container .pp-credit-cards {
+  border: 2px solid #36384B;
+  padding: 10px; }
+
+.purple-text {
+  font-weight: 700;
+  color: #434DA0;
+  font-family: "aktiv-grotesk", Helvetica, sans-serif;
+  font-size: 18px; }
+
+.info-container-green, .oe-summary-modal-table .oe-summary-srp-info-text-container, .oe-summary-modal-table .oe-on-account-summary-srp-info-text-container, .onAccount-info-container, .smarterPartner-setup-container .su-step-3 .su-deposit-payment-pref-info-text-container, .smarterPartner-setup-container .su-credit-cards-info-text-container {
+  position: absolute;
+  /*position: relative;*/
+  background-color: #E2FBF0;
+  padding: 10px 15px;
+  /* top: 41%; */
+  /* left: 64%; */
+  /* width: 25%; */
+  z-index: 1000;
+  transition: all 0.5s ease-in; }
+
+.info-container-caret, .oe-summary-modal-table .oe-summary-srp-info-text-container .fa-caret-up, .oe-summary-modal-table .oe-on-account-summary-srp-info-text-container .fa-caret-up, .onAccount-info-container .fa-caret-up, .smarterPartner-setup-container .su-step-3 .su-deposit-payment-pref-info-text-container .fa-caret-up, .smarterPartner-setup-container .su-credit-cards-info-text-container .fa-caret-up {
+  position: absolute;
+  color: #E2FBF0;
+  /*left: -15px; */
+  top: -30px;
+  font-size: 3em; }
+
+.fa-bell {
+  font-size: 18px;
+  padding: 0 5px; }
+
+/* Login screen*/
+.srs-login-container {
+  width: 40%;
+  margin-top: 12%; }
+  .srs-login-container .srs-login-content .zuc-modal-subtitle {
+    font-size: 2.5em;
+    font-family: "aktiv-grotesk", Helvetica, sans-serif;
+    padding: 1em 0; }
+  .srs-login-container .srs-login-content .zuc-input-group {
+    padding: 10px 0; }
+    .srs-login-container .srs-login-content .zuc-input-group .zuc-input-name {
+      font-family: "aktiv-grotesk", Helvetica, sans-serif;
+      font-size: 1.5em; }
+    .srs-login-container .srs-login-content .zuc-input-group input[type=date], .srs-login-container .srs-login-content .zuc-input-group input[type=email], .srs-login-container .srs-login-content .zuc-input-group input[type=password], .srs-login-container .srs-login-content .zuc-input-group input[type=search], .srs-login-container .srs-login-content .zuc-input-group input[type=tel], .srs-login-container .srs-login-content .zuc-input-group input[type=text], .srs-login-container .srs-login-content .zuc-input-group input[type=url] {
+      height: 70px;
+      background-color: rgba(163, 172, 255, 0.2);
+      border: 0;
+      color: #36384B; }
+    .srs-login-container .srs-login-content .zuc-input-group a {
+      font-size: 0.95em;
+      position: relative;
+      top: 10px;
+      padding-bottom: 10px; }
+  .srs-login-container .srs-login-content .remember-me {
+    margin: 5% 0 0 0; }
+    .srs-login-container .srs-login-content .remember-me input[type="checkbox"] {
+      margin: 0 auto; }
+  .srs-login-container .srs-login-content .form-buttons {
+    margin-top: 5%; }
+
+/*Plan registration styling*/
+.plan-registration-container {
+  border: 2px solid #36384B;
+  height: auto; }
+
+.videoLink {
+  position: absolute;
+  top: 2.25em;
+  left: 80%; }
+  .videoLink a {
+    cursor: pointer; }
+
+.planRegis-form {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2em 0; }
+  .planRegis-form div i {
+    font-size: 1.5em;
+    color: #434DA0;
+    margin-right: 10px; }
+  .planRegis-form .planRegis-divStyle {
+    padding: 5px 0;
+    display: grid;
+    grid-template-columns: 20% 80%; }
+  .planRegis-form .info-circle {
+    color: #70E9B2;
+    margin: 1em 0 0 10px;
+    cursor: pointer; }
+  .planRegis-form .info-text-container {
+    display: none;
+    position: absolute;
+    background-color: #E2FBF0;
+    padding: 10px 15px;
+    top: 40%;
+    left: 56%;
+    width: 30%;
+    z-index: 1000; }
+    .planRegis-form .info-text-container p {
+      font-size: 13px;
+      color: #36384B; }
+    .planRegis-form .info-text-container i {
+      position: absolute;
+      color: #E2FBF0;
+      left: 50%;
+      top: -30px;
+      font-size: 3em; }
+  .planRegis-form .twoInput-fields {
+    display: grid;
+    grid-template-columns: 20% 40% 40%; }
+    .planRegis-form .twoInput-fields input {
+      width: 60%; }
+  .planRegis-form .grey-field {
+    color: #898A8D;
+    padding-top: 10px; }
+    .planRegis-form .grey-field select {
+      background-color: #C8C8C8; }
+  .planRegis-form .info-grid {
+    display: grid;
+    grid-template-columns: 20% 64% 0; }
+    .planRegis-form .info-grid input {
+      width: 100%; }
+  .planRegis-form select {
+    margin-bottom: 0;
+    width: 80%; }
+    .planRegis-form select:focus {
+      color: inherit;
+      border-color: #a3acff;
+      background-color: white; }
+  .planRegis-form input {
+    width: 80%; }
+    .planRegis-form input:focus {
+      color: inherit;
+      border-color: #a3acff;
+      background-color: white; }
+  .planRegis-form input:focus:invalid:focus, .planRegis-form textarea:focus:invalid:focus, .planRegis-form select:focus:invalid:focus {
+    color: inherit;
+    border-color: #a3acff;
+    background-color: white; }
+  .planRegis-form .formField-data-controller {
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto; }
+    .planRegis-form .formField-data-controller .fillForm-button {
+      grid-template-columns: auto;
+      justify-content: flex-start;
+      margin-left: -20px; }
+    .planRegis-form .formField-data-controller .clearform-button {
+      grid-template-columns: auto;
+      justify-content: center;
+      /*margin-left:5em;*/
+      display: grid; }
+  .planRegis-form input[type="checkbox"] {
+    width: 30px;
+    height: 30px; }
+  .planRegis-form input[type="date"] {
+    height: 50px;
+    border-radius: 10px; }
+  .planRegis-form .planRegis-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 85%;
+    margin: 1em 0; }
+  .planRegis-form .hidden-field {
+    display: none; }
+
+.plan-registration-box {
+  height: auto;
+  border: 2px solid #36384B;
+  width: 90%;
+  margin-bottom: 2em;
+  display: none; }
+  .plan-registration-box .purple-background {
+    background-color: #434DA0; }
+    .plan-registration-box .purple-background h2 {
+      color: white;
+      font-size: 18px;
+      padding: 1em;
+      font-family: "aktiv-grotesk", Helvetica, sans-serif; }
+  .plan-registration-box .new-planAdd-title {
+    padding: 0 10px 14px;
+    transition: all ease-in 0.5s;
+    -webkit-transition: all ease-in 0.5s; }
+    .plan-registration-box .new-planAdd-title p {
+      font-family: "aktiv-grotesk", Helvetica, sans-serif;
+      font-weight: 700;
+      cursor: pointer; }
+      .plan-registration-box .new-planAdd-title p span {
+        text-transform: uppercase;
+        padding-left: 5px; }
+      .plan-registration-box .new-planAdd-title p i {
+        font-size: 1.5em;
+        color: #36384B; }
+
+.new-planAdd-detail {
+  display: none;
+  border: 1px solid #36384B;
+  margin: 10px; }
+  .new-planAdd-detail table {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed; }
+    .new-planAdd-detail table tr {
+      text-align: center;
+      font-family: "aktiv-grotesk", Helvetica, sans-serif; }
+    .new-planAdd-detail table td,
+    .new-planAdd-detail table th {
+      padding: 5px;
+      line-height: 22px;
+      word-break: break-word;
+      text-align: left; }
+      .new-planAdd-detail table td i,
+      .new-planAdd-detail table th i {
+        color: #434DA0; }
+    .new-planAdd-detail table th {
+      color: #434DA0;
+      font-weight: 700; }
+    .new-planAdd-detail table tbody tr:hover {
+      background-color: #70E9B2;
+      transition: background-color ease-in 0.5s;
+      cursor: pointer; }
+
+.planRegis-controls {
+  visibility: hidden;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2em 0; }
+
+.popup-modals-container {
+  /*This is pop up section class*/
+  /*Congratulation modal*/ }
+  .popup-modals-container .addItem-modal {
+    /*This is all modal div class*/ }
+    .popup-modals-container .addItem-modal .addItem-form .purple-background h2::after {
+      padding: 0;
+      font-weight: 700; }
+    .popup-modals-container .addItem-modal .addItem-form .planRegis-form {
+      width: 90%; }
+      .popup-modals-container .addItem-modal .addItem-form .planRegis-form div {
+        /*padding:0;*/ }
+      .popup-modals-container .addItem-modal .addItem-form .planRegis-form .planRegis-divStyle {
+        grid-template-columns: 20% 65% 0; }
+      .popup-modals-container .addItem-modal .addItem-form .planRegis-form select {
+        width: 100%; }
+      .popup-modals-container .addItem-modal .addItem-form .planRegis-form input {
+        width: 100%; }
+      .popup-modals-container .addItem-modal .addItem-form .planRegis-form .serial-info {
+        color: #70E9B2;
+        margin: 0 0 0 10px;
+        cursor: pointer; }
+      .popup-modals-container .addItem-modal .addItem-form .planRegis-form .serial-text-container {
+        display: none;
+        position: absolute;
+        background-color: #E2FBF0;
+        padding: 10px 15px;
+        top: 75%;
+        left: 78%;
+        width: 30%;
+        z-index: 1000; }
+        .popup-modals-container .addItem-modal .addItem-form .planRegis-form .serial-text-container p {
+          font-size: 13px;
+          color: #36384B; }
+        .popup-modals-container .addItem-modal .addItem-form .planRegis-form .serial-text-container i {
+          position: absolute;
+          color: #E2FBF0;
+          left: 50%;
+          top: -30px;
+          font-size: 3em; }
+      .popup-modals-container .addItem-modal .addItem-form .planRegis-form .addItem-quantity .label {
+        font-family: "aktiv-grotesk", Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        background: none;
+        color: #36384B;
+        text-shadow: none;
+        margin-right: 1em; }
+      .popup-modals-container .addItem-modal .addItem-form .planRegis-form .addItem-quantity .button-minus,
+      .popup-modals-container .addItem-modal .addItem-form .planRegis-form .addItem-quantity .button-plus {
+        border-radius: 50%;
+        width: auto;
+        margin: 5px;
+        font-size: 2em;
+        vertical-align: middle;
+        text-align: center; }
+      .popup-modals-container .addItem-modal .addItem-form .planRegis-form .addItem-quantity .button-minus {
+        padding: 2px 8px 8px; }
+      .popup-modals-container .addItem-modal .addItem-form .planRegis-form .addItem-quantity .button-plus {
+        padding: 5px; }
+      .popup-modals-container .addItem-modal .addItem-form .planRegis-form .addItem-quantity .quantity-input {
+        width: 15%;
+        text-align: center;
+        color: #36384B;
+        border-radius: 0;
+        border: 2px solid #C8C8C8;
+        padding: 0;
+        margin: 0; }
+      .popup-modals-container .addItem-modal .addItem-form .planRegis-form .formField-data-controller div:nth-child(2) {
+        display: grid;
+        grid-template-columns: 30% 65%;
+        margin-left: 0; }
+      .popup-modals-container .addItem-modal .addItem-form .planRegis-form .margin-10 {
+        margin: 10px; }
+  .popup-modals-container .mainSubmit-modal-container .mainSubmit-modal h2,
+  .popup-modals-container .mainSubmit-modal-container .remove-planModal h2,
+  .popup-modals-container .remove-planModal-container .mainSubmit-modal h2,
+  .popup-modals-container .remove-planModal-container .remove-planModal h2 {
+    font-family: "PublicoHeadline", aktiv-grotesk, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    color: #434DA0;
+    text-align: center;
+    padding: 1em; }
+  .popup-modals-container .mainSubmit-modal-container .mainSubmit-modal .cross,
+  .popup-modals-container .mainSubmit-modal-container .remove-planModal .cross,
+  .popup-modals-container .remove-planModal-container .mainSubmit-modal .cross,
+  .popup-modals-container .remove-planModal-container .remove-planModal .cross {
+    font-size: 1.5em;
+    padding: 10px; }
+  .popup-modals-container .mainSubmit-modal-container .mainSubmit-modal p,
+  .popup-modals-container .mainSubmit-modal-container .remove-planModal p,
+  .popup-modals-container .remove-planModal-container .mainSubmit-modal p,
+  .popup-modals-container .remove-planModal-container .remove-planModal p {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.75em; }
+  .popup-modals-container .mainSubmit-modal-container .mainSubmit-modal div,
+  .popup-modals-container .mainSubmit-modal-container .remove-planModal div,
+  .popup-modals-container .remove-planModal-container .mainSubmit-modal div,
+  .popup-modals-container .remove-planModal-container .remove-planModal div {
+    text-align: center;
+    padding: 1em; }
+  .popup-modals-container .remove-planModal-container .remove-planModal h3 {
+    text-align: center;
+    margin-top: 1em; }
+  .popup-modals-container .remove-planModal-container .remove-planModal div a {
+    margin: 0 10px; }
+  .popup-modals-container .remove-planModal-container .remove-planModal div .zuc-btn-hollow {
+    border: 2px solid #434DA0;
+    color: #434DA0; }
+  .popup-modals-container .video-modal-container .video-modal .cross {
+    font-size: 2em;
+    font-weight: 900;
+    padding: 0 10px; }
+  .popup-modals-container .video-modal-container .video-modal iframe {
+    width: 100%;
+    height: 600px; }
+
+/*Retailer Profile*/
+.retailer-profile-container {
+  width: 80%;
+  margin: 0 auto; }
+  .retailer-profile-container .two-grid-column {
+    align-items: center;
+    /*div{
+    	padding:0 10px;
+    }*/ }
+    .retailer-profile-container .two-grid-column .retailer-info-form div {
+      /*padding:5px 0;*/
+      justify-content: flex-end; }
+      .retailer-profile-container .two-grid-column .retailer-info-form div p {
+        width: 70%;
+        font-weight: bold; }
+    .retailer-profile-container .two-grid-column .retailer-info-form select {
+      margin-bottom: 0; }
+  .retailer-profile-container .profile-boxStyle {
+    border: 2px solid #36384B;
+    height: auto; }
+  .retailer-profile-container .profile-address {
+    padding: 10px; }
+    .retailer-profile-container .profile-address div {
+      padding: 5px; }
+    .retailer-profile-container .profile-address label {
+      word-break: break-word; }
+    .retailer-profile-container .profile-address select:focus {
+      color: inherit;
+      border-color: #a3acff;
+      background-color: white; }
+  .retailer-profile-container .locations-container .new-planAdd-detail {
+    display: block;
+    /*margin:0 auto;*/
+    padding: 0; }
+    .retailer-profile-container .locations-container .new-planAdd-detail table tr {
+      text-align: left; }
+    .retailer-profile-container .locations-container .new-planAdd-detail table thead tr th:nth-child(1) {
+      width: 10%; }
+    .retailer-profile-container .locations-container .new-planAdd-detail table thead tr th:nth-child(2) {
+      width: 20%; }
+    .retailer-profile-container .locations-container .new-planAdd-detail table thead tr th:nth-child(3) {
+      width: 30%; }
+    .retailer-profile-container .locations-container .new-planAdd-detail table thead tr th:nth-child(4) {
+      width: 20%; }
+  .retailer-profile-container .contacts-container {
+    margin-top: 3%;
+    padding: 0; }
+    .retailer-profile-container .contacts-container .grey {
+      color: grey; }
+    .retailer-profile-container .contacts-container .new-planAdd-detail {
+      display: block; }
+      .retailer-profile-container .contacts-container .new-planAdd-detail table thead tr th {
+        border-right: 1px solid #d3d3df;
+        text-align: center; }
+      .retailer-profile-container .contacts-container .new-planAdd-detail table tbody tr td {
+        border-right: 1px solid #d3d3df;
+        text-align: center; }
+
+.shipping-locations-modal .shipping-locations-form .planRegis-form {
+  width: 85%;
+  margin: 0 auto; }
+  .shipping-locations-modal .shipping-locations-form .planRegis-form input {
+    width: 100%; }
+  .shipping-locations-modal .shipping-locations-form .planRegis-form select {
+    width: 100%; }
+  .shipping-locations-modal .shipping-locations-form .planRegis-form input[type="checkbox"] {
+    width: 30px;
+    height: 30px; }
+  .shipping-locations-modal .shipping-locations-form .planRegis-form .profileLocation-province {
+    margin-left: 4em; }
+    .shipping-locations-modal .shipping-locations-form .planRegis-form .profileLocation-province select {
+      width: 150px; }
+
+.contacts-form-modal .contacts-form .planRegis-form {
+  width: 100%;
+  padding: 1em; }
+  .contacts-form-modal .contacts-form .planRegis-form .div-sixty-forty {
+    display: grid;
+    grid-template-columns: 60% 40%; }
+  .contacts-form-modal .contacts-form .planRegis-form div {
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto; }
+  .contacts-form-modal .contacts-form .planRegis-form label {
+    padding: 0 5px;
+    text-align: left;
+    margin: 0;
+    width: 30%;
+    word-break: unset; }
+  .contacts-form-modal .contacts-form .planRegis-form input {
+    width: 100%; }
+  .contacts-form-modal .contacts-form .planRegis-form select {
+    width: 100%;
+    margin-top: 10px; }
+  .contacts-form-modal .contacts-form .planRegis-form .purple-text {
+    font-weight: 700; }
+  .contacts-form-modal .contacts-form .planRegis-form .permissions {
+    width: 100%;
+    border: 2px solid #36384B;
+    display: grid;
+    grid-template-columns: 20% 30% 20% 30%;
+    justify-content: center;
+    align-items: flex-start; }
+    .contacts-form-modal .contacts-form .planRegis-form .permissions label {
+      color: #434DA0;
+      font-size: 14px;
+      font-weight: 300;
+      font-family: "aktiv-grotesk", Helvetica, sans-serif;
+      text-align: center;
+      width: 100%;
+      min-height: 40px; }
+    .contacts-form-modal .contacts-form .planRegis-form .permissions input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      margin: 10px auto; }
+    .contacts-form-modal .contacts-form .planRegis-form .permissions p {
+      font-size: 16px;
+      text-align: center;
+      min-height: 50px; }
+
+@media screen and (max-width: 768px) {
+  .retailer-profile-container .contacts-container .new-planAdd-detail table tbody tr td {
+    border-bottom: 1px solid #d3d3df; }
+
+  .shipping-locations-modal .shipping-locations-form .planRegis-form {
+    width: 85%;
+    margin: 0 auto; }
+    .shipping-locations-modal .shipping-locations-form .planRegis-form input {
+      width: 100%; }
+    .shipping-locations-modal .shipping-locations-form .planRegis-form select {
+      width: 100%; }
+    .shipping-locations-modal .shipping-locations-form .planRegis-form .formField-data-controller {
+      grid-template-columns: 100%; }
+    .shipping-locations-modal .shipping-locations-form .planRegis-form input[type="checkbox"] {
+      width: 30px;
+      height: 30px; }
+    .shipping-locations-modal .shipping-locations-form .planRegis-form .profileLocation-province {
+      margin-left: 0; }
+      .shipping-locations-modal .shipping-locations-form .planRegis-form .profileLocation-province select {
+        width: 100%; }
+
+  .contacts-form-modal .contacts-form .planRegis-form div {
+    width: 100%; }
+  .contacts-form-modal .contacts-form .planRegis-form label {
+    /*word-break: break-word;*/ }
+  .contacts-form-modal .contacts-form .planRegis-form select {
+    margin-top: 10px; }
+  .contacts-form-modal .contacts-form .planRegis-form .div-sixty-forty, .contacts-form-modal .contacts-form .planRegis-form .formField-data-controller {
+    grid-template-columns: 100%; }
+  .contacts-form-modal .contacts-form .planRegis-form .permissions {
+    grid-template-columns: 100%; } }
+@media screen and (max-width: 980px) {
+  .contacts-form-modal .contacts-form .planRegis-form div {
+    width: 100%; }
+  .contacts-form-modal .contacts-form .planRegis-form label {
+    /*word-break: break-word;*/ }
+  .contacts-form-modal .contacts-form .planRegis-form .div-sixty-forty {
+    grid-template-columns: 100%; }
+  .contacts-form-modal .contacts-form .planRegis-form .permissions {
+    grid-template-columns: 100%; } }
+/*Plan inquiry screen*/
+.plan-inquiry-container {
+  width: 85%;
+  max-width: 100%;
+  /*padding:0 1em;*/ }
+  .plan-inquiry-container .search-container {
+    /*margin-top:7%;*/
+    /*grid-gap: 2em 2em;*/ }
+  .plan-inquiry-container .manual-search-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-row-gap: 2em;
+    padding: 10px;
+    margin: 0 auto; }
+    .plan-inquiry-container .manual-search-container .inquiry-date-filter {
+      border: 2px solid #36384B;
+      height: auto; }
+      .plan-inquiry-container .manual-search-container .inquiry-date-filter div {
+        color: #36384B;
+        font-family: "aktiv-grotesk", Helvetica, sans-serif;
+      			/*.inquiry-search-3{
+      				width:100%;
+      				margin:2em auto;
+      				display: grid;
+      				grid-template-columns: 33% 34% 33%;
+
+      				label{
+      					@extend %label;
+      				}
+
+      				select{
+      					@extend %select;
+      				}
+
+      			}*/ }
+        .plan-inquiry-container .manual-search-container .inquiry-date-filter div i {
+          color: #434DA0;
+          font-size: 1.5em;
+          padding: 5px; }
+        .plan-inquiry-container .manual-search-container .inquiry-date-filter div input {
+          width: 90%; }
+        .plan-inquiry-container .manual-search-container .inquiry-date-filter div .filter-param-box {
+          display: grid;
+          grid-template-columns: 30% 30% 30%;
+          justify-content: center;
+          grid-gap: 1em 1em;
+          max-width: 100%;
+          height: auto;
+          margin-top: 1em; }
+          .plan-inquiry-container .manual-search-container .inquiry-date-filter div .filter-param-box .filter-box {
+            margin-top: 10px;
+            border: 2px solid #36384B;
+            background-color: white;
+            min-height: 210px;
+            height: auto;
+            overflow-y: scroll; }
+            .plan-inquiry-container .manual-search-container .inquiry-date-filter div .filter-param-box .filter-box p {
+              padding: 5px;
+              cursor: pointer;
+              font-size: 16px; }
+              .plan-inquiry-container .manual-search-container .inquiry-date-filter div .filter-param-box .filter-box p:hover {
+                background-color: #70E9B2;
+                transition: all ease-in 0.5; }
+          .plan-inquiry-container .manual-search-container .inquiry-date-filter div .filter-param-box .selected {
+            background-color: #70E9B2;
+            transition: all ease-in 0.5; }
+          .plan-inquiry-container .manual-search-container .inquiry-date-filter div .filter-param-box ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: #434DA0; }
+      .plan-inquiry-container .manual-search-container .inquiry-date-filter .width-80 {
+        margin: 0 auto; }
+  .plan-inquiry-container .advance-search-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-row-gap: 2em;
+    padding: 10px;
+    margin: 0 auto; }
+    .plan-inquiry-container .advance-search-container .advance-search-form {
+      border: 2px solid #36384B; }
+      .plan-inquiry-container .advance-search-container .advance-search-form .planRegis-form {
+        width: 90%;
+        padding: 1em 0; }
+        .plan-inquiry-container .advance-search-container .advance-search-form .planRegis-form div {
+          padding: 0; }
+        .plan-inquiry-container .advance-search-container .advance-search-form .planRegis-form .planRegis-divStyle {
+          grid-template-columns: 30% 70%; }
+        .plan-inquiry-container .advance-search-container .advance-search-form .planRegis-form input {
+          width: 80%; }
+        .plan-inquiry-container .advance-search-container .advance-search-form .planRegis-form select {
+          width: 80%; }
+        .plan-inquiry-container .advance-search-container .advance-search-form .planRegis-form a {
+          margin: 10px; }
+  .plan-inquiry-container .allPlans-container {
+    width: 100%;
+    margin: 3em auto;
+    border: 2px solid #36384B; }
+    .plan-inquiry-container .allPlans-container .title p {
+      margin: 0 10px; }
+    .plan-inquiry-container .allPlans-container .new-planAdd-detail {
+      display: block;
+      border: 2px solid #d3d3df; }
+      .plan-inquiry-container .allPlans-container .new-planAdd-detail table td i {
+        cursor: pointer; }
+
+/*.popup-modal-container{*/
+.cancelation-modal .plan-cancelation-container {
+  width: 95%;
+  /*Plan cenlation ends*/ }
+  .cancelation-modal .plan-cancelation-container .srs-heading {
+    margin-top: 2%; }
+  .cancelation-modal .plan-cancelation-container .cross {
+    font-size: 1.5em;
+    padding: 10px; }
+  .cancelation-modal .plan-cancelation-container .plan-cancelation {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    justify-content: center;
+    align-items: flex-start; }
+    .cancelation-modal .plan-cancelation-container .plan-cancelation .plan-search-field {
+      height: auto;
+      padding: 0 2em;
+      width: 100%; }
+      .cancelation-modal .plan-cancelation-container .plan-cancelation .plan-search-field .search-form div {
+        margin-top: 12px; }
+        .cancelation-modal .plan-cancelation-container .plan-cancelation .plan-search-field .search-form div input {
+          margin: 0; }
+        .cancelation-modal .plan-cancelation-container .plan-cancelation .plan-search-field .search-form div button {
+          height: 50px;
+          border: 2px solid #36384B;
+          border-radius: 10px;
+          background: #434DA0;
+          position: relative;
+          left: -50px;
+          width: 25%; }
+          .cancelation-modal .plan-cancelation-container .plan-cancelation .plan-search-field .search-form div button i {
+            font-size: 1.5em;
+            color: white; }
+    .cancelation-modal .plan-cancelation-container .plan-cancelation .reason-container {
+      height: auto;
+      padding: 0 2em;
+      width: 100%; }
+      .cancelation-modal .plan-cancelation-container .plan-cancelation .reason-container textarea {
+        border: 2px solid #36384B;
+        border-radius: 0;
+        height: 350px;
+        font-size: 16px; }
+  .cancelation-modal .plan-cancelation-container .search-plan-details {
+    margin-top: 3em; }
+    .cancelation-modal .plan-cancelation-container .search-plan-details .plan-registration-box {
+      display: block;
+      width: 95%;
+      margin-bottom: 0; }
+      .cancelation-modal .plan-cancelation-container .search-plan-details .plan-registration-box .new-planAdd-detail {
+        display: block; }
+
+/*}*/
+.planRegistration-modal-container .planRegistration-modal {
+  width: 85%; }
+  .planRegistration-modal-container .planRegistration-modal .srs-heading {
+    margin-top: 1%; }
+  .planRegistration-modal-container .planRegistration-modal .cross {
+    padding: 10px;
+    font-size: 1.5em; }
+  .planRegistration-modal-container .planRegistration-modal .addItem-form .planRegis-form .formField-data-controller div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    margin-left: 0; }
+
+@media screen and (max-width: 768px) {
+  .plan-inquiry-container .manual-search-container .inquiry-date-filter div .filter-param-box {
+    display: grid;
+    grid-template-columns: 90%; }
+
+  .planRegistration-modal-container .planRegistration-modal {
+    width: 100%; }
+    .planRegistration-modal-container .planRegistration-modal .addItem-form .planRegis-form .formField-data-controller {
+      grid-template-columns: 100%; }
+      .planRegistration-modal-container .planRegistration-modal .addItem-form .planRegis-form .formField-data-controller div:nth-child(1) {
+        justify-content: space-between; }
+      .planRegistration-modal-container .planRegistration-modal .addItem-form .planRegis-form .formField-data-controller div:nth-child(2) {
+        display: grid;
+        grid-template-columns: 35% 65%; } }
+.order-entry-container {
+  width: 85%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; }
+  .order-entry-container .two-grid-column {
+    margin-top: 4em; }
+    .order-entry-container .two-grid-column .add-item-info {
+      height: auto;
+      width: 100%;
+      padding: 0 1em 0 0; }
+      .order-entry-container .two-grid-column .add-item-info .planRegis-form div {
+        /*justify-content: space-around;*/ }
+      .order-entry-container .two-grid-column .add-item-info .planRegis-form label {
+        text-align: left;
+        width: 25%; }
+      .order-entry-container .two-grid-column .add-item-info .planRegis-form select {
+        margin-bottom: 0; }
+    .order-entry-container .two-grid-column .light-grey-text {
+      font-family: "aktiv-grotesk", Helvetica, sans-serif;
+      font-size: 16px;
+      margin: 10px 0; }
+    .order-entry-container .two-grid-column .shipping-instructions {
+      height: auto;
+      width: 100%;
+      padding: 0 0 0 1em; }
+      .order-entry-container .two-grid-column .shipping-instructions textarea {
+        font-size: 16px; }
+      .order-entry-container .two-grid-column .shipping-instructions .two-grid-column {
+        margin-top: 0;
+        grid-column-gap: 1.5em; }
+        .order-entry-container .two-grid-column .shipping-instructions .two-grid-column label {
+          text-align: left; }
+  .order-entry-container .planRegis-form {
+    width: 100%;
+    padding: 0; }
+  .order-entry-container .order-table-container {
+    width: 100%;
+    border: 2px solid #36384B;
+    margin: 3% auto; }
+    .order-entry-container .order-table-container .new-planAdd-detail {
+      display: block;
+      border: 0; }
+      .order-entry-container .order-table-container .new-planAdd-detail table th, .order-entry-container .order-table-container .new-planAdd-detail table td {
+        /*text-align: left;*/
+        word-break: break-word; }
+      .order-entry-container .order-table-container .new-planAdd-detail table th {
+        width: 10%; }
+      .order-entry-container .order-table-container .new-planAdd-detail table th:nth-child(3) {
+        width: 25%; }
+      .order-entry-container .order-table-container .new-planAdd-detail table th:nth-child(4), .order-entry-container .order-table-container .new-planAdd-detail table th:nth-child(7), .order-entry-container .order-table-container .new-planAdd-detail table th:nth-child(8) {
+        width: 5%; }
+  .order-entry-container .orderEntry-controls {
+    margin-bottom: 2em; }
+    .order-entry-container .orderEntry-controls p {
+      padding-left: 30%;
+      text-align: right; }
+
+.editOrder-modal-container .editOrder-modal .planRegis-form {
+  width: 90%; }
+  .editOrder-modal-container .editOrder-modal .planRegis-form div {
+    justify-content: center; }
+  .editOrder-modal-container .editOrder-modal .planRegis-form input {
+    width: 80%; }
+  .editOrder-modal-container .editOrder-modal .planRegis-form .addItem-quantity .label {
+    font-family: "aktiv-grotesk", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    background: none;
+    color: #36384B;
+    text-shadow: none;
+    margin-right: 1em; }
+  .editOrder-modal-container .editOrder-modal .planRegis-form .addItem-quantity .button-minus, .editOrder-modal-container .editOrder-modal .planRegis-form .addItem-quantity .button-plus {
+    border-radius: 50%;
+    width: auto;
+    margin: 5px;
+    font-size: 2em;
+    vertical-align: middle;
+    text-align: center; }
+  .editOrder-modal-container .editOrder-modal .planRegis-form .addItem-quantity .button-minus {
+    padding: 2px 8px 8px 8px; }
+  .editOrder-modal-container .editOrder-modal .planRegis-form .addItem-quantity .button-plus {
+    padding: 5px; }
+  .editOrder-modal-container .editOrder-modal .planRegis-form .addItem-quantity .quantity-input {
+    width: 15%;
+    text-align: center;
+    color: #36384B;
+    border-radius: 0;
+    border: 2px solid #C8C8C8;
+    padding: 0;
+    margin: 0; }
+  .editOrder-modal-container .editOrder-modal .planRegis-form .item-found {
+    border: 1px solid #d1d1e0;
+    padding: 0;
+    width: 60%;
+    margin: 0 auto; }
+    .editOrder-modal-container .editOrder-modal .planRegis-form .item-found p {
+      font-size: 14px;
+      font-family: "aktiv-grotesk", Helvetica, sans-serif;
+      color: #36384B;
+      border-bottom: 1px solid #d1d1e0; }
+      .editOrder-modal-container .editOrder-modal .planRegis-form .item-found p:hover {
+        background: #70E9B2; }
+
+.oe-add-item-modal-container .oe-add-item-modal .purple-background h2, .oe-add-item-modal-container .oe-summary-modal .purple-background h2, .oe-summary-modal-container .oe-add-item-modal .purple-background h2, .oe-summary-modal-container .oe-summary-modal .purple-background h2 {
+  margin-bottom: 0; }
+.oe-add-item-modal-container .oe-add-item-modal .purple-background .close-modal, .oe-add-item-modal-container .oe-summary-modal .purple-background .close-modal, .oe-summary-modal-container .oe-add-item-modal .purple-background .close-modal, .oe-summary-modal-container .oe-summary-modal .purple-background .close-modal {
+  padding: 0;
+  font-weight: 700;
+  margin-right: 1em; }
+.oe-add-item-modal-container .oe-add-item-modal .planRegis-form, .oe-add-item-modal-container .oe-summary-modal .planRegis-form, .oe-summary-modal-container .oe-add-item-modal .planRegis-form, .oe-summary-modal-container .oe-summary-modal .planRegis-form {
+  width: 80%; }
+  .oe-add-item-modal-container .oe-add-item-modal .planRegis-form .two-grid-column, .oe-add-item-modal-container .oe-summary-modal .planRegis-form .two-grid-column, .oe-summary-modal-container .oe-add-item-modal .planRegis-form .two-grid-column, .oe-summary-modal-container .oe-summary-modal .planRegis-form .two-grid-column {
+    grid-column-gap: 1.5em; }
+.oe-add-item-modal-container .oe-add-item-modal .quantity-input, .oe-add-item-modal-container .oe-summary-modal .quantity-input, .oe-summary-modal-container .oe-add-item-modal .quantity-input, .oe-summary-modal-container .oe-summary-modal .quantity-input {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 15px;
+  align-items: center; }
+  .oe-add-item-modal-container .oe-add-item-modal .quantity-input label, .oe-add-item-modal-container .oe-summary-modal .quantity-input label, .oe-summary-modal-container .oe-add-item-modal .quantity-input label, .oe-summary-modal-container .oe-summary-modal .quantity-input label {
+    text-align: left;
+    margin-right: 0; }
+
+.oe-cancel-order-conf-modal-container .oe-cancel-order-conf-modal h2, .oe-cancel-order-conf-modal-container .oe-backorder-warning-modal h2, .oe-backorder-warning-modal-container .oe-cancel-order-conf-modal h2, .oe-backorder-warning-modal-container .oe-backorder-warning-modal h2 {
+  font-family: "PublicoHeadline", aktiv-grotesk, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 3em;
+  color: #434DA0;
+  text-align: center;
+  padding: 1em; }
+.oe-cancel-order-conf-modal-container .oe-cancel-order-conf-modal .close-modal, .oe-cancel-order-conf-modal-container .oe-backorder-warning-modal .close-modal, .oe-backorder-warning-modal-container .oe-cancel-order-conf-modal .close-modal, .oe-backorder-warning-modal-container .oe-backorder-warning-modal .close-modal {
+  font-size: 1.5em;
+  padding: 10px; }
+.oe-cancel-order-conf-modal-container .oe-cancel-order-conf-modal p, .oe-cancel-order-conf-modal-container .oe-backorder-warning-modal p, .oe-backorder-warning-modal-container .oe-cancel-order-conf-modal p, .oe-backorder-warning-modal-container .oe-backorder-warning-modal p {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.75em; }
+.oe-cancel-order-conf-modal-container .oe-cancel-order-conf-modal h3, .oe-cancel-order-conf-modal-container .oe-backorder-warning-modal h3, .oe-backorder-warning-modal-container .oe-cancel-order-conf-modal h3, .oe-backorder-warning-modal-container .oe-backorder-warning-modal h3 {
+  text-align: center;
+  padding: 1em;
+  color: #434DA0;
+  font-weight: 700;
+  font-family: "aktiv-grotesk", Helvetica, sans-serif; }
+.oe-cancel-order-conf-modal-container .oe-cancel-order-conf-modal .new-planAdd-detail, .oe-cancel-order-conf-modal-container .oe-backorder-warning-modal .new-planAdd-detail, .oe-backorder-warning-modal-container .oe-cancel-order-conf-modal .new-planAdd-detail, .oe-backorder-warning-modal-container .oe-backorder-warning-modal .new-planAdd-detail {
+  display: block; }
+
+.oe-summary-modal-table {
+  padding: 2em 3em; }
+  .oe-summary-modal-table table {
+    /*width:70%;*/ }
+    .oe-summary-modal-table table td {
+      font-size: 18px;
+      font-weight: 700;
+      font-family: "aktiv-grotesk", Helvetica, sans-serif;
+      /*color:$grey-text;*/
+      padding: 5px 0; }
+  .oe-summary-modal-table .oe-summary-srp-info-circle, .oe-summary-modal-table .oe-on-account-summary-srp-info-circle {
+    font-size: 1.25em;
+    color: #70E9B2;
+    cursor: pointer; }
+  .oe-summary-modal-table .oe-summary-srp-info-text-container, .oe-summary-modal-table .oe-on-account-summary-srp-info-text-container {
+    width: 30%;
+    left: 48%;
+    /*top:49%;*/
+    margin-top: 1em; }
+    .oe-summary-modal-table .oe-summary-srp-info-text-container .fa-caret-up, .oe-summary-modal-table .oe-on-account-summary-srp-info-text-container .fa-caret-up {
+      left: 50%; }
+    .oe-summary-modal-table .oe-summary-srp-info-text-container .info-text, .oe-summary-modal-table .oe-on-account-summary-srp-info-text-container .info-text {
+      font-size: 14px; }
+  .oe-summary-modal-table .oe-on-account-summary-srp-info-text-container {
+    left: 25%; }
+  .oe-summary-modal-table .oe-summary-use-buying-group-container {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em; }
+    .oe-summary-modal-table .oe-summary-use-buying-group-container input[type="radio"] {
+      width: 25px;
+      height: 25px;
+      margin: 0 7px; }
+
+.oe-on-account-summary-modal-container .oe-on-account-summary-modal .purple-background h2, .oe-on-account-summary-modal-container .oe-redeem-modal .purple-background h2, .oe-on-account-summary-modal-container .oe-thank-you-modal .purple-background h2, .oe-on-account-summary-modal-container .oe-sorry-modal .purple-background h2, .oe-redeem-modal-container .oe-on-account-summary-modal .purple-background h2, .oe-redeem-modal-container .oe-redeem-modal .purple-background h2, .oe-redeem-modal-container .oe-thank-you-modal .purple-background h2, .oe-redeem-modal-container .oe-sorry-modal .purple-background h2, .oe-thank-you-modal-container .oe-on-account-summary-modal .purple-background h2, .oe-thank-you-modal-container .oe-redeem-modal .purple-background h2, .oe-thank-you-modal-container .oe-thank-you-modal .purple-background h2, .oe-thank-you-modal-container .oe-sorry-modal .purple-background h2, .oe-sorry-modal-container .oe-on-account-summary-modal .purple-background h2, .oe-sorry-modal-container .oe-redeem-modal .purple-background h2, .oe-sorry-modal-container .oe-thank-you-modal .purple-background h2, .oe-sorry-modal-container .oe-sorry-modal .purple-background h2 {
+  margin-bottom: 0; }
+.oe-on-account-summary-modal-container .oe-on-account-summary-modal .purple-background .close-modal, .oe-on-account-summary-modal-container .oe-redeem-modal .purple-background .close-modal, .oe-on-account-summary-modal-container .oe-thank-you-modal .purple-background .close-modal, .oe-on-account-summary-modal-container .oe-sorry-modal .purple-background .close-modal, .oe-redeem-modal-container .oe-on-account-summary-modal .purple-background .close-modal, .oe-redeem-modal-container .oe-redeem-modal .purple-background .close-modal, .oe-redeem-modal-container .oe-thank-you-modal .purple-background .close-modal, .oe-redeem-modal-container .oe-sorry-modal .purple-background .close-modal, .oe-thank-you-modal-container .oe-on-account-summary-modal .purple-background .close-modal, .oe-thank-you-modal-container .oe-redeem-modal .purple-background .close-modal, .oe-thank-you-modal-container .oe-thank-you-modal .purple-background .close-modal, .oe-thank-you-modal-container .oe-sorry-modal .purple-background .close-modal, .oe-sorry-modal-container .oe-on-account-summary-modal .purple-background .close-modal, .oe-sorry-modal-container .oe-redeem-modal .purple-background .close-modal, .oe-sorry-modal-container .oe-thank-you-modal .purple-background .close-modal, .oe-sorry-modal-container .oe-sorry-modal .purple-background .close-modal {
+  padding: 0;
+  font-weight: 700;
+  margin-right: 1em; }
+
+.modal-padding {
+  padding: 2em 3em; }
+
+.oe-redeem-modal-container .oe-redeem-modal h3 {
+  font-size: 20px;
+  margin-bottom: 0; }
+.oe-redeem-modal-container .oe-redeem-modal p {
+  font-size: 16px; }
+
+.total-information {
+  width: 100%;
+  max-width: 100%;
+  margin: 1em 0;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border-bottom: 1px solid #36384B; }
+  .total-information div:nth-child(1), .total-information div:nth-child(2) {
+    padding: 10px; }
+
+.rewards-redemption-amount {
+  border: 1px solid #434DA0;
+  padding: 5px;
+  margin-left: 5px; }
+
+.oe-thank-you-modal-container .oe-thank-you-modal p {
+  font-size: 16px;
+  color: #36384B;
+  padding: 5px 0; }
+
+.oe-sorry-modal-container .oe-sorry-modal p {
+  font-size: 16px;
+  color: #36384B;
+  padding: 5px 0; }
+.oe-sorry-modal-container .oe-sorry-modal button {
+  margin: 0 5px; }
+
+.oe-payment-modal-container .oe-payment-modal .purple-background h2 {
+  margin-bottom: 0; }
+.oe-payment-modal-container .oe-payment-modal .purple-background .close-modal {
+  padding: 0;
+  font-weight: 700;
+  margin-right: 1em; }
+
+.oe-payment-options {
+  margin-top: 1em; }
+  .oe-payment-options li {
+    border: 2px solid #36384B;
+    padding: 5px; }
+    .oe-payment-options li input[type="radio"] {
+      width: 25px;
+      height: 25px;
+      margin: 0 5px; }
+    .oe-payment-options li .payment-card-info {
+      position: relative;
+      display: grid;
+      grid-template-columns: 50% 30% 20%;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      align-self: center; }
+      .oe-payment-options li .payment-card-info i {
+        font-size: 3em;
+        margin: 0 5px; }
+  .oe-payment-options .fa-info-circle {
+    font-size: 1.5em;
+    color: #70E9B2;
+    margin: 0 5px; }
+
+.payment-icons i {
+  font-size: 4em;
+  padding: 0 5px; }
+
+.onAccount-info-container {
+  width: 20%;
+  /*top:70%;*/
+  margin-top: 10em;
+  left: 27%; }
+  .onAccount-info-container .fa-caret-up {
+    left: 45%; }
+  .onAccount-info-container .info-text {
+    font-size: 14px; }
+
+.oe-credit-cards-add-modal-container .oe-credit-cards-add-modal .purple-background h2 {
+  margin-bottom: 0; }
+.oe-credit-cards-add-modal-container .oe-credit-cards-add-modal .purple-background .close-modal {
+  padding: 0;
+  font-weight: 700;
+  margin-right: 1em; }
+.oe-credit-cards-add-modal-container .oe-credit-cards-add-modal .planRegis-form {
+  width: 100%;
+  padding: 10px; }
+  .oe-credit-cards-add-modal-container .oe-credit-cards-add-modal .planRegis-form input[type="number"] {
+    margin: 5px 0 0 0; }
+  .oe-credit-cards-add-modal-container .oe-credit-cards-add-modal .planRegis-form #oe-credit-cards-add-expiry-month {
+    margin-right: 5px; }
+  .oe-credit-cards-add-modal-container .oe-credit-cards-add-modal .planRegis-form #oe-credit-cards-add-expiry-year {
+    margin-left: 5px; }
+.oe-credit-cards-add-modal-container .oe-credit-cards-add-modal .billing-address-container {
+  width: 80%;
+  margin: 1em auto; }
+
+@media screen and (max-width: 768px) {
+  .order-entry-container {
+    margin-top: 10%;
+    width: 95%;
+    height: auto; }
+    .order-entry-container .new-planAdd-detail {
+      display: block;
+      border: 0; }
+      .order-entry-container .new-planAdd-detail table td {
+        text-align: right; }
+    .order-entry-container .orderEntry-controls {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2em; }
+      .order-entry-container .orderEntry-controls p {
+        padding-left: 0;
+        text-align: right; }
+    .order-entry-container .two-grid-column {
+      grid-template-columns: 100%; }
+      .order-entry-container .two-grid-column .add-item-info .planRegis-form label {
+        width: 35%; }
+    .order-entry-container .shipping-instructions {
+      margin-top: 2em; }
+      .order-entry-container .shipping-instructions input[type="checkbox"] {
+        margin: 0 10px; }
+
+  .oe-add-item-modal-container .oe-add-item-modal, .oe-add-item-modal-container .oe-cancel-order-conf-modal, .oe-add-item-modal-container .oe-summary-modal, .oe-add-item-modal-container .oe-on-account-summary-modal, .oe-add-item-modal-container .oe-redeem-modal, .oe-add-item-modal-container .oe-thank-you-modal, .oe-add-item-modal-container .oe-sorry-modal, .oe-add-item-modal-container .oe-payment-modal, .oe-add-item-modal-container .oe-credit-cards-add-modal, .oe-cancel-order-conf-modal-container .oe-add-item-modal, .oe-cancel-order-conf-modal-container .oe-cancel-order-conf-modal, .oe-cancel-order-conf-modal-container .oe-summary-modal, .oe-cancel-order-conf-modal-container .oe-on-account-summary-modal, .oe-cancel-order-conf-modal-container .oe-redeem-modal, .oe-cancel-order-conf-modal-container .oe-thank-you-modal, .oe-cancel-order-conf-modal-container .oe-sorry-modal, .oe-cancel-order-conf-modal-container .oe-payment-modal, .oe-cancel-order-conf-modal-container .oe-credit-cards-add-modal, .oe-summary-modal-container .oe-add-item-modal, .oe-summary-modal-container .oe-cancel-order-conf-modal, .oe-summary-modal-container .oe-summary-modal, .oe-summary-modal-container .oe-on-account-summary-modal, .oe-summary-modal-container .oe-redeem-modal, .oe-summary-modal-container .oe-thank-you-modal, .oe-summary-modal-container .oe-sorry-modal, .oe-summary-modal-container .oe-payment-modal, .oe-summary-modal-container .oe-credit-cards-add-modal, .oe-on-account-summary-modal-container .oe-add-item-modal, .oe-on-account-summary-modal-container .oe-cancel-order-conf-modal, .oe-on-account-summary-modal-container .oe-summary-modal, .oe-on-account-summary-modal-container .oe-on-account-summary-modal, .oe-on-account-summary-modal-container .oe-redeem-modal, .oe-on-account-summary-modal-container .oe-thank-you-modal, .oe-on-account-summary-modal-container .oe-sorry-modal, .oe-on-account-summary-modal-container .oe-payment-modal, .oe-on-account-summary-modal-container .oe-credit-cards-add-modal, .oe-redeem-modal-container .oe-add-item-modal, .oe-redeem-modal-container .oe-cancel-order-conf-modal, .oe-redeem-modal-container .oe-summary-modal, .oe-redeem-modal-container .oe-on-account-summary-modal, .oe-redeem-modal-container .oe-redeem-modal, .oe-redeem-modal-container .oe-thank-you-modal, .oe-redeem-modal-container .oe-sorry-modal, .oe-redeem-modal-container .oe-payment-modal, .oe-redeem-modal-container .oe-credit-cards-add-modal, .oe-thank-you-modal-container .oe-add-item-modal, .oe-thank-you-modal-container .oe-cancel-order-conf-modal, .oe-thank-you-modal-container .oe-summary-modal, .oe-thank-you-modal-container .oe-on-account-summary-modal, .oe-thank-you-modal-container .oe-redeem-modal, .oe-thank-you-modal-container .oe-thank-you-modal, .oe-thank-you-modal-container .oe-sorry-modal, .oe-thank-you-modal-container .oe-payment-modal, .oe-thank-you-modal-container .oe-credit-cards-add-modal, .oe-sorry-modal-container .oe-add-item-modal, .oe-sorry-modal-container .oe-cancel-order-conf-modal, .oe-sorry-modal-container .oe-summary-modal, .oe-sorry-modal-container .oe-on-account-summary-modal, .oe-sorry-modal-container .oe-redeem-modal, .oe-sorry-modal-container .oe-thank-you-modal, .oe-sorry-modal-container .oe-sorry-modal, .oe-sorry-modal-container .oe-payment-modal, .oe-sorry-modal-container .oe-credit-cards-add-modal, .oe-payment-modal-container .oe-add-item-modal, .oe-payment-modal-container .oe-cancel-order-conf-modal, .oe-payment-modal-container .oe-summary-modal, .oe-payment-modal-container .oe-on-account-summary-modal, .oe-payment-modal-container .oe-redeem-modal, .oe-payment-modal-container .oe-thank-you-modal, .oe-payment-modal-container .oe-sorry-modal, .oe-payment-modal-container .oe-payment-modal, .oe-payment-modal-container .oe-credit-cards-add-modal, .oe-credit-cards-add-modal-container .oe-add-item-modal, .oe-credit-cards-add-modal-container .oe-cancel-order-conf-modal, .oe-credit-cards-add-modal-container .oe-summary-modal, .oe-credit-cards-add-modal-container .oe-on-account-summary-modal, .oe-credit-cards-add-modal-container .oe-redeem-modal, .oe-credit-cards-add-modal-container .oe-thank-you-modal, .oe-credit-cards-add-modal-container .oe-sorry-modal, .oe-credit-cards-add-modal-container .oe-payment-modal, .oe-credit-cards-add-modal-container .oe-credit-cards-add-modal {
+    width: 95%;
+    margin: 35% auto; }
+
+  .oe-payment-modal-container .oe-payment-modal .reverse-mobile {
+    grid-template-columns: 100%; }
+    .oe-payment-modal-container .oe-payment-modal .reverse-mobile div:nth-child(1) {
+      order: 2; }
+    .oe-payment-modal-container .oe-payment-modal .reverse-mobile div:nth-child(2) {
+      order: 1; }
+
+  .onAccount-info-container {
+    width: auto;
+    left: 0;
+    margin-top: 6em; }
+
+  .oe-credit-cards-add-modal-container .oe-credit-cards-add-modal .planRegis-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; } }
+@media screen and (max-width: 980px) {
+  .oe-summary-modal-table .oe-summary-srp-info-text-container, .oe-summary-modal-table .oe-on-account-summary-srp-info-text-container {
+    width: auto;
+    left: 0;
+    margin-top: 0; }
+  .oe-summary-modal-table .oe-on-account-summary-srp-info-text-container {
+    margin-top: 1em; }
+  .oe-summary-modal-table .oe-summary-use-buying-group-container {
+    grid-template-columns: 100%;
+    width: 100%; }
+
+  .modal-padding {
+    padding: 1em; } }
+@media screen and (min-width: 1440px) {
+  .onAccount-info-container {
+    margin-top: 7em; } }
+.planPending-registrations-container .status-report-container {
+  width: 85%;
+  max-height: 100%;
+  height: auto;
+  border: 2px solid #36384B;
+  margin: 2% auto; }
+  .planPending-registrations-container .status-report-container .status-report-table-container .invoice-title p {
+    margin: 10px; }
+  .planPending-registrations-container .status-report-container .status-report-table-container .new-planAdd-detail {
+    display: block;
+    border: 2px solid #d1d1e0; }
+  .planPending-registrations-container .status-report-container .status-report-table-container .box-total {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; }
+    .planPending-registrations-container .status-report-container .status-report-table-container .box-total p {
+      border: 2px solid #d1d1e0;
+      color: #36384B;
+      padding: 10px;
+      font-weight: 900;
+      text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .planPending-registrations-container .status-report-container {
+    width: 100%; } }
+.order-history-container {
+  width: 85%;
+  max-width: 100%;
+  margin: 0 auto;
+  /*order-history-table*/ }
+  .order-history-container .filter-box, .order-history-container .search-container {
+    border: 2px solid #36384B;
+    height: auto;
+    width: 90%;
+    margin: 3em auto; }
+    .order-history-container .filter-box .planRegis-form, .order-history-container .search-container .planRegis-form {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% 30% 20%;
+      padding: 10px;
+      align-items: center; }
+      .order-history-container .filter-box .planRegis-form div, .order-history-container .search-container .planRegis-form div {
+        justify-content: center; }
+      .order-history-container .filter-box .planRegis-form .date-filter, .order-history-container .search-container .planRegis-form .date-filter {
+        display: flex;
+        flex-direction: column; }
+        .order-history-container .filter-box .planRegis-form .date-filter div:nth-child(1) p, .order-history-container .search-container .planRegis-form .date-filter div:nth-child(1) p {
+          width: 90%;
+          text-align: center;
+          border-bottom: 1px dashed #36384B;
+          line-height: 0.1px;
+          margin: 10px auto; }
+          .order-history-container .filter-box .planRegis-form .date-filter div:nth-child(1) p span, .order-history-container .search-container .planRegis-form .date-filter div:nth-child(1) p span {
+            background: #fff;
+            padding: 0 5px; }
+      .order-history-container .filter-box .planRegis-form input, .order-history-container .search-container .planRegis-form input {
+        width: 70%; }
+      .order-history-container .filter-box .planRegis-form label, .order-history-container .search-container .planRegis-form label {
+        text-align: center; }
+      .order-history-container .filter-box .planRegis-form select, .order-history-container .search-container .planRegis-form select {
+        margin-bottom: 10px;
+        width: 70%; }
+      .order-history-container .filter-box .planRegis-form .select-location, .order-history-container .search-container .planRegis-form .select-location {
+        width: 100%;
+        padding: 0 10px; }
+  .order-history-container .order-history-table-container {
+    width: 100%;
+    margin: 3em auto;
+    border: 2px solid #36384B; }
+    .order-history-container .order-history-table-container .new-planAdd-detail {
+      display: block;
+      border: 2px solid #d3d3df; }
+
+@media screen and (max-width: 980px) {
+  .order-history-container {
+    width: 95%; }
+    .order-history-container .filter-box, .order-history-container .search-container {
+      width: 100%;
+      max-width: 100%; }
+      .order-history-container .filter-box .planRegis-form, .order-history-container .search-container .planRegis-form {
+        grid-template-columns: 100%; }
+        .order-history-container .filter-box .planRegis-form .select-location, .order-history-container .search-container .planRegis-form .select-location {
+          margin: 1em 0; }
+        .order-history-container .filter-box .planRegis-form .filter-param-box div, .order-history-container .search-container .planRegis-form .filter-param-box div {
+          display: flex;
+          flex-direction: column; } }
+.rep-profile-container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0; }
+  .rep-profile-container .rep-profile {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: flex-start;
+    grid-gap: 1em 2em; }
+  .rep-profile-container .organization-container {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; }
+  .rep-profile-container .other-details-container {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    max-width: 100%; }
+  .rep-profile-container .financial-details .rp-financial-details-info-icon {
+    color: #70E9B2;
+    margin-left: 10px; }
+  .rep-profile-container .profile-boxStyle {
+    border: 2px solid #36384B;
+    padding: 10px; }
+    .rep-profile-container .profile-boxStyle p, .rep-profile-container .profile-boxStyle label {
+      font-weight: 700;
+      margin-top: 10px; }
+    .rep-profile-container .profile-boxStyle .planRegis-form {
+      width: auto;
+      padding: 0; }
+      .rep-profile-container .profile-boxStyle .planRegis-form select {
+        margin-top: 5px; }
+  .rep-profile-container .margin-left {
+    margin-left: 5px; }
+  .rep-profile-container .margin-right {
+    margin-right: 5px; }
+  .rep-profile-container .transit-input {
+    width: 100%; }
+    .rep-profile-container .transit-input input {
+      width: 98%; }
+  .rep-profile-container .partner-profiles h3 {
+    margin: 10px 0; }
+  .rep-profile-container .partner-profiles .new-planAdd-detail {
+    display: block;
+    margin: 0; }
+    .rep-profile-container .partner-profiles .new-planAdd-detail th:first-of-type, .rep-profile-container .partner-profiles .new-planAdd-detail td:first-of-type {
+      border-right: 1px solid #d3d3df; }
+  .rep-profile-container .agreement h3 {
+    margin: 10px 0; }
+  .rep-profile-container .agreement .profile-boxStyle input[type="checkbox"] {
+    width: 30px;
+    height: 30px; }
+  .rep-profile-container .agreement .profile-boxStyle label {
+    margin: 0 0 0 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #36384B;
+    font-family: "aktiv-grotesk", Helvetica, sans-serif;
+    margin-bottom: 10px; }
+  .rep-profile-container .agreement .profile-boxStyle a {
+    color: #70E9B2;
+    text-decoration: underline;
+    margin-left: 2.5em;
+    font-weight: 700; }
+
+.popup-modals-container .rp-partner-profile-details-modal-container .rp-partner-profile-details-modal .purple-background h2 {
+  margin-bottom: 0; }
+.popup-modals-container .rp-partner-profile-details-modal-container .rp-partner-profile-details-modal .purple-background .close-modal {
+  padding: 0;
+  font-weight: 700;
+  margin-right: 1em; }
+.popup-modals-container .rp-partner-profile-details-modal-container .rp-partner-profile-details-modal p {
+  margin-left: 1em; }
+.popup-modals-container .rp-partner-profile-details-modal-container .rp-partner-profile-details-modal .new-planAdd-detail {
+  display: block;
+  border: 2px solid #d3d3df; }
+.popup-modals-container .rp-agreement-modal-container .rp-agreement-modal .purple-background h2 {
+  margin-bottom: 0; }
+.popup-modals-container .rp-agreement-modal-container .rp-agreement-modal .purple-background .close-modal {
+  padding: 0;
+  font-weight: 700;
+  margin-right: 1em; }
+.popup-modals-container .rp-agreement-modal-container .rp-agreement-modal .padding-1 {
+  padding: 1em; }
+.popup-modals-container .rp-agreement-modal-container .rp-agreement-modal .rp-agreement-text {
+  max-width: 100%;
+  padding: 10px 1em;
+  border: 2px solid #d3d3df;
+  overflow-y: scroll;
+  max-height: 300px; }
+  .popup-modals-container .rp-agreement-modal-container .rp-agreement-modal .rp-agreement-text p {
+    margin: 10px 0;
+    font-size: 16px; }
+.popup-modals-container .rp-agreement-modal-container .rp-agreement-modal .agreement-controls {
+  display: none; }
+.popup-modals-container .rp-agreement-modal-container .rp-agreement-modal .agreement-radioButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* div{
+     margin:0 10px;
+   }
+   label{
+     color:$zucora-purple;
+     font-weight: 700;
+   }
+   input[type="radio"]{
+       width:20px;
+       height: 20px;
+       margin-left:5px;
+       color:$zucora-purple;
+   }*/ }
+.popup-modals-container .rp-agreement-modal-container .rp-agreement-modal .agreement-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .popup-modals-container .rp-agreement-modal-container .rp-agreement-modal .agreement-actions i {
+    color: #434DA0;
+    font-size: 1.5em;
+    margin: 0 10px; }
+.popup-modals-container .rp-financial-details-modal-container .rp-financial-details-modal {
+  border: none; }
+  .popup-modals-container .rp-financial-details-modal-container .rp-financial-details-modal .purple-background h2 {
+    margin-bottom: 0; }
+  .popup-modals-container .rp-financial-details-modal-container .rp-financial-details-modal .purple-background .close-modal {
+    padding: 0;
+    font-weight: 700;
+    margin-right: 1em; }
+  .popup-modals-container .rp-financial-details-modal-container .rp-financial-details-modal .checkbook-content {
+    border: 2px solid #36384B;
+    border-top: none;
+    padding: 1em; }
+    .popup-modals-container .rp-financial-details-modal-container .rp-financial-details-modal .checkbook-content img {
+      margin-top: 10px; }
+
+@media screen and (max-width: 768px) {
+  .rep-profile-container .rep-profile {
+    display: grid;
+    grid-template-columns: 100%; }
+
+  .popup-modals-container .rp-partner-profile-details-modal-container .rp-partner-profile-details-modal {
+    width: 90%;
+    margin: 35% auto; }
+  .popup-modals-container .rp-agreement-modal-container .rp-agreement-modal {
+    width: 90%;
+    margin: 35% auto; }
+    .popup-modals-container .rp-agreement-modal-container .rp-agreement-modal .agreement-actions {
+      margin-top: 1em; }
+  .popup-modals-container .rp-financial-details-modal-container .rp-financial-details-modal {
+    width: 90%;
+    margin: 35% auto; } }
+@media screen and (min-width: 1200px) {
+  .rep-profile-container {
+    width: 65%; } }
+.videos-container .video-grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 3em 1.5em; }
+
+.rep-landingPage-container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 15%; }
+  .rep-landingPage-container .rw-promo-graphic {
+    width: 100%; }
+  .rep-landingPage-container .two-grid-column {
+    justify-content: center;
+    align-content: flex-start;
+    grid-gap: 1.5em 1.5em; }
+  .rep-landingPage-container .new-planAdd-detail {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    border: 2px solid #36384B; }
+  .rep-landingPage-container .border-box {
+    width: 100%;
+    height: auto;
+    border: 2px solid #36384B;
+    padding: 10px; }
+  .rep-landingPage-container dl dt {
+    color: #434DA0;
+    font-family: "aktiv-grotesk", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    /*margin-bottom:5px;*/
+    line-height: 32px; }
+
+@media screen and (max-width: 768px) {
+  .rep-landingPage-container {
+    margin-top: 20%; } }
+.market-partners-container {
+  width: 85%;
+  margin: 0 auto;
+  display: block; }
+  .market-partners-container .first-filter.planRegis-form {
+    width: 25%;
+    margin: 0; }
+  .market-partners-container .two-grid-column {
+    justify-content: center;
+    align-content: flex-start;
+    grid-gap: 1.5em 1.5em;
+    align-items: start; }
+  .market-partners-container .border-box {
+    width: 100%;
+    height: auto;
+    border: 2px solid #36384B; }
+  .market-partners-container .purple-background {
+    color: white; }
+    .market-partners-container .purple-background h3 {
+      font-family: "aktiv-grotesk", Helvetica, sans-serif;
+      font-size: 18px;
+      padding: 1em;
+      font-weight: 700; }
+  .market-partners-container .mp-details-invite {
+    margin: 0 20px; }
+  .market-partners-container .new-planAdd-detail {
+    display: block;
+    margin: 0 auto;
+    border: 0; }
+    .market-partners-container .new-planAdd-detail table {
+      overflow-y: scroll; }
+  .market-partners-container .partner-data-container .planRegis-form, .market-partners-container .mp-invite-modal .planRegis-form {
+    width: 95%;
+    padding: 1em 0; }
+    .market-partners-container .partner-data-container .planRegis-form input, .market-partners-container .mp-invite-modal .planRegis-form input {
+      width: 100%; }
+    .market-partners-container .partner-data-container .planRegis-form select, .market-partners-container .mp-invite-modal .planRegis-form select {
+      width: 100%; }
+    .market-partners-container .partner-data-container .planRegis-form textarea, .market-partners-container .mp-invite-modal .planRegis-form textarea {
+      border: 2px solid #36384B; }
+    .market-partners-container .partner-data-container .planRegis-form .planRegis-divStyle, .market-partners-container .mp-invite-modal .planRegis-form .planRegis-divStyle {
+      grid-template-columns: 30% 70%; }
+      .market-partners-container .partner-data-container .planRegis-form .planRegis-divStyle label, .market-partners-container .mp-invite-modal .planRegis-form .planRegis-divStyle label {
+        margin-right: 10px;
+        word-break: break-word; }
+    .market-partners-container .partner-data-container .planRegis-form .zuc-btn, .market-partners-container .mp-invite-modal .planRegis-form .zuc-btn {
+      margin: 0 10px; }
+    .market-partners-container .partner-data-container .planRegis-form .two-grid-column, .market-partners-container .mp-invite-modal .planRegis-form .two-grid-column {
+      grid-gap: 0;
+      align-items: start; }
+  .market-partners-container .mp-invite-modal .planRegis-form .planRegis-divStyle {
+    grid-template-columns: 30% 70%; }
+  .market-partners-container .profileBox-heading {
+    font-size: 18px;
+    padding: 1em; }
+  .market-partners-container .mp-add-product-service-modal-container .mp-add-product-service-modal .planRegis-form, .market-partners-container .mp-add-product-service-modal-container .mp-invite-modal .planRegis-form, .market-partners-container .mp-add-product-service-modal-container .mp-add-note-modal .planRegis-form, .market-partners-container .mp-invite-modal-container .mp-add-product-service-modal .planRegis-form, .market-partners-container .mp-invite-modal-container .mp-invite-modal .planRegis-form, .market-partners-container .mp-invite-modal-container .mp-add-note-modal .planRegis-form, .market-partners-container .mp-add-note-modal-container .mp-add-product-service-modal .planRegis-form, .market-partners-container .mp-add-note-modal-container .mp-invite-modal .planRegis-form, .market-partners-container .mp-add-note-modal-container .mp-add-note-modal .planRegis-form {
+    width: 90%; }
+    .market-partners-container .mp-add-product-service-modal-container .mp-add-product-service-modal .planRegis-form .zuc-btn, .market-partners-container .mp-add-product-service-modal-container .mp-invite-modal .planRegis-form .zuc-btn, .market-partners-container .mp-add-product-service-modal-container .mp-add-note-modal .planRegis-form .zuc-btn, .market-partners-container .mp-invite-modal-container .mp-add-product-service-modal .planRegis-form .zuc-btn, .market-partners-container .mp-invite-modal-container .mp-invite-modal .planRegis-form .zuc-btn, .market-partners-container .mp-invite-modal-container .mp-add-note-modal .planRegis-form .zuc-btn, .market-partners-container .mp-add-note-modal-container .mp-add-product-service-modal .planRegis-form .zuc-btn, .market-partners-container .mp-add-note-modal-container .mp-invite-modal .planRegis-form .zuc-btn, .market-partners-container .mp-add-note-modal-container .mp-add-note-modal .planRegis-form .zuc-btn {
+      /*padding:15px 30px;*/
+      margin: 0 10px; }
+    .market-partners-container .mp-add-product-service-modal-container .mp-add-product-service-modal .planRegis-form input, .market-partners-container .mp-add-product-service-modal-container .mp-invite-modal .planRegis-form input, .market-partners-container .mp-add-product-service-modal-container .mp-add-note-modal .planRegis-form input, .market-partners-container .mp-invite-modal-container .mp-add-product-service-modal .planRegis-form input, .market-partners-container .mp-invite-modal-container .mp-invite-modal .planRegis-form input, .market-partners-container .mp-invite-modal-container .mp-add-note-modal .planRegis-form input, .market-partners-container .mp-add-note-modal-container .mp-add-product-service-modal .planRegis-form input, .market-partners-container .mp-add-note-modal-container .mp-invite-modal .planRegis-form input, .market-partners-container .mp-add-note-modal-container .mp-add-note-modal .planRegis-form input {
+      width: 100%; }
+    .market-partners-container .mp-add-product-service-modal-container .mp-add-product-service-modal .planRegis-form textarea, .market-partners-container .mp-add-product-service-modal-container .mp-invite-modal .planRegis-form textarea, .market-partners-container .mp-add-product-service-modal-container .mp-add-note-modal .planRegis-form textarea, .market-partners-container .mp-invite-modal-container .mp-add-product-service-modal .planRegis-form textarea, .market-partners-container .mp-invite-modal-container .mp-invite-modal .planRegis-form textarea, .market-partners-container .mp-invite-modal-container .mp-add-note-modal .planRegis-form textarea, .market-partners-container .mp-add-note-modal-container .mp-add-product-service-modal .planRegis-form textarea, .market-partners-container .mp-add-note-modal-container .mp-invite-modal .planRegis-form textarea, .market-partners-container .mp-add-note-modal-container .mp-add-note-modal .planRegis-form textarea {
+      border: 2px solid #36384B;
+      border-radius: 10px; }
+    .market-partners-container .mp-add-product-service-modal-container .mp-add-product-service-modal .planRegis-form input[type="date"], .market-partners-container .mp-add-product-service-modal-container .mp-invite-modal .planRegis-form input[type="date"], .market-partners-container .mp-add-product-service-modal-container .mp-add-note-modal .planRegis-form input[type="date"], .market-partners-container .mp-invite-modal-container .mp-add-product-service-modal .planRegis-form input[type="date"], .market-partners-container .mp-invite-modal-container .mp-invite-modal .planRegis-form input[type="date"], .market-partners-container .mp-invite-modal-container .mp-add-note-modal .planRegis-form input[type="date"], .market-partners-container .mp-add-note-modal-container .mp-add-product-service-modal .planRegis-form input[type="date"], .market-partners-container .mp-add-note-modal-container .mp-invite-modal .planRegis-form input[type="date"], .market-partners-container .mp-add-note-modal-container .mp-add-note-modal .planRegis-form input[type="date"] {
+      border-radius: 10px; }
+  .market-partners-container .mp-add-product-service-modal-container .close-modal, .market-partners-container .mp-invite-modal-container .close-modal, .market-partners-container .mp-add-note-modal-container .close-modal {
+    font-size: 1.5em;
+    padding: 14px;
+    color: #70E9B2; }
+  .market-partners-container .mp-invite-sent-modal-container .mp-invite-sent-modal h2 {
+    font-family: "PublicoHeadline", aktiv-grotesk, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    color: #434DA0;
+    text-align: center;
+    padding: 15px; }
+  .market-partners-container .mp-invite-sent-modal-container .mp-invite-sent-modal .close-modal {
+    font-size: 1.5em;
+    padding: 10px; }
+  .market-partners-container .mp-invite-sent-modal-container .mp-invite-sent-modal .border-box {
+    width: 90%;
+    margin: 2em auto;
+    padding: 10px; }
+    .market-partners-container .mp-invite-sent-modal-container .mp-invite-sent-modal .border-box h3 {
+      font-family: "aktiv-grotesk", Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 500; }
+  .market-partners-container .mp-details-contact-add {
+    font-size: 22px;
+    color: #434DA0;
+    padding: 0 7px;
+    font-weight: 700; }
+
+.mp-status-descriptions {
+  padding: 10px; }
+  .mp-status-descriptions li {
+    list-style-type: none;
+    font-family: "aktiv-grotesk", Helvetica, sans-serif;
+    color: #36384B; }
+
+.mp-details-contact-add-modal-container .mp-details-contact-add-modal .purple-background h2, .mp-details-contact-add-modal-container .mp-add-modal .purple-background h2, .mp-add-modal-container .mp-details-contact-add-modal .purple-background h2, .mp-add-modal-container .mp-add-modal .purple-background h2 {
+  margin-bottom: 0; }
+.mp-details-contact-add-modal-container .mp-details-contact-add-modal .purple-background .close-modal, .mp-details-contact-add-modal-container .mp-add-modal .purple-background .close-modal, .mp-add-modal-container .mp-details-contact-add-modal .purple-background .close-modal, .mp-add-modal-container .mp-add-modal .purple-background .close-modal {
+  font-size: 1.5em;
+  padding: 10px; }
+.mp-details-contact-add-modal-container .mp-details-contact-add-modal .planRegis-form, .mp-details-contact-add-modal-container .mp-add-modal .planRegis-form, .mp-add-modal-container .mp-details-contact-add-modal .planRegis-form, .mp-add-modal-container .mp-add-modal .planRegis-form {
+  width: 90%;
+  padding: 1em 0; }
+  .mp-details-contact-add-modal-container .mp-details-contact-add-modal .planRegis-form .planRegis-divStyle, .mp-details-contact-add-modal-container .mp-add-modal .planRegis-form .planRegis-divStyle, .mp-add-modal-container .mp-details-contact-add-modal .planRegis-form .planRegis-divStyle, .mp-add-modal-container .mp-add-modal .planRegis-form .planRegis-divStyle {
+    grid-template-columns: 30% 70%; }
+  .mp-details-contact-add-modal-container .mp-details-contact-add-modal .planRegis-form input, .mp-details-contact-add-modal-container .mp-details-contact-add-modal .planRegis-form select, .mp-details-contact-add-modal-container .mp-add-modal .planRegis-form input, .mp-details-contact-add-modal-container .mp-add-modal .planRegis-form select, .mp-add-modal-container .mp-details-contact-add-modal .planRegis-form input, .mp-add-modal-container .mp-details-contact-add-modal .planRegis-form select, .mp-add-modal-container .mp-add-modal .planRegis-form input, .mp-add-modal-container .mp-add-modal .planRegis-form select {
+    width: 100%; }
+
+@media screen and (max-width: 768px) {
+  .market-partners-container {
+    width: 95%; }
+    .market-partners-container .first-filter.planRegis-form {
+      width: 100%; }
+
+  .mp-details-contact-add-modal-container .mp-details-contact-add-modal, .mp-details-contact-add-modal-container .mp-add-modal, .mp-add-modal-container .mp-details-contact-add-modal, .mp-add-modal-container .mp-add-modal {
+    width: 95%;
+    margin: 35% auto; } }
+.smartShip-container {
+  width: 85%;
+  margin: 0 auto;
+  display: block; }
+  .smartShip-container .profile-box {
+    border: 2px solid #36384B;
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 1.5em;
+    padding: 1em 3em;
+    /*align-items: center;*/
+    /*justify-content: flex-start;*/ }
+  .smartShip-container .customer-details-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; }
+    .smartShip-container .customer-details-container .purple-text {
+      font-weight: 700;
+      margin-top: 10px;
+      margin-bottom: 0; }
+    .smartShip-container .customer-details-container .planRegis-form {
+      width: auto;
+      padding: 0; }
+  .smartShip-container .profile-boxStyle {
+    border: 2px solid #36384B;
+    padding: 15px; }
+  .smartShip-container .margin-right {
+    margin-right: 5px; }
+  .smartShip-container .margin-left {
+    margin-left: 5px; }
+  .smartShip-container .margin-top {
+    margin-top: 5px; }
+  .smartShip-container .right-side .planRegis-form {
+    width: 100%;
+    padding: 0; }
+  .smartShip-container .right-side label {
+    text-align: left;
+    margin-right: 0; }
+  .smartShip-container .right-side .itemNumber {
+    display: grid;
+    grid-template-columns: 60% 30% 10%;
+    align-items: center;
+    justify-content: space-between; }
+    .smartShip-container .right-side .itemNumber input {
+      margin: 0; }
+    .smartShip-container .right-side .itemNumber input[type="text"] {
+      width: 90%; }
+    .smartShip-container .right-side .itemNumber input[type="number"] {
+      width: 70%; }
+    .smartShip-container .right-side .itemNumber a {
+      text-align: center;
+      border-radius: 50%;
+      width: 35px;
+      font-size: 2em;
+      vertical-align: middle;
+      text-align: center;
+      border: 2px solid #36384B; }
+  .smartShip-container .right-side .new-planAdd-detail {
+    display: block; }
+    .smartShip-container .right-side .new-planAdd-detail thead {
+      background-color: #434DA0; }
+      .smartShip-container .right-side .new-planAdd-detail thead tr th {
+        color: white; }
+  .smartShip-container .right-side .total-bill {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px; }
+    .smartShip-container .right-side .total-bill td {
+      padding: 10px;
+      font-weight: 700;
+      font-family: "aktiv-grotesk", Helvetica, sans-serif; }
+    .smartShip-container .right-side .total-bill tr:first-child {
+      border-bottom: 1px solid #36384B; }
+
+@media screen and (max-width: 768px) {
+  .smartShip-container {
+    width: 100%;
+    margin: 0 auto; }
+    .smartShip-container .profile-box {
+      grid-template-columns: 100%;
+      padding: 1em;
+      border: none; }
+    .smartShip-container .right-side {
+      margin-top: 2em; } }
+.advisor-profile-container {
+  width: 70%;
+  margin: 0 auto;
+  display: block; }
+  .advisor-profile-container .pf-picture-container {
+    position: relative; }
+    .advisor-profile-container .pf-picture-container .pf-picture-to-upload {
+      width: 100% !important;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .advisor-profile-container .pf-picture-container .pf-picture {
+      width: 60%;
+      display: block;
+      margin: 0 auto; }
+    .advisor-profile-container .pf-picture-container p {
+      font-size: 14px; }
+  .advisor-profile-container .pf-nickname-info-icon, .advisor-profile-container .pf-sin-info-icon {
+    color: #70E9B2;
+    margin-left: 10px;
+    font-size: 1.5em; }
+  .advisor-profile-container .profile-boxStyle {
+    border: 2px solid #36384B;
+    padding: 10px; }
+    .advisor-profile-container .profile-boxStyle .margin-right {
+      margin-right: 5px; }
+    .advisor-profile-container .profile-boxStyle .margin-left {
+      margin-left: 5px; }
+  .advisor-profile-container .pf-nickname-info-container {
+    /*display: block;*/
+    /*display: none;*/
+    position: relative;
+    background-color: #E2FBF0;
+    padding: 10px 15px;
+    /*top: 36%;*/
+    /*left: 48%;*/
+    width: 50%;
+    z-index: 1000;
+    transition: all 0.5s ease-in;
+    margin-left: 1em; }
+    .advisor-profile-container .pf-nickname-info-container i {
+      position: absolute;
+      color: #E2FBF0;
+      left: -15px;
+      /*top:-30px;*/
+      font-size: 3em; }
+    .advisor-profile-container .pf-nickname-info-container .info-text {
+      font-size: 13px;
+      color: #36384B; }
+  .advisor-profile-container .purple-text {
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 18px; }
+  .advisor-profile-container .pf-sin-info-container {
+    /*position: absolute;*/
+    background-color: #E2FBF0;
+    padding: 10px 15px;
+    /*top: 41%;*/
+    /*left: 64%;*/
+    /*width: 25%;*/
+    z-index: 1000;
+    transition: all 0.5s ease-in;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto; }
+    .advisor-profile-container .pf-sin-info-container i {
+      position: absolute;
+      color: #E2FBF0;
+      /*left:-15px;*/
+      /*top:0px;*/
+      left: 35%;
+      top: -30px;
+      font-size: 3em; }
+    .advisor-profile-container .pf-sin-info-container .info-text {
+      font-size: 14px;
+      color: #36384B; }
+  .advisor-profile-container .agreement-text input[type=checkbox] {
+    width: 25px;
+    height: 25px; }
+  .advisor-profile-container .agreement-text label {
+    font-family: "aktiv-grotesk", Helvetica, sans-serif;
+    color: #36384B;
+    font-weight: 500;
+    margin: 0 0 0 10px; }
+  .advisor-profile-container .agreement-text a {
+    color: #70E9B2;
+    text-decoration: underline;
+    margin-left: 2.5em;
+    font-weight: 700; }
+  .advisor-profile-container .profileBox-heading {
+    margin: 10px 0; }
+  .advisor-profile-container .permissions {
+    width: 100%;
+    border: 2px solid #36384B;
+    display: grid;
+    grid-template-columns: 20% 30% 20% 30%;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 15px; }
+    .advisor-profile-container .permissions div {
+      width: 90%;
+      margin: 0 auto;
+      justify-content: center; }
+    .advisor-profile-container .permissions label {
+      color: #434DA0;
+      font-size: 14px;
+      font-weight: 300;
+      font-family: "aktiv-grotesk", Helvetica, sans-serif;
+      text-align: center;
+      width: 100%;
+      min-height: 40px; }
+    .advisor-profile-container .permissions input[type=checkbox] {
+      width: 20px;
+      height: 20px; }
+  .advisor-profile-container .first-section {
+    padding-right: 15px; }
+  .advisor-profile-container .second-section {
+    padding-left: 15px; }
+
+.pf-agreement-modal-container .pf-agreement-modal .purple-background h2 {
+  margin-bottom: 0; }
+.pf-agreement-modal-container .pf-agreement-modal .purple-background .close-modal {
+  padding: 0;
+  font-weight: 700;
+  margin-right: 1em; }
+.pf-agreement-modal-container .pf-agreement-modal .padding-1 {
+  padding: 1em; }
+.pf-agreement-modal-container .pf-agreement-modal .pf-agreement-text {
+  max-width: 100%;
+  padding: 10px 1em;
+  border: 2px solid #d3d3df;
+  overflow-y: scroll;
+  max-height: 300px; }
+.pf-agreement-modal-container .pf-agreement-modal .agreement-radioButtons, .pf-agreement-modal-container .pf-agreement-modal .agreement-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+.pf-agreement-modal-container .pf-agreement-modal .agreement-actions i {
+  color: #434DA0;
+  font-size: 1.5em;
+  margin: 0 10px; }
+
+@media screen and (max-width: 768px) {
+  .advisor-profile-container {
+    width: 95%; }
+    .advisor-profile-container .pf-sin-info-container {
+      width: auto;
+      position: relative;
+      left: 0;
+      top: 0;
+      max-width: 100%; }
+      .advisor-profile-container .pf-sin-info-container i {
+        position: absolute;
+        color: #E2FBF0;
+        left: 30%;
+        top: -30px;
+        font-size: 3em; }
+    .advisor-profile-container .permissions {
+      grid-template-columns: 100%; }
+      .advisor-profile-container .permissions div {
+        width: 100%; }
+
+  .pf-agreement-modal-container .pf-agreement-modal {
+    width: 95%;
+    margin: 35% auto; }
+    .pf-agreement-modal-container .pf-agreement-modal .agreement-actions {
+      margin-top: 1em; } }
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  .advisor-profile-container .pf-sin-info-container {
+    width: auto;
+    top: 0;
+    position: relative;
+    left: 0; }
+    .advisor-profile-container .pf-sin-info-container i {
+      position: absolute;
+      color: #E2FBF0;
+      left: 30%;
+      top: -30px;
+      font-size: 3em; } }
+.smarterPartner-setup-container {
+  /*first step*/ }
+  .smarterPartner-setup-container .su-step-1, .smarterPartner-setup-container .su-step-2, .smarterPartner-setup-container .su-step-3, .smarterPartner-setup-container .su-nav {
+    width: 40%;
+    margin: 0 auto;
+    display: block; }
+    .smarterPartner-setup-container .su-step-1 .step-box, .smarterPartner-setup-container .su-step-2 .step-box, .smarterPartner-setup-container .su-step-3 .step-box, .smarterPartner-setup-container .su-nav .step-box {
+      border: 2px solid #36384B;
+      background-color: #A3ACFF;
+      padding: 1em;
+      margin-top: 2.5em; }
+      .smarterPartner-setup-container .su-step-1 .step-box h2, .smarterPartner-setup-container .su-step-1 .step-box p, .smarterPartner-setup-container .su-step-2 .step-box h2, .smarterPartner-setup-container .su-step-2 .step-box p, .smarterPartner-setup-container .su-step-3 .step-box h2, .smarterPartner-setup-container .su-step-3 .step-box p, .smarterPartner-setup-container .su-nav .step-box h2, .smarterPartner-setup-container .su-nav .step-box p {
+        /*color: white;*/
+        font-family: "aktiv-grotesk", Helvetica, sans-serif;
+        color: #36384B; }
+      .smarterPartner-setup-container .su-step-1 .step-box p, .smarterPartner-setup-container .su-step-2 .step-box p, .smarterPartner-setup-container .su-step-3 .step-box p, .smarterPartner-setup-container .su-nav .step-box p {
+        font-size: 30px; }
+    .smarterPartner-setup-container .su-step-1 .profileBox-style, .smarterPartner-setup-container .su-step-1 .partner-profile-container .payment-methods-container .pp-credit-cards, .partner-profile-container .payment-methods-container .smarterPartner-setup-container .su-step-1 .pp-credit-cards, .smarterPartner-setup-container .su-step-2 .profileBox-style, .smarterPartner-setup-container .su-step-2 .partner-profile-container .payment-methods-container .pp-credit-cards, .partner-profile-container .payment-methods-container .smarterPartner-setup-container .su-step-2 .pp-credit-cards, .smarterPartner-setup-container .su-step-3 .profileBox-style, .smarterPartner-setup-container .su-step-3 .partner-profile-container .payment-methods-container .pp-credit-cards, .partner-profile-container .payment-methods-container .smarterPartner-setup-container .su-step-3 .pp-credit-cards, .smarterPartner-setup-container .su-nav .profileBox-style, .smarterPartner-setup-container .su-nav .partner-profile-container .payment-methods-container .pp-credit-cards, .partner-profile-container .payment-methods-container .smarterPartner-setup-container .su-nav .pp-credit-cards {
+      /*padding:1em;*/ }
+    .smarterPartner-setup-container .su-step-1 .planRegis-form, .smarterPartner-setup-container .su-step-2 .planRegis-form, .smarterPartner-setup-container .su-step-3 .planRegis-form, .smarterPartner-setup-container .su-nav .planRegis-form {
+      width: 100%;
+      padding: 10px;
+      margin: 0 auto; }
+      .smarterPartner-setup-container .su-step-1 .planRegis-form .form-div, .smarterPartner-setup-container .su-step-2 .planRegis-form .form-div, .smarterPartner-setup-container .su-step-3 .planRegis-form .form-div, .smarterPartner-setup-container .su-nav .planRegis-form .form-div {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        align-items: center;
+        justify-content: space-around; }
+      .smarterPartner-setup-container .su-step-1 .planRegis-form input, .smarterPartner-setup-container .su-step-2 .planRegis-form input, .smarterPartner-setup-container .su-step-3 .planRegis-form input, .smarterPartner-setup-container .su-nav .planRegis-form input {
+        width: 100%; }
+      .smarterPartner-setup-container .su-step-1 .planRegis-form select, .smarterPartner-setup-container .su-step-2 .planRegis-form select, .smarterPartner-setup-container .su-step-3 .planRegis-form select, .smarterPartner-setup-container .su-nav .planRegis-form select {
+        width: 100%;
+        margin: .41667vw 0 0; }
+      .smarterPartner-setup-container .su-step-1 .planRegis-form .two-grid-column, .smarterPartner-setup-container .su-step-2 .planRegis-form .two-grid-column, .smarterPartner-setup-container .su-step-3 .planRegis-form .two-grid-column, .smarterPartner-setup-container .su-nav .planRegis-form .two-grid-column {
+        margin-top: 5px; }
+      .smarterPartner-setup-container .su-step-1 .planRegis-form .province-grid-column, .smarterPartner-setup-container .su-step-2 .planRegis-form .province-grid-column, .smarterPartner-setup-container .su-step-3 .planRegis-form .province-grid-column, .smarterPartner-setup-container .su-nav .planRegis-form .province-grid-column {
+        display: grid;
+        grid-template-columns: 65% 35%;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        grid-column-gap: 1em; }
+  .smarterPartner-setup-container .su-step-2 .new-planAdd-detail {
+    display: block; }
+  .smarterPartner-setup-container .su-step-3 h3 {
+    margin-bottom: 0; }
+  .smarterPartner-setup-container .su-step-3 .su-deposit-payment-pref-info-text-container {
+    width: 30%;
+    left: 45%;
+    margin-top: 3em; }
+    .smarterPartner-setup-container .su-step-3 .su-deposit-payment-pref-info-text-container p {
+      font-size: 14px; }
+    .smarterPartner-setup-container .su-step-3 .su-deposit-payment-pref-info-text-container .fa-caret-up {
+      left: 45%; }
+  .smarterPartner-setup-container i {
+    color: #70E9B2;
+    margin-left: 10px;
+    font-size: 1.5em;
+    cursor: pointer; }
+  .smarterPartner-setup-container .profileBox-style input[type="radio"], .smarterPartner-setup-container .partner-profile-container .payment-methods-container .pp-credit-cards input[type="radio"], .partner-profile-container .payment-methods-container .smarterPartner-setup-container .pp-credit-cards input[type="radio"] {
+    height: 25px;
+    width: 25px;
+    margin: 5px; }
+  .smarterPartner-setup-container .profileBox-style label, .smarterPartner-setup-container .partner-profile-container .payment-methods-container .pp-credit-cards label, .partner-profile-container .payment-methods-container .smarterPartner-setup-container .pp-credit-cards label {
+    /*font-weight: 500 !important;*/ }
+  .smarterPartner-setup-container .profileBox-style .planRegis-form, .smarterPartner-setup-container .partner-profile-container .payment-methods-container .pp-credit-cards .planRegis-form, .partner-profile-container .payment-methods-container .smarterPartner-setup-container .pp-credit-cards .planRegis-form {
+    width: 100%; }
+  .smarterPartner-setup-container .su-credit-cards-info-text-container {
+    width: 30%;
+    margin-top: 1em; }
+    .smarterPartner-setup-container .su-credit-cards-info-text-container p {
+      font-size: 14px; }
+    .smarterPartner-setup-container .su-credit-cards-info-text-container .fa-caret-up {
+      left: 60%; }
+  .smarterPartner-setup-container .creditCard-details-container.profileBox-style, .smarterPartner-setup-container .partner-profile-container .payment-methods-container .creditCard-details-container.pp-credit-cards, .partner-profile-container .payment-methods-container .smarterPartner-setup-container .creditCard-details-container.pp-credit-cards {
+    padding: 0px; }
+  .smarterPartner-setup-container .creditCard-details-container ul {
+    list-style-type: none; }
+    .smarterPartner-setup-container .creditCard-details-container ul li {
+      list-style-type: none; }
+  .smarterPartner-setup-container .creditCard-details-container .su-credit-cards {
+    border: 2px solid #36384B;
+    margin: 10px; }
+  .smarterPartner-setup-container .creditCard-details-container .credit-card-heading {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    background-color: #C8C8C8;
+    border-bottom: 2px solid #36384B; }
+  .smarterPartner-setup-container .creditCard-details-container .su-credit-cards-type {
+    font-size: 2.5em;
+    margin: 5px;
+    color: #36384B; }
+  .smarterPartner-setup-container .creditCard-details-container .su-credit-cards-description {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "aktiv-grotesk", Helvetica, sans-serif;
+    color: #36384B; }
+  .smarterPartner-setup-container .creditCard-details-container .su-credit-cards-expiry {
+    font-family: "aktiv-grotesk", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #36384B; }
+  .smarterPartner-setup-container .creditCard-details-container .su-credit-cards-expand {
+    color: #36384B;
+    margin: 0 5px; }
+  .smarterPartner-setup-container .creditCard-details-container .su-credit-cards-details {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-content: center;
+    justify-content: center;
+    font-family: "aktiv-grotesk", Helvetica, sans-serif; }
+    .smarterPartner-setup-container .creditCard-details-container .su-credit-cards-details h5 {
+      font-size: 20px;
+      font-weight: 700; }
+  .smarterPartner-setup-container .creditCard-details-container .su-credit-cards-name, .smarterPartner-setup-container .creditCard-details-container .su-credit-cards-billing {
+    padding: 10px; }
+  .smarterPartner-setup-container .creditCard-details-container .su-credit-cards-name-on-card {
+    font-family: "aktiv-grotesk", Helvetica, sans-serif;
+    font-size: 18px; }
+  .smarterPartner-setup-container .creditCard-details-container .su-credit-cards-billing div {
+    margin-bottom: 8px; }
+  .smarterPartner-setup-container .creditCard-details-container .su-credit-cards-billing button {
+    margin: 5px; }
+  .smarterPartner-setup-container #su-read-agree-to-terms {
+    width: 25px;
+    height: 25px;
+    margin-top: 0; }
+  .smarterPartner-setup-container .su-view-terms {
+    color: #70E9B2;
+    text-decoration: underline; }
+
+.su-locations-add-modal-container .su-locations-add-modal .purple-background h2::after {
+  padding: 0;
+  font-weight: 700; }
+.su-locations-add-modal-container .su-locations-add-modal .planRegis-form {
+  width: 95%; }
+  .su-locations-add-modal-container .su-locations-add-modal .planRegis-form .form-div {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+    justify-content: center; }
+  .su-locations-add-modal-container .su-locations-add-modal .planRegis-form .margin-right {
+    margin-right: 5px; }
+  .su-locations-add-modal-container .su-locations-add-modal .planRegis-form .margin-left {
+    margin-left: 15px; }
+  .su-locations-add-modal-container .su-locations-add-modal .planRegis-form .two-grid-column {
+    width: 70%;
+    margin: 0 auto; }
+  .su-locations-add-modal-container .su-locations-add-modal .planRegis-form select {
+    margin: .41667vw 0 0; }
+
+.su-credit-cards-add-modal-container .su-credit-cards-add-modal .purple-background h2::after {
+  padding: 0;
+  font-weight: 700; }
+.su-credit-cards-add-modal-container .su-credit-cards-add-modal .planRegis-form {
+  width: 100%;
+  padding: 0 1em; }
+  .su-credit-cards-add-modal-container .su-credit-cards-add-modal .planRegis-form label {
+    text-align: left;
+    margin: 0 0 5px 10px; }
+  .su-credit-cards-add-modal-container .su-credit-cards-add-modal .planRegis-form input {
+    margin: 0;
+    width: 95%; }
+  .su-credit-cards-add-modal-container .su-credit-cards-add-modal .planRegis-form select {
+    margin: 0 5px;
+    width: 100px; }
+.su-credit-cards-add-modal-container .su-credit-cards-add-modal .billing-address-container {
+  padding: 1em; }
+  .su-credit-cards-add-modal-container .su-credit-cards-add-modal .billing-address-container .profileBox-heading {
+    color: #36384B; }
+  .su-credit-cards-add-modal-container .su-credit-cards-add-modal .billing-address-container .grey-border {
+    border: 2px solid #C8C8C8;
+    padding: 14px; }
+    .su-credit-cards-add-modal-container .su-credit-cards-add-modal .billing-address-container .grey-border input[type="radio"] {
+      width: 25px;
+      height: 25px;
+      margin-right: 5px; }
+
+.su-credit-cards-edit-modal-container .su-credit-cards-edit-modal .purple-background h2::after {
+  padding: 0;
+  font-weight: 700; }
+.su-credit-cards-edit-modal-container .su-credit-cards-edit-modal .two-grid-column {
+  /*width:100%;*/
+  padding: 1em; }
+  .su-credit-cards-edit-modal-container .su-credit-cards-edit-modal .two-grid-column .su-credit-cards-edit-description {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+    .su-credit-cards-edit-modal-container .su-credit-cards-edit-modal .two-grid-column .su-credit-cards-edit-description i {
+      color: #36384B;
+      margin: 5px;
+      font-size: 2.5em; }
+  .su-credit-cards-edit-modal-container .su-credit-cards-edit-modal .two-grid-column.planRegis-form {
+    width: 100%; }
+    .su-credit-cards-edit-modal-container .su-credit-cards-edit-modal .two-grid-column.planRegis-form label {
+      text-align: left; }
+    .su-credit-cards-edit-modal-container .su-credit-cards-edit-modal .two-grid-column.planRegis-form .margin-right {
+      margin-right: 5px; }
+    .su-credit-cards-edit-modal-container .su-credit-cards-edit-modal .two-grid-column.planRegis-form .margin-left {
+      margin-left: 5px; }
+    .su-credit-cards-edit-modal-container .su-credit-cards-edit-modal .two-grid-column.planRegis-form select {
+      width: 100px;
+      margin-top: 10px; }
+    .su-credit-cards-edit-modal-container .su-credit-cards-edit-modal .two-grid-column.planRegis-form input[type=checkbox] {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px; }
+.su-credit-cards-edit-modal-container .su-credit-cards-edit-modal button {
+  margin: 0 5px; }
+
+.su-banking-details-modal-container .su-banking-details-modal .purple-background h2 {
+  margin-bottom: 0; }
+.su-banking-details-modal-container .su-banking-details-modal .purple-background .close-modal {
+  font-weight: 700;
+  margin-right: 1em;
+  padding: 0; }
+.su-banking-details-modal-container .su-banking-details-modal p {
+  padding: 1.5em; }
+
+.su-agreement-modal-container .su-agreement-modal .purple-background h2 {
+  margin-bottom: 0; }
+.su-agreement-modal-container .su-agreement-modal .purple-background .close-modal {
+  font-weight: 700;
+  margin-right: 1em;
+  padding: 0; }
+.su-agreement-modal-container .su-agreement-modal .padding-1 {
+  padding: 1em; }
+.su-agreement-modal-container .su-agreement-modal .su-agreement-text {
+  max-width: 100%;
+  padding: 10px 1em;
+  border: 2px solid #d3d3df;
+  overflow-y: scroll;
+  max-height: 300px; }
+.su-agreement-modal-container .su-agreement-modal .agreement-radioButtons, .su-agreement-modal-container .su-agreement-modal .agreement-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .su-agreement-modal-container .su-agreement-modal .agreement-radioButtons button, .su-agreement-modal-container .su-agreement-modal .agreement-actions button {
+    margin: 0 5px; }
+.su-agreement-modal-container .su-agreement-modal .agreement-actions i {
+  color: #434DA0;
+  font-size: 1.5em;
+  margin: 0 10px; }
+
+.su-submitted-modal-container .su-submitted-modal h2 {
+  font-family: "PublicoHeadline", aktiv-grotesk, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 3em;
+  color: #434DA0;
+  text-align: center;
+  padding: 12px; }
+.su-submitted-modal-container .su-submitted-modal .close-modal {
+  font-size: 1.5em;
+  padding: 10px; }
+.su-submitted-modal-container .su-submitted-modal p {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.75em;
+  margin-bottom: 2em; }
+
+@media screen and (max-width: 768px) {
+  .smarterPartner-setup-container .su-step-1, .smarterPartner-setup-container .su-step-2, .smarterPartner-setup-container .su-step-3, .smarterPartner-setup-container .su-nav {
+    width: 95%;
+    margin: 0 auto;
+    display: block; }
+    .smarterPartner-setup-container .su-step-1 .step-box, .smarterPartner-setup-container .su-step-2 .step-box, .smarterPartner-setup-container .su-step-3 .step-box, .smarterPartner-setup-container .su-nav .step-box {
+      margin-top: 2em; }
+    .smarterPartner-setup-container .su-step-1 .planRegis-form .form-div, .smarterPartner-setup-container .su-step-2 .planRegis-form .form-div, .smarterPartner-setup-container .su-step-3 .planRegis-form .form-div, .smarterPartner-setup-container .su-nav .planRegis-form .form-div {
+      grid-template-columns: 35% 65%;
+      word-break: break-word; }
+    .smarterPartner-setup-container .su-step-1 .planRegis-form .province-grid-column, .smarterPartner-setup-container .su-step-2 .planRegis-form .province-grid-column, .smarterPartner-setup-container .su-step-3 .planRegis-form .province-grid-column, .smarterPartner-setup-container .su-nav .planRegis-form .province-grid-column {
+      grid-template-columns: 100%;
+      width: 100%; }
+  .smarterPartner-setup-container .creditCard-details-container .su-credit-cards-details {
+    grid-template-columns: 100%; }
+
+  .su-locations-add-modal-container .su-locations-add-modal {
+    width: 95%;
+    margin: 30% auto; }
+    .su-locations-add-modal-container .su-locations-add-modal .planRegis-form .form-div {
+      /*display: flex;*/
+      grid-template-columns: 30% 70%; }
+    .su-locations-add-modal-container .su-locations-add-modal .planRegis-form .two-grid-column {
+      width: 100%;
+      grid-template-columns: 100%; }
+    .su-locations-add-modal-container .su-locations-add-modal .planRegis-form .margin-left {
+      margin-left: 0; }
+    .su-locations-add-modal-container .su-locations-add-modal .planRegis-form input, .su-locations-add-modal-container .su-locations-add-modal .planRegis-form select {
+      width: 100%; }
+
+  .su-credit-cards-add-modal-container .su-credit-cards-add-modal {
+    width: 95%;
+    margin: 30% auto; }
+    .su-credit-cards-add-modal-container .su-credit-cards-add-modal .planRegis-form {
+      display: flex;
+      flex-direction: column; }
+
+  .su-banking-details-modal-container .su-banking-details-modal, .su-banking-details-modal-container .su-agreement-modal, .su-agreement-modal-container .su-banking-details-modal, .su-agreement-modal-container .su-agreement-modal {
+    width: 95%;
+    margin: 30% auto; }
+
+  .su-agreement-modal-container .su-agreement-modal .agreement-actions {
+    margin-top: 1em; } }
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  .smarterPartner-setup-container .su-step-1, .smarterPartner-setup-container .su-step-2, .smarterPartner-setup-container .su-step-3, .smarterPartner-setup-container .su-nav {
+    width: 80%; } }
+@media screen and (max-width: 980px) {
+  .smarterPartner-setup-container .su-step-3 .su-deposit-payment-pref-info-text-container {
+    width: auto;
+    left: 0;
+    margin-top: 4em; }
+  .smarterPartner-setup-container .su-credit-cards-info-text-container {
+    width: auto; } }
+@media screen and (max-width: 1200px) {
+  .su-locations-add-modal-container .su-locations-add-modal .planRegis-form .two-grid-column {
+    width: 95%; } }
+.videos-container {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 12%; }
+  .videos-container .video-box {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0; }
+    .videos-container .video-box h3 {
+      margin-bottom: 0; }
+    .videos-container .video-box .purple-background {
+      color: white;
+      font-size: 22px;
+      font-weight: 700;
+      font-family: "aktiv-grotesk", Helvetica, sans-serif;
+      padding: 13px; }
+    .videos-container .video-box video {
+      width: 100%;
+      height: auto; }
+  .videos-container .as-video .as-video-modal {
+    padding: 2em;
+    width: 70%; }
+    .videos-container .as-video .as-video-modal .close-modal {
+      font-size: 1.5em;
+      padding: 14px;
+      color: #70E9B2; }
+    .videos-container .as-video .as-video-modal h2 {
+      font-family: "PublicoHeadline", aktiv-grotesk, Helvetica, sans-serif;
+      font-weight: 900;
+      font-size: 3em;
+      color: #434DA0;
+      text-align: center;
+      padding: 12px; }
+    .videos-container .as-video .as-video-modal .modal-video {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      height: auto; }
+  .videos-container .three-grid-column {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 14px 1em;
+    align-items: inherit; }
+    .videos-container .three-grid-column .video-box {
+      /*padding:10px;*/
+      box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+      cursor: pointer; }
+    .videos-container .three-grid-column .purple-background {
+      font-size: 1em;
+      padding: 10px; }
+  .videos-container .as-under-review-container .as-under-review .close-modal {
+    font-size: 1.5em;
+    padding: 14px;
+    color: #70E9B2; }
+  .videos-container .as-under-review-container .as-under-review h2 {
+    font-family: "PublicoHeadline", aktiv-grotesk, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    color: #434DA0;
+    text-align: center;
+    padding: 12px; }
+  .videos-container .as-under-review-container .as-under-review p {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.75em;
+    margin-bottom: 2em; }
+
+@media screen and (max-width: 768px) {
+  .videos-container {
+    width: 95%; }
+    .videos-container .as-video .as-video-modal {
+      width: 95%;
+      margin: 35% auto; } }
+@media screen and (max-width: 980px) {
+  .videos-container {
+    margin-top: 20%; }
+    .videos-container .three-grid-column {
+      grid-template-columns: 50% 50%;
+      padding: 0 10px; } }
+@media screen and (min-width: 981px) {
+  .videos-container .three-grid-column {
+    grid-template-columns: 25% 25% 25% 25%; } }
+.partner-profile-container {
+  width: 85%;
+  margin: 0 auto;
+  display: block; }
+  .partner-profile-container .planRegis-form {
+    width: 100%;
+    padding: 10px; }
+    .partner-profile-container .planRegis-form .form-div {
+      display: grid;
+      grid-template-columns: 25% 75%;
+      align-items: center;
+      justify-content: space-around; }
+    .partner-profile-container .planRegis-form input, .partner-profile-container .planRegis-form select {
+      width: 95%; }
+    .partner-profile-container .planRegis-form .two-grid-column {
+      margin-top: 5px; }
+  .partner-profile-container .pp-buying-group {
+    max-width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    /*margin-top:5px;*/ }
+  .partner-profile-container input[type=radio] {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px; }
+  .partner-profile-container .margin-leftRight {
+    margin: 0 10px; }
+  .partner-profile-container .new-planAdd-detail {
+    display: block;
+    margin: 0;
+    border-width: 2px; }
+  .partner-profile-container .payment-methods-container {
+    margin-top: 14px; }
+    .partner-profile-container .payment-methods-container ul, .partner-profile-container .payment-methods-container li {
+      list-style-type: none; }
+
+.our-people-container .new-planAdd-detail table thead tr th {
+  border-right: 1px solid #d3d3df;
+  text-align: center; }
+.our-people-container .new-planAdd-detail table thead tr th:last-child {
+  border-right: none; }
+.our-people-container .new-planAdd-detail table tbody tr td {
+  border-right: 1px solid #d3d3df;
+  text-align: center; }
+  .our-people-container .new-planAdd-detail table tbody tr td i {
+    color: #434DA0; }
+.our-people-container .new-planAdd-detail table .pp-people-edit {
+  color: #434DA0; }
+
+.pp-payment-prefs-edit-modal-container .pp-payment-prefs-edit-modal .purple-background h2, .pp-payment-prefs-edit-modal-container .pp-header-edit-modal .purple-background h2, .pp-payment-prefs-edit-modal-container .pp-billing-address-edit-modal .purple-background h2, .pp-payment-prefs-edit-modal-container .pp-ship-to-modal .purple-background h2, .pp-payment-prefs-edit-modal-container .pp-credit-card-edit-modal .purple-background h2, .pp-payment-prefs-edit-modal-container .pp-bank-account-edit-modal .purple-background h2, .pp-header-edit-modal-container .pp-payment-prefs-edit-modal .purple-background h2, .pp-header-edit-modal-container .pp-header-edit-modal .purple-background h2, .pp-header-edit-modal-container .pp-billing-address-edit-modal .purple-background h2, .pp-header-edit-modal-container .pp-ship-to-modal .purple-background h2, .pp-header-edit-modal-container .pp-credit-card-edit-modal .purple-background h2, .pp-header-edit-modal-container .pp-bank-account-edit-modal .purple-background h2, .pp-billing-address-edit-modal-container .pp-payment-prefs-edit-modal .purple-background h2, .pp-billing-address-edit-modal-container .pp-header-edit-modal .purple-background h2, .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal .purple-background h2, .pp-billing-address-edit-modal-container .pp-ship-to-modal .purple-background h2, .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal .purple-background h2, .pp-billing-address-edit-modal-container .pp-bank-account-edit-modal .purple-background h2, .pp-ship-to-modal-container .pp-payment-prefs-edit-modal .purple-background h2, .pp-ship-to-modal-container .pp-header-edit-modal .purple-background h2, .pp-ship-to-modal-container .pp-billing-address-edit-modal .purple-background h2, .pp-ship-to-modal-container .pp-ship-to-modal .purple-background h2, .pp-ship-to-modal-container .pp-credit-card-edit-modal .purple-background h2, .pp-ship-to-modal-container .pp-bank-account-edit-modal .purple-background h2, .pp-credit-card-edit-modal-container .pp-payment-prefs-edit-modal .purple-background h2, .pp-credit-card-edit-modal-container .pp-header-edit-modal .purple-background h2, .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal .purple-background h2, .pp-credit-card-edit-modal-container .pp-ship-to-modal .purple-background h2, .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .purple-background h2, .pp-credit-card-edit-modal-container .pp-bank-account-edit-modal .purple-background h2, .pp-bank-account-edit-modal-container .pp-payment-prefs-edit-modal .purple-background h2, .pp-bank-account-edit-modal-container .pp-header-edit-modal .purple-background h2, .pp-bank-account-edit-modal-container .pp-billing-address-edit-modal .purple-background h2, .pp-bank-account-edit-modal-container .pp-ship-to-modal .purple-background h2, .pp-bank-account-edit-modal-container .pp-credit-card-edit-modal .purple-background h2, .pp-bank-account-edit-modal-container .pp-bank-account-edit-modal .purple-background h2 {
+  margin-bottom: 0; }
+.pp-payment-prefs-edit-modal-container .pp-payment-prefs-edit-modal .purple-background .close-modal, .pp-payment-prefs-edit-modal-container .pp-header-edit-modal .purple-background .close-modal, .pp-payment-prefs-edit-modal-container .pp-billing-address-edit-modal .purple-background .close-modal, .pp-payment-prefs-edit-modal-container .pp-ship-to-modal .purple-background .close-modal, .pp-payment-prefs-edit-modal-container .pp-credit-card-edit-modal .purple-background .close-modal, .pp-payment-prefs-edit-modal-container .pp-bank-account-edit-modal .purple-background .close-modal, .pp-header-edit-modal-container .pp-payment-prefs-edit-modal .purple-background .close-modal, .pp-header-edit-modal-container .pp-header-edit-modal .purple-background .close-modal, .pp-header-edit-modal-container .pp-billing-address-edit-modal .purple-background .close-modal, .pp-header-edit-modal-container .pp-ship-to-modal .purple-background .close-modal, .pp-header-edit-modal-container .pp-credit-card-edit-modal .purple-background .close-modal, .pp-header-edit-modal-container .pp-bank-account-edit-modal .purple-background .close-modal, .pp-billing-address-edit-modal-container .pp-payment-prefs-edit-modal .purple-background .close-modal, .pp-billing-address-edit-modal-container .pp-header-edit-modal .purple-background .close-modal, .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal .purple-background .close-modal, .pp-billing-address-edit-modal-container .pp-ship-to-modal .purple-background .close-modal, .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal .purple-background .close-modal, .pp-billing-address-edit-modal-container .pp-bank-account-edit-modal .purple-background .close-modal, .pp-ship-to-modal-container .pp-payment-prefs-edit-modal .purple-background .close-modal, .pp-ship-to-modal-container .pp-header-edit-modal .purple-background .close-modal, .pp-ship-to-modal-container .pp-billing-address-edit-modal .purple-background .close-modal, .pp-ship-to-modal-container .pp-ship-to-modal .purple-background .close-modal, .pp-ship-to-modal-container .pp-credit-card-edit-modal .purple-background .close-modal, .pp-ship-to-modal-container .pp-bank-account-edit-modal .purple-background .close-modal, .pp-credit-card-edit-modal-container .pp-payment-prefs-edit-modal .purple-background .close-modal, .pp-credit-card-edit-modal-container .pp-header-edit-modal .purple-background .close-modal, .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal .purple-background .close-modal, .pp-credit-card-edit-modal-container .pp-ship-to-modal .purple-background .close-modal, .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .purple-background .close-modal, .pp-credit-card-edit-modal-container .pp-bank-account-edit-modal .purple-background .close-modal, .pp-bank-account-edit-modal-container .pp-payment-prefs-edit-modal .purple-background .close-modal, .pp-bank-account-edit-modal-container .pp-header-edit-modal .purple-background .close-modal, .pp-bank-account-edit-modal-container .pp-billing-address-edit-modal .purple-background .close-modal, .pp-bank-account-edit-modal-container .pp-ship-to-modal .purple-background .close-modal, .pp-bank-account-edit-modal-container .pp-credit-card-edit-modal .purple-background .close-modal, .pp-bank-account-edit-modal-container .pp-bank-account-edit-modal .purple-background .close-modal {
+  padding: 0;
+  font-weight: 700;
+  margin-right: 1em; }
+.pp-payment-prefs-edit-modal-container .pp-payment-prefs-edit-modal .padding-box, .pp-payment-prefs-edit-modal-container .pp-header-edit-modal .padding-box, .pp-payment-prefs-edit-modal-container .pp-billing-address-edit-modal .padding-box, .pp-payment-prefs-edit-modal-container .pp-ship-to-modal .padding-box, .pp-payment-prefs-edit-modal-container .pp-credit-card-edit-modal .padding-box, .pp-payment-prefs-edit-modal-container .pp-bank-account-edit-modal .padding-box, .pp-header-edit-modal-container .pp-payment-prefs-edit-modal .padding-box, .pp-header-edit-modal-container .pp-header-edit-modal .padding-box, .pp-header-edit-modal-container .pp-billing-address-edit-modal .padding-box, .pp-header-edit-modal-container .pp-ship-to-modal .padding-box, .pp-header-edit-modal-container .pp-credit-card-edit-modal .padding-box, .pp-header-edit-modal-container .pp-bank-account-edit-modal .padding-box, .pp-billing-address-edit-modal-container .pp-payment-prefs-edit-modal .padding-box, .pp-billing-address-edit-modal-container .pp-header-edit-modal .padding-box, .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal .padding-box, .pp-billing-address-edit-modal-container .pp-ship-to-modal .padding-box, .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal .padding-box, .pp-billing-address-edit-modal-container .pp-bank-account-edit-modal .padding-box, .pp-ship-to-modal-container .pp-payment-prefs-edit-modal .padding-box, .pp-ship-to-modal-container .pp-header-edit-modal .padding-box, .pp-ship-to-modal-container .pp-billing-address-edit-modal .padding-box, .pp-ship-to-modal-container .pp-ship-to-modal .padding-box, .pp-ship-to-modal-container .pp-credit-card-edit-modal .padding-box, .pp-ship-to-modal-container .pp-bank-account-edit-modal .padding-box, .pp-credit-card-edit-modal-container .pp-payment-prefs-edit-modal .padding-box, .pp-credit-card-edit-modal-container .pp-header-edit-modal .padding-box, .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal .padding-box, .pp-credit-card-edit-modal-container .pp-ship-to-modal .padding-box, .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .padding-box, .pp-credit-card-edit-modal-container .pp-bank-account-edit-modal .padding-box, .pp-bank-account-edit-modal-container .pp-payment-prefs-edit-modal .padding-box, .pp-bank-account-edit-modal-container .pp-header-edit-modal .padding-box, .pp-bank-account-edit-modal-container .pp-billing-address-edit-modal .padding-box, .pp-bank-account-edit-modal-container .pp-ship-to-modal .padding-box, .pp-bank-account-edit-modal-container .pp-credit-card-edit-modal .padding-box, .pp-bank-account-edit-modal-container .pp-bank-account-edit-modal .padding-box {
+  padding: 1em; }
+.pp-payment-prefs-edit-modal-container .pp-payment-prefs-edit-modal input[type=radio], .pp-payment-prefs-edit-modal-container .pp-header-edit-modal input[type=radio], .pp-payment-prefs-edit-modal-container .pp-billing-address-edit-modal input[type=radio], .pp-payment-prefs-edit-modal-container .pp-ship-to-modal input[type=radio], .pp-payment-prefs-edit-modal-container .pp-credit-card-edit-modal input[type=radio], .pp-payment-prefs-edit-modal-container .pp-bank-account-edit-modal input[type=radio], .pp-header-edit-modal-container .pp-payment-prefs-edit-modal input[type=radio], .pp-header-edit-modal-container .pp-header-edit-modal input[type=radio], .pp-header-edit-modal-container .pp-billing-address-edit-modal input[type=radio], .pp-header-edit-modal-container .pp-ship-to-modal input[type=radio], .pp-header-edit-modal-container .pp-credit-card-edit-modal input[type=radio], .pp-header-edit-modal-container .pp-bank-account-edit-modal input[type=radio], .pp-billing-address-edit-modal-container .pp-payment-prefs-edit-modal input[type=radio], .pp-billing-address-edit-modal-container .pp-header-edit-modal input[type=radio], .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal input[type=radio], .pp-billing-address-edit-modal-container .pp-ship-to-modal input[type=radio], .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal input[type=radio], .pp-billing-address-edit-modal-container .pp-bank-account-edit-modal input[type=radio], .pp-ship-to-modal-container .pp-payment-prefs-edit-modal input[type=radio], .pp-ship-to-modal-container .pp-header-edit-modal input[type=radio], .pp-ship-to-modal-container .pp-billing-address-edit-modal input[type=radio], .pp-ship-to-modal-container .pp-ship-to-modal input[type=radio], .pp-ship-to-modal-container .pp-credit-card-edit-modal input[type=radio], .pp-ship-to-modal-container .pp-bank-account-edit-modal input[type=radio], .pp-credit-card-edit-modal-container .pp-payment-prefs-edit-modal input[type=radio], .pp-credit-card-edit-modal-container .pp-header-edit-modal input[type=radio], .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal input[type=radio], .pp-credit-card-edit-modal-container .pp-ship-to-modal input[type=radio], .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal input[type=radio], .pp-credit-card-edit-modal-container .pp-bank-account-edit-modal input[type=radio], .pp-bank-account-edit-modal-container .pp-payment-prefs-edit-modal input[type=radio], .pp-bank-account-edit-modal-container .pp-header-edit-modal input[type=radio], .pp-bank-account-edit-modal-container .pp-billing-address-edit-modal input[type=radio], .pp-bank-account-edit-modal-container .pp-ship-to-modal input[type=radio], .pp-bank-account-edit-modal-container .pp-credit-card-edit-modal input[type=radio], .pp-bank-account-edit-modal-container .pp-bank-account-edit-modal input[type=radio] {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px; }
+
+.pp-header-edit-modal-container .pp-header-edit-modal .planRegis-form, .pp-header-edit-modal-container .pp-billing-address-edit-modal .planRegis-form, .pp-header-edit-modal-container .pp-ship-to-modal .planRegis-form, .pp-header-edit-modal-container .pp-credit-card-edit-modal .planRegis-form, .pp-header-edit-modal-container .pp-bank-account-edit-modal .planRegis-form, .pp-billing-address-edit-modal-container .pp-header-edit-modal .planRegis-form, .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal .planRegis-form, .pp-billing-address-edit-modal-container .pp-ship-to-modal .planRegis-form, .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal .planRegis-form, .pp-billing-address-edit-modal-container .pp-bank-account-edit-modal .planRegis-form, .pp-ship-to-modal-container .pp-header-edit-modal .planRegis-form, .pp-ship-to-modal-container .pp-billing-address-edit-modal .planRegis-form, .pp-ship-to-modal-container .pp-ship-to-modal .planRegis-form, .pp-ship-to-modal-container .pp-credit-card-edit-modal .planRegis-form, .pp-ship-to-modal-container .pp-bank-account-edit-modal .planRegis-form, .pp-credit-card-edit-modal-container .pp-header-edit-modal .planRegis-form, .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal .planRegis-form, .pp-credit-card-edit-modal-container .pp-ship-to-modal .planRegis-form, .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .planRegis-form, .pp-credit-card-edit-modal-container .pp-bank-account-edit-modal .planRegis-form, .pp-bank-account-edit-modal-container .pp-header-edit-modal .planRegis-form, .pp-bank-account-edit-modal-container .pp-billing-address-edit-modal .planRegis-form, .pp-bank-account-edit-modal-container .pp-ship-to-modal .planRegis-form, .pp-bank-account-edit-modal-container .pp-credit-card-edit-modal .planRegis-form, .pp-bank-account-edit-modal-container .pp-bank-account-edit-modal .planRegis-form {
+  width: 90%; }
+  .pp-header-edit-modal-container .pp-header-edit-modal .planRegis-form .plaRegis-divStyle, .pp-header-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .plaRegis-divStyle, .pp-header-edit-modal-container .pp-ship-to-modal .planRegis-form .plaRegis-divStyle, .pp-header-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .plaRegis-divStyle, .pp-header-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .plaRegis-divStyle, .pp-billing-address-edit-modal-container .pp-header-edit-modal .planRegis-form .plaRegis-divStyle, .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .plaRegis-divStyle, .pp-billing-address-edit-modal-container .pp-ship-to-modal .planRegis-form .plaRegis-divStyle, .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .plaRegis-divStyle, .pp-billing-address-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .plaRegis-divStyle, .pp-ship-to-modal-container .pp-header-edit-modal .planRegis-form .plaRegis-divStyle, .pp-ship-to-modal-container .pp-billing-address-edit-modal .planRegis-form .plaRegis-divStyle, .pp-ship-to-modal-container .pp-ship-to-modal .planRegis-form .plaRegis-divStyle, .pp-ship-to-modal-container .pp-credit-card-edit-modal .planRegis-form .plaRegis-divStyle, .pp-ship-to-modal-container .pp-bank-account-edit-modal .planRegis-form .plaRegis-divStyle, .pp-credit-card-edit-modal-container .pp-header-edit-modal .planRegis-form .plaRegis-divStyle, .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .plaRegis-divStyle, .pp-credit-card-edit-modal-container .pp-ship-to-modal .planRegis-form .plaRegis-divStyle, .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .plaRegis-divStyle, .pp-credit-card-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .plaRegis-divStyle, .pp-bank-account-edit-modal-container .pp-header-edit-modal .planRegis-form .plaRegis-divStyle, .pp-bank-account-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .plaRegis-divStyle, .pp-bank-account-edit-modal-container .pp-ship-to-modal .planRegis-form .plaRegis-divStyle, .pp-bank-account-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .plaRegis-divStyle, .pp-bank-account-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .plaRegis-divStyle {
+    grid-template-columns: 30% 70%; }
+  .pp-header-edit-modal-container .pp-header-edit-modal .planRegis-form input[type=text], .pp-header-edit-modal-container .pp-billing-address-edit-modal .planRegis-form input[type=text], .pp-header-edit-modal-container .pp-ship-to-modal .planRegis-form input[type=text], .pp-header-edit-modal-container .pp-credit-card-edit-modal .planRegis-form input[type=text], .pp-header-edit-modal-container .pp-bank-account-edit-modal .planRegis-form input[type=text], .pp-billing-address-edit-modal-container .pp-header-edit-modal .planRegis-form input[type=text], .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal .planRegis-form input[type=text], .pp-billing-address-edit-modal-container .pp-ship-to-modal .planRegis-form input[type=text], .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal .planRegis-form input[type=text], .pp-billing-address-edit-modal-container .pp-bank-account-edit-modal .planRegis-form input[type=text], .pp-ship-to-modal-container .pp-header-edit-modal .planRegis-form input[type=text], .pp-ship-to-modal-container .pp-billing-address-edit-modal .planRegis-form input[type=text], .pp-ship-to-modal-container .pp-ship-to-modal .planRegis-form input[type=text], .pp-ship-to-modal-container .pp-credit-card-edit-modal .planRegis-form input[type=text], .pp-ship-to-modal-container .pp-bank-account-edit-modal .planRegis-form input[type=text], .pp-credit-card-edit-modal-container .pp-header-edit-modal .planRegis-form input[type=text], .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal .planRegis-form input[type=text], .pp-credit-card-edit-modal-container .pp-ship-to-modal .planRegis-form input[type=text], .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .planRegis-form input[type=text], .pp-credit-card-edit-modal-container .pp-bank-account-edit-modal .planRegis-form input[type=text], .pp-bank-account-edit-modal-container .pp-header-edit-modal .planRegis-form input[type=text], .pp-bank-account-edit-modal-container .pp-billing-address-edit-modal .planRegis-form input[type=text], .pp-bank-account-edit-modal-container .pp-ship-to-modal .planRegis-form input[type=text], .pp-bank-account-edit-modal-container .pp-credit-card-edit-modal .planRegis-form input[type=text], .pp-bank-account-edit-modal-container .pp-bank-account-edit-modal .planRegis-form input[type=text] {
+    /*width: 80%;*/ }
+  .pp-header-edit-modal-container .pp-header-edit-modal .planRegis-form .margin-right, .pp-header-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .margin-right, .pp-header-edit-modal-container .pp-ship-to-modal .planRegis-form .margin-right, .pp-header-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .margin-right, .pp-header-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .margin-right, .pp-billing-address-edit-modal-container .pp-header-edit-modal .planRegis-form .margin-right, .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .margin-right, .pp-billing-address-edit-modal-container .pp-ship-to-modal .planRegis-form .margin-right, .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .margin-right, .pp-billing-address-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .margin-right, .pp-ship-to-modal-container .pp-header-edit-modal .planRegis-form .margin-right, .pp-ship-to-modal-container .pp-billing-address-edit-modal .planRegis-form .margin-right, .pp-ship-to-modal-container .pp-ship-to-modal .planRegis-form .margin-right, .pp-ship-to-modal-container .pp-credit-card-edit-modal .planRegis-form .margin-right, .pp-ship-to-modal-container .pp-bank-account-edit-modal .planRegis-form .margin-right, .pp-credit-card-edit-modal-container .pp-header-edit-modal .planRegis-form .margin-right, .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .margin-right, .pp-credit-card-edit-modal-container .pp-ship-to-modal .planRegis-form .margin-right, .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .margin-right, .pp-credit-card-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .margin-right, .pp-bank-account-edit-modal-container .pp-header-edit-modal .planRegis-form .margin-right, .pp-bank-account-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .margin-right, .pp-bank-account-edit-modal-container .pp-ship-to-modal .planRegis-form .margin-right, .pp-bank-account-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .margin-right, .pp-bank-account-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .margin-right {
+    margin-right: 10px; }
+  .pp-header-edit-modal-container .pp-header-edit-modal .planRegis-form .margin-left, .pp-header-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .margin-left, .pp-header-edit-modal-container .pp-ship-to-modal .planRegis-form .margin-left, .pp-header-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .margin-left, .pp-header-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .margin-left, .pp-billing-address-edit-modal-container .pp-header-edit-modal .planRegis-form .margin-left, .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .margin-left, .pp-billing-address-edit-modal-container .pp-ship-to-modal .planRegis-form .margin-left, .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .margin-left, .pp-billing-address-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .margin-left, .pp-ship-to-modal-container .pp-header-edit-modal .planRegis-form .margin-left, .pp-ship-to-modal-container .pp-billing-address-edit-modal .planRegis-form .margin-left, .pp-ship-to-modal-container .pp-ship-to-modal .planRegis-form .margin-left, .pp-ship-to-modal-container .pp-credit-card-edit-modal .planRegis-form .margin-left, .pp-ship-to-modal-container .pp-bank-account-edit-modal .planRegis-form .margin-left, .pp-credit-card-edit-modal-container .pp-header-edit-modal .planRegis-form .margin-left, .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .margin-left, .pp-credit-card-edit-modal-container .pp-ship-to-modal .planRegis-form .margin-left, .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .margin-left, .pp-credit-card-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .margin-left, .pp-bank-account-edit-modal-container .pp-header-edit-modal .planRegis-form .margin-left, .pp-bank-account-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .margin-left, .pp-bank-account-edit-modal-container .pp-ship-to-modal .planRegis-form .margin-left, .pp-bank-account-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .margin-left, .pp-bank-account-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .margin-left {
+    margin-left: 10px; }
+  .pp-header-edit-modal-container .pp-header-edit-modal .planRegis-form .two-grid-column, .pp-header-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .two-grid-column, .pp-header-edit-modal-container .pp-ship-to-modal .planRegis-form .two-grid-column, .pp-header-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .two-grid-column, .pp-header-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .two-grid-column, .pp-billing-address-edit-modal-container .pp-header-edit-modal .planRegis-form .two-grid-column, .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .two-grid-column, .pp-billing-address-edit-modal-container .pp-ship-to-modal .planRegis-form .two-grid-column, .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .two-grid-column, .pp-billing-address-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .two-grid-column, .pp-ship-to-modal-container .pp-header-edit-modal .planRegis-form .two-grid-column, .pp-ship-to-modal-container .pp-billing-address-edit-modal .planRegis-form .two-grid-column, .pp-ship-to-modal-container .pp-ship-to-modal .planRegis-form .two-grid-column, .pp-ship-to-modal-container .pp-credit-card-edit-modal .planRegis-form .two-grid-column, .pp-ship-to-modal-container .pp-bank-account-edit-modal .planRegis-form .two-grid-column, .pp-credit-card-edit-modal-container .pp-header-edit-modal .planRegis-form .two-grid-column, .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .two-grid-column, .pp-credit-card-edit-modal-container .pp-ship-to-modal .planRegis-form .two-grid-column, .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .two-grid-column, .pp-credit-card-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .two-grid-column, .pp-bank-account-edit-modal-container .pp-header-edit-modal .planRegis-form .two-grid-column, .pp-bank-account-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .two-grid-column, .pp-bank-account-edit-modal-container .pp-ship-to-modal .planRegis-form .two-grid-column, .pp-bank-account-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .two-grid-column, .pp-bank-account-edit-modal-container .pp-bank-account-edit-modal .planRegis-form .two-grid-column {
+    grid-column-gap: 10px;
+    /*grid-template-columns: 50% 40%;*/ }
+
+.pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .planRegis-form label {
+  text-align: left; }
+.pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .two-grid-column {
+  padding: 1em;
+  /*grid-column-gap: 10px;*/ }
+  .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .two-grid-column .planRegis-form {
+    padding: 0;
+    width: 95%; }
+    .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .two-grid-column .planRegis-form select {
+      margin-top: .41667vw; }
+  .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .two-grid-column .label-margin {
+    margin: 10px 0; }
+.pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .edit-billing-address-form .planRegis-form {
+  padding: 0;
+  width: 90%; }
+  .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .edit-billing-address-form .planRegis-form .two-grid-column {
+    padding: 0; }
+  .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .edit-billing-address-form .planRegis-form select {
+    margin-top: 10px; }
+
+@media screen and (max-width: 768px) {
+  .partner-profile-container {
+    width: 95%;
+    display: block;
+    margin: 0 auto; }
+    .partner-profile-container .payment-references-container {
+      margin-top: 1em; }
+
+  .pp-payment-prefs-edit-modal-container .pp-payment-prefs-edit-modal, .pp-payment-prefs-edit-modal-container .pp-header-edit-modal, .pp-payment-prefs-edit-modal-container .pp-billing-address-edit-modal, .pp-payment-prefs-edit-modal-container .pp-ship-to-modal, .pp-payment-prefs-edit-modal-container .pp-credit-card-edit-modal, .pp-header-edit-modal-container .pp-payment-prefs-edit-modal, .pp-header-edit-modal-container .pp-header-edit-modal, .pp-header-edit-modal-container .pp-billing-address-edit-modal, .pp-header-edit-modal-container .pp-ship-to-modal, .pp-header-edit-modal-container .pp-credit-card-edit-modal, .pp-billing-address-edit-modal-container .pp-payment-prefs-edit-modal, .pp-billing-address-edit-modal-container .pp-header-edit-modal, .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal, .pp-billing-address-edit-modal-container .pp-ship-to-modal, .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal, .pp-ship-to-modal-container .pp-payment-prefs-edit-modal, .pp-ship-to-modal-container .pp-header-edit-modal, .pp-ship-to-modal-container .pp-billing-address-edit-modal, .pp-ship-to-modal-container .pp-ship-to-modal, .pp-ship-to-modal-container .pp-credit-card-edit-modal, .pp-credit-card-edit-modal-container .pp-payment-prefs-edit-modal, .pp-credit-card-edit-modal-container .pp-header-edit-modal, .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal, .pp-credit-card-edit-modal-container .pp-ship-to-modal, .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal {
+    width: 90%;
+    margin: 35% auto; }
+    .pp-payment-prefs-edit-modal-container .pp-payment-prefs-edit-modal .planRegis-form .planRegis-divStyle, .pp-payment-prefs-edit-modal-container .pp-header-edit-modal .planRegis-form .planRegis-divStyle, .pp-payment-prefs-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .planRegis-divStyle, .pp-payment-prefs-edit-modal-container .pp-ship-to-modal .planRegis-form .planRegis-divStyle, .pp-payment-prefs-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .planRegis-divStyle, .pp-header-edit-modal-container .pp-payment-prefs-edit-modal .planRegis-form .planRegis-divStyle, .pp-header-edit-modal-container .pp-header-edit-modal .planRegis-form .planRegis-divStyle, .pp-header-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .planRegis-divStyle, .pp-header-edit-modal-container .pp-ship-to-modal .planRegis-form .planRegis-divStyle, .pp-header-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .planRegis-divStyle, .pp-billing-address-edit-modal-container .pp-payment-prefs-edit-modal .planRegis-form .planRegis-divStyle, .pp-billing-address-edit-modal-container .pp-header-edit-modal .planRegis-form .planRegis-divStyle, .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .planRegis-divStyle, .pp-billing-address-edit-modal-container .pp-ship-to-modal .planRegis-form .planRegis-divStyle, .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .planRegis-divStyle, .pp-ship-to-modal-container .pp-payment-prefs-edit-modal .planRegis-form .planRegis-divStyle, .pp-ship-to-modal-container .pp-header-edit-modal .planRegis-form .planRegis-divStyle, .pp-ship-to-modal-container .pp-billing-address-edit-modal .planRegis-form .planRegis-divStyle, .pp-ship-to-modal-container .pp-ship-to-modal .planRegis-form .planRegis-divStyle, .pp-ship-to-modal-container .pp-credit-card-edit-modal .planRegis-form .planRegis-divStyle, .pp-credit-card-edit-modal-container .pp-payment-prefs-edit-modal .planRegis-form .planRegis-divStyle, .pp-credit-card-edit-modal-container .pp-header-edit-modal .planRegis-form .planRegis-divStyle, .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .planRegis-divStyle, .pp-credit-card-edit-modal-container .pp-ship-to-modal .planRegis-form .planRegis-divStyle, .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .planRegis-divStyle {
+      width: 100%; }
+    .pp-payment-prefs-edit-modal-container .pp-payment-prefs-edit-modal .planRegis-form .formField-data-controller, .pp-payment-prefs-edit-modal-container .pp-header-edit-modal .planRegis-form .formField-data-controller, .pp-payment-prefs-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .formField-data-controller, .pp-payment-prefs-edit-modal-container .pp-ship-to-modal .planRegis-form .formField-data-controller, .pp-payment-prefs-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .formField-data-controller, .pp-header-edit-modal-container .pp-payment-prefs-edit-modal .planRegis-form .formField-data-controller, .pp-header-edit-modal-container .pp-header-edit-modal .planRegis-form .formField-data-controller, .pp-header-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .formField-data-controller, .pp-header-edit-modal-container .pp-ship-to-modal .planRegis-form .formField-data-controller, .pp-header-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .formField-data-controller, .pp-billing-address-edit-modal-container .pp-payment-prefs-edit-modal .planRegis-form .formField-data-controller, .pp-billing-address-edit-modal-container .pp-header-edit-modal .planRegis-form .formField-data-controller, .pp-billing-address-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .formField-data-controller, .pp-billing-address-edit-modal-container .pp-ship-to-modal .planRegis-form .formField-data-controller, .pp-billing-address-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .formField-data-controller, .pp-ship-to-modal-container .pp-payment-prefs-edit-modal .planRegis-form .formField-data-controller, .pp-ship-to-modal-container .pp-header-edit-modal .planRegis-form .formField-data-controller, .pp-ship-to-modal-container .pp-billing-address-edit-modal .planRegis-form .formField-data-controller, .pp-ship-to-modal-container .pp-ship-to-modal .planRegis-form .formField-data-controller, .pp-ship-to-modal-container .pp-credit-card-edit-modal .planRegis-form .formField-data-controller, .pp-credit-card-edit-modal-container .pp-payment-prefs-edit-modal .planRegis-form .formField-data-controller, .pp-credit-card-edit-modal-container .pp-header-edit-modal .planRegis-form .formField-data-controller, .pp-credit-card-edit-modal-container .pp-billing-address-edit-modal .planRegis-form .formField-data-controller, .pp-credit-card-edit-modal-container .pp-ship-to-modal .planRegis-form .formField-data-controller, .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .planRegis-form .formField-data-controller {
+      grid-template-columns: 100%; }
+
+  .pp-credit-card-edit-modal-container .pp-credit-card-edit-modal .two-grid-column {
+    grid-template-columns: 100%; } }
+.advisor-welcome-container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 15%; }
+  .advisor-welcome-container .two-grid-column {
+    justify-content: center;
+    align-content: flex-start;
+    grid-gap: 1.5em 1.5em; }
+  .advisor-welcome-container .aw-promo-graphic {
+    width: 100%; }
+  .advisor-welcome-container .new-planAdd-detail {
+    display: block;
+    border: 2px solid #36384B;
+    margin: 0 auto; }
+  .advisor-welcome-container .aw-leaderboard thead tr {
+    background-color: #434DA0;
+    margin: 0;
+    padding: 0; }
+    .advisor-welcome-container .aw-leaderboard thead tr th {
+      color: white;
+      font-family: "aktiv-grotesk", Helvetica, sans-serif;
+      padding: 10px; }
+  .advisor-welcome-container .aw-leaderboard tbody tr:nth-child(odd) {
+    background-color: #A3ACFF; }
+  .advisor-welcome-container .aw-leaderboard tbody tr:nth-child(even) {
+    background-color: rgba(163, 172, 255, 0.4); }
+  .advisor-welcome-container .aw-leaderboard tbody .aw-leader-profile-image {
+    width: 25px;
+    height: auto;
+    margin: 0 5px; }
+
+@media screen and (max-width: 768px) {
+  .advisor-welcome-container {
+    width: 95%;
+    margin-top: 25%; }
+    .advisor-welcome-container .two-grid-column {
+      grid-template-columns: 100%; } }
+/*Media queries */
+@media screen and (max-width: 768px) {
+  .srs-login-container {
+    width: 90%;
+    margin-top: 20%; }
+
+  .srs-heading {
+    margin-top: 20%; }
+
+  .videoLink {
+    position: relative;
+    text-align: center;
+    left: 0;
+    top: 0;
+    margin: 1.5em 0; }
+
+  .planRegis-form {
+    width: 90%; }
+    .planRegis-form div .info-text-container {
+      width: 100%;
+      top: 38%;
+      left: 0; }
+    .planRegis-form .planRegis-divStyle {
+      grid-template-columns: 35% 65%;
+      display: grid; }
+      .planRegis-form .planRegis-divStyle input {
+        width: 100%; }
+      .planRegis-form .planRegis-divStyle select {
+        width: 100%; }
+    .planRegis-form .info-grid {
+      display: grid;
+      grid-template-columns: 35% 56% 0%; }
+    .planRegis-form label {
+      text-align: left;
+      margin-right: 10px; }
+    .planRegis-form .formField-data-controller {
+      width: 100%; }
+      .planRegis-form .formField-data-controller .fillForm-button {
+        margin-left: 0; }
+      .planRegis-form .formField-data-controller .clearForm-button {
+        margin-left: 0;
+        justify-content: flex-end; }
+    .planRegis-form .twoInput-fields {
+      grid-template-columns: 35% 65%; }
+      .planRegis-form .twoInput-fields input:nth-of-type(1) {
+        margin-left: 0; }
+      .planRegis-form .twoInput-fields input:nth-of-type(2) {
+        margin-left: 0; }
+      .planRegis-form .twoInput-fields input {
+        width: 100%; }
+    .planRegis-form .planRegis-button {
+      width: 100%;
+      justify-content: center;
+      align-items: center; }
+    .planRegis-form .hidden-field {
+      display: block;
+      visibility: hidden; }
+
+  .new-planAdd-detail {
+    border: none; }
+    .new-planAdd-detail table {
+      border: 0; }
+      .new-planAdd-detail table thead {
+        border: none;
+        clip: react(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute; }
+      .new-planAdd-detail table tr {
+        border-bottom: 1px solid #36384B;
+        display: block;
+        padding: 5px 0; }
+      .new-planAdd-detail table td {
+        display: block;
+        font-size: 0.8em;
+        text-align: right; }
+      .new-planAdd-detail table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: 700;
+        color: #434DA0; }
+
+  .popup-modals-container {
+    /*This is pop up section class*/ }
+    .popup-modals-container .addItem-modal {
+      overflow: auto; }
+      .popup-modals-container .addItem-modal .addItem-form {
+        width: 90%;
+        margin: 30% auto; }
+        .popup-modals-container .addItem-modal .addItem-form .planRegis-form .formField-data-controller {
+          grid-template-columns: 100%; }
+          .popup-modals-container .addItem-modal .addItem-form .planRegis-form .formField-data-controller div:nth-child(1) {
+            justify-content: space-between; }
+          .popup-modals-container .addItem-modal .addItem-form .planRegis-form .formField-data-controller div:nth-child(2) {
+            display: grid;
+            grid-template-columns: 35% 65%; }
+            .popup-modals-container .addItem-modal .addItem-form .planRegis-form .formField-data-controller div:nth-child(2) input {
+              width: 100%; }
+        .popup-modals-container .addItem-modal .addItem-form .planRegis-form .serial-text-container {
+          width: 100%;
+          top: 70%;
+          left: 0; }
+    .popup-modals-container .video-modal-container .video-modal {
+      width: 95%;
+      margin-top: 70%; }
+      .popup-modals-container .video-modal-container .video-modal iframe {
+        height: 200px; }
+
+  .mobile-column {
+    flex-direction: column;
+    grid-template-columns: 100%; }
+
+  .retailer-profile-container {
+    width: 100%; }
+
+  .shipping-locations-modal .shipping-locations-form {
+    width: 90%;
+    margin-top: 30%; }
+    .shipping-locations-modal .shipping-locations-form .planRegis-form div {
+      width: 100%; }
+    .shipping-locations-modal .shipping-locations-form .planRegis-form input {
+      width: 100%; }
+    .shipping-locations-modal .shipping-locations-form .planRegis-form select {
+      width: 100%; }
+  .shipping-locations-modal .width-45 {
+    width: 100%; }
+
+  .plan-inquiry-container .manual-search-container .date-filter-box .date-filter-form {
+    flex-flow: column; }
+
+  .plan-cancelation-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto; }
+    .plan-cancelation-container .container-border .plan-cancelation {
+      display: grid;
+      grid-template-columns: 100%;
+      justify-content: center; }
+      .plan-cancelation-container .container-border .plan-cancelation .reason-container {
+        margin-top: 2em; }
+        .plan-cancelation-container .container-border .plan-cancelation .reason-container textarea {
+          border: 2px solid #36384B;
+          border-radius: 0;
+          height: 350px; }
+
+  .popup-modals-container .addItem-modal .addItem-form, .popup-modals-container .mainSubmit-modal-container .mainSubmit-modal, .popup-modals-container .mainSubmit-modal-container .remove-planModal, .popup-modals-container .remove-planModal-container .mainSubmit-modal, .popup-modals-container .remove-planModal-container .remove-planModal, .shipping-locations-modal .shipping-locations-form, .contacts-form-modal .contacts-form {
+    width: 100%;
+    margin: 50% auto; } }
+@media screen and (min-width: 769px) {
+  .srs-nav-container .zuc-main-nav .zuc-nav-brand {
+    width: 22vw;
+    max-width: 100%; 
+    padding:1.25em 0; } }
+@media screen and (max-width: 1200px) {
+  .plan-inquiry-container {
+    width: 100%;
+    padding: 0 1em; }
+    .plan-inquiry-container .search-container {
+      margin-top: 7%;
+      grid-template-columns: 100%; }
+    .plan-inquiry-container .manual-search-container {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: grid;
+      grid-row-gap: 2em; }
+      .plan-inquiry-container .manual-search-container .filter-param-box {
+        grid-template-columns: auto; }
+    .plan-inquiry-container .advance-search-container {
+      width: 100%;
+      max-width: 100%;
+      height: auto; }
+    .plan-inquiry-container .allPlans-container {
+      width: 100%; } }
+@media screen and (max-width: 769px) {
+  .planRegis-form div .info-text-container {
+    width: 100%;
+    top: 40%;
+    left: 0; }
+
+  .popup-modals-container .addItem-modal .addItem-form .planRegis-form .serial-text-container {
+    width: 100%;
+    top: 70%;
+    left: 0; } }
+.welcome-message-container {
+  position: relative; }
+
+.employer-full-name {
+  color: #36384b;
+  font-size: 20px;
+  position: absolute;
+  top: calc(50% - 12.5px);
+  margin: 0;
+  right: 10%; }
+
+/*# sourceMappingURL=SRS-system.css.map */

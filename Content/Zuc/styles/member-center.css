@@ -1,0 +1,1649 @@
+﻿/*meDefault styles*/
+.width-80 {
+    width: 80%;
+    max-width: 80%;
+}
+
+.memberForm-margin {
+    margin: 1.3vw 0;
+}
+
+.auto-width {
+    width: auto;
+    max-width: 100%;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.strong {
+    font-weight: 700;
+}
+
+
+.non-visible {
+    display: none;
+}
+
+
+p {
+    font-family: 'aktiv-grotesk',Helvetica,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: PublicoHeadline,Helvetica,sans-serif
+}
+
+@media screen and (max-width:1024px) {
+    .padding-10-onlyMedium {
+        padding: 10px;
+    }
+}
+
+.member-login > .zuc-input-group > .zuc-input-name {
+    color: #36384b;
+}
+
+.memberPortal-login input[type=date], .memberPortal-login input[type=email], .memberPortal-login input[type=password], .memberPortal-login input[type=search], .memberPortal-login input[type=tel], .memberPortal-login input[type=text], .memberPortal-login input[type=url], .memberPortal-login input[type=number] {
+    width: 100%;
+    height: 50px;
+    border: 2px solid #54565a;
+    border-radius: 10px;
+    background-color: #fbfbfb;
+    color: #898a8d;
+    font-family: aktiv-grotesk, Helvetica, sans-serif;
+    padding: 10px
+}
+
+/*Member navigation*/
+
+.zuc-user-login:hover {
+}
+
+.member-navigation {
+    background-color: #A3ACFF;
+    width: 100%;
+    max-width: 100%;
+    /*color: #36384B;*/
+    color: white;
+    /*display: flex;*/
+    padding: 1.5em;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: -100;
+    position: relative;
+}
+
+.member-links {
+    width: auto;
+    max-width: 100%;
+}
+
+    .member-links > a {
+        padding: 0 10px;
+    }
+
+    .member-links > .active {
+        /* color:#898A8D; */
+        font-weight: 700;
+    }
+
+/*.light-grey{
+	color: #C8C8C8;
+}*/
+
+.dark-grey {
+    color: #54565A;
+    /*color:#36384B !important;*/
+    /* This is zucora deep indigo color */
+}
+
+.middle-grey {
+    /*color:#898A8D;*/
+    color: #36384B;
+}
+
+.white-color {
+    color: white;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.memberInfo-table > div > p.light-grey {
+    color: #898A8D;
+}
+/*Member info box only for desktop*/
+@media screen and (max-width:767px) {
+    .member-info-boxed, .member-navigation, .member-info-boxed-rightSide {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .member-navigation, .member-info-boxed {
+        display: flex;
+        visibility: visible;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .member-info-boxed-rightSide {
+        position: absolute;
+        right: 0;
+    }
+
+    .memberInfo-table {
+        display: grid;
+        width: auto;
+        max-width: 100%;
+        border: 2px solid #36384B;
+        grid-template-columns: auto auto;
+        /*padding: 1em;*/
+        /*grid-gap: 1em 2em;*/
+        padding: 10px;
+        grid-gap: 10px;
+        margin-top: 5px;
+    }
+
+        .memberInfo-table > div > p {
+            /* font-weight: 700; */
+            text-transform: uppercase;
+            color: #36384B;
+        }
+}
+/*Member Account set up page*/
+
+.member-setup-page {
+    border: 4px solid #C8C8C8;
+    margin-top: 10%;
+    color: #36384B;
+}
+
+@media screen and (max-width: 767px) {
+    .member-setup-page {
+        margin-top: 25%;
+    }
+
+    .memberForm-checkmark {
+        flex-direction: column;
+    }
+
+        .memberForm-checkmark > label:nth-child(3n) {
+            margin-left: -17px;
+        }
+
+        .memberForm-checkmark > label:nth-child(4n) {
+            margin-left: -6px;
+        }
+
+    .mobile-column {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .memberForm-checkmark {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .member-setup-page {
+        width: 50%;
+    }
+}
+
+.member-setup-page > .inner-width {
+    position: relative;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 4vw 1vw;
+}
+
+.memberProfile-title {
+    color: #36384B;
+    text-align: center;
+    font-weight: 500;
+}
+
+    .memberProfile-title > h3 {
+        font-size: 2.5em;
+        font-family: 'aktiv-grotesk',Helvetica,sans-serif;
+        /*font-family:'PublicoHeadline',aktiv-grotesk,Helvetica,sans-serif;*/
+        font-weight: 500;
+    }
+
+.memberPortal-login > .zuc-form-row {
+    margin-top: 1.3vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    .memberPortal-login > .zuc-form-row > .zuc-form-group > .zuc-input-name {
+        /*color: #898A8D;*/
+        color: #36384B;
+        font-weight: 600;
+        /*font-size: 20px;*/
+    }
+
+.memberForm-checkmark {
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    /*align-items: center;*/
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.memberForm-checkmark > h3 {
+    font-family: aktiv-grotesk,Helvetica,sans-serif;
+    font-size: 16px;
+    /*text-transform: uppercase;*/
+    color: #54565A;
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding-right: 1em;
+}
+
+.form-links {
+    text-transform: uppercase;
+    color: #36384B;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+a.form-links:hover {
+    color: #898A8D;
+    text-decoration: underline;
+    transition: all 0.4s ease-in;
+}
+/* The container */
+.checkmark-container, .radio-container {
+    display: block;
+    position: relative;
+    padding: 0 30px 0 35px;
+    margin: 12px 0;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: auto;
+    font-family: aktiv-grotesk,Helvetica,sans-serif;
+    /*color:#434DA0;*/
+    line-height: 20px;
+}
+
+.radio-container {
+    margin: 18px 0;
+}
+
+    /* Hide the browser's default checkbox */
+    .checkmark-container input, .radio-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 2px solid #54565A;
+}
+
+.radio-checkmark {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 2px solid #54565A;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.checkmark-container:hover input ~ .checkmark, .radio-container:hover input ~ .radio-checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkmark-container input:checked ~ .checkmark, .radio-container input:checked ~ .radio-checkmark {
+    background-color: #FFF;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after, .radio-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkmark-container input:checked ~ .checkmark:after, .radio-container input:checked ~ .radio-checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkmark-container .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 7px;
+    height: 13px;
+    border: solid #54565A;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.radio-container .radio-checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #54565A;
+}
+
+.member-setup-page > .zuc-form-row {
+    display: flex;
+    align-items: center;
+}
+
+.password-field > h3 {
+    font-family: aktiv-grotesk,Helvetica,sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #54565A;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 1em;
+}
+/*After registration */
+
+.page-smarterLiving-logo {
+    margin-bottom: 2em;
+}
+
+.page-smarterLiving-logo-noBorder {
+    margin: 4em auto !important;
+    position: relative;
+    top: 2em;
+    width: 40%;
+}
+
+@media screen and (max-width:767px) {
+    .afterRegistration-block {
+        width: 90%;
+        margin-top: 30%;
+    }
+
+    .page-smarterLiving-logo, .page-smarterLiving-logo-noBorder {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .afterRegistration-block {
+        width: 50%;
+        margin-top: 15%;
+    }
+
+    .page-smarterLiving-logo {
+        width: 40%;
+    }
+}
+
+.registration-border {
+    border: 4px solid #36384B;
+    padding: 3em;
+}
+
+.registration-para {
+    margin-top: 2em;
+    color: #36384B;
+    font-family: 'aktiv-grotesk', Helvetica, sans-serif;
+    /*font-size:20px;*/
+}
+
+.zuc-memberForm-button {
+    color: white;
+    letter-spacing: 1px;
+    border: none;
+    min-width: 15em;
+    width: auto;
+    text-align: center;
+}
+
+.primaryButton-color {
+    /* background-color: #898A8D; */
+    background-color: #A3ACFF;
+}
+
+.secondaryButton-color {
+    background: linear-gradient(90deg,#434da0 34%,#a2acff);
+    background-position: 50%;
+    background-size: cover;
+}
+
+/*Member screen containers*/
+
+
+@media screen and (min-width:1400px) {
+    /*.member-center-container{
+		width:50%;
+	}*/
+
+    .page-smarterLiving-logo {
+        width: 39%;
+    }
+}
+
+/*Address list screen and Welcome back screen*/
+
+.address-modal {
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1000;
+}
+
+.address-modal-content {
+    background-color: white;
+}
+
+.mainAddress-container, .menu-tiles-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    grid-gap: 2em;
+    justify-content: center;
+}
+
+.menu-tiles-container {
+    grid-gap: 3em;
+}
+
+.address-box {
+    border: 2px solid #36384B;
+    min-height: 250px;
+    height: auto;
+}
+
+.menu-tile {
+    min-height: 250px;
+    cursor: pointer;
+}
+
+.address-box > h6 {
+    /* border-bottom: 2px solid #36384B; */
+    color: white;
+    font-family: 'aktiv-grotesk', Helvetica, sans-serif;
+    background-color: #434DA0;
+}
+
+
+.menu-tile h6 {
+    margin-bottom: 0px;
+    padding: 1em;
+    font-size: 20px;
+    color: white;
+    font-family: 'aktiv-grotesk', Helvetica, sans-serif;
+    background-color: #434da0;
+}
+
+.address-box > p {
+    /* color:#898A8D; */
+    color: #36384B;
+}
+
+.tile-image {
+    width: 100%;
+    background-size: cover;
+    background-repeat-y: no-repeat;
+    height: 250px;
+}
+
+.image-1 {
+    background-image: url('https://www.zucorahome.com/Images/Zuc/images/shared/mom-boy-kitchen.png');
+    background-position: right center;
+}
+
+.image-2 {
+    background-image: url('https://www.zucorahome.com/Images/Zuc/images/shared/happy-family-laughing-746x536.png');
+    background-position: right center;
+}
+
+.image-3 {
+    background-image: url(https://www.zucorahome.com/Images/Zuc/images/shared/man-tool-bag.png);
+    background-position: right center;
+}
+
+.image-4 {
+    background-image: url(https://www.zucorahome.com/Images/Zuc/images/shared/woman-online-purchase.png);
+    background-position: center center;
+}
+
+.image-5 {
+    background-image: url(https://www.zucorahome.com/Images/Zuc/images/shared/interior-house.png);
+    background-position: right center;
+}
+
+.image-6 {
+    background-image: url(https://www.zucorahome.com/Images/Zuc/images/shared/couple-on-computer.png);
+    background-position: center center;
+}
+
+@media screen and (max-width: 767px) {
+    .mainAddress-container, .menu-tiles-container {
+        grid-template-columns: auto;
+    }
+
+    .address-modal {
+        height: 140%;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    /*.address-modal{
+		height: 160%;
+	}
+*/
+    .address-modal-content {
+        margin-top: 2% !important;
+    }
+}
+
+/*@media screen and (min-width:1400px){
+	.address-modal{
+		height:170%;
+	}
+}
+
+@media screen and (min-width:1700px){
+	.address-modal{
+		height:180%;
+	}
+}*/
+
+.addressForm-select > .zuc-select-container select {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 10px;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #54565A;
+    border: 2px solid #54565A;
+}
+
+.addressForm-select > .zuc-select-container:before {
+    width: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 1px;
+    background: #fbfbfb;
+    content: "";
+    pointer-events: none;
+    height: 25px;
+}
+
+.addressForm-select > .zuc-select-container select:focus {
+    border: 1px solid #a3acff;
+    outline: none;
+}
+
+.cross-close {
+    /*width:10%;*/
+    position: relative;
+    float: right;
+}
+
+    .cross-close a {
+        font-size: 6em;
+        color: #54565A;
+    }
+
+        .cross-close a:hover {
+            text-decoration: none;
+        }
+
+/*Payment option screens*/
+
+.payment-container {
+    font-family: 'aktiv-grotesk', Helvetica, sans-serif;
+}
+
+    .payment-container p, .payment-container i {
+        /*color: #54565A;*/
+        /*color: white;*/
+    }
+
+.payment-box {
+    border: 2px solid #54565A;
+    /*padding:10px;*/
+}
+
+.paymentCard-name {
+    border-bottom: 2px solid #54565A;
+    /*background-color: #C8C8C8;*/
+    background-color: #434DA0;
+    max-width: 99.99%;
+    color: white;
+}
+
+    .paymentCard-name > div > img {
+        width: 20%;
+        padding: 10px;
+    }
+
+.chevron {
+    float: right;
+    cursor: pointer;
+}
+
+.two-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+    .two-row > .zuc-memberForm-button {
+        min-width: auto;
+    }
+
+.uppercase-text {
+    font-family: aktiv-grotesk,Helvetica,sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #54565A;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 1.25em;
+}
+
+.paymentCard-info {
+}
+
+.payment-logos {
+    grid-template-columns: 20% 20%;
+}
+
+    .payment-logos img {
+        width: 100%;
+    }
+
+.addNewCard-container {
+    padding-bottom: 2em;
+}
+
+.showForm a {
+    float: left;
+    font-size: 20px;
+    padding-bottom: 1em;
+}
+
+.addNewCard-form {
+    display: grid;
+    grid-template-columns: auto;
+    padding-top: 1em;
+}
+
+    .addNewCard-form > .zuc-form-row {
+        justify-content: space-evenly;
+    }
+
+        .addNewCard-form > .zuc-form-row > .zuc-form-group {
+            width: 20%;
+            padding-right: 10px;
+        }
+
+            .addNewCard-form > .zuc-form-row > .zuc-form-group > select {
+                width: 35%;
+                height: 50px;
+                border: 2px solid #54565A;
+                border-radius: 10px;
+                background-color: #fbfbfb;
+                color: #54565A;
+                margin: .41667vw 0 0;
+            }
+
+.selectAddress-box {
+    margin-top: 2vw;
+    border: 2px solid #54565A;
+    padding: 0 2em;
+    transition: visible 0.4s ease-out;
+}
+
+
+.address-list > .memberForm-radioButtons > .radio-container {
+    margin: 30px 0;
+}
+
+@media screen and (max-width:767px) {
+
+    .mobile-column {
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+
+    .payment-logos {
+        grid-template-columns: 50% 50%;
+    }
+
+    .paymentCard-name > div > img {
+        width: 60%;
+    }
+
+    .addNewCard-form > .zuc-form-row > .zuc-form-group {
+        width: 100%;
+    }
+
+        .addNewCard-form > .zuc-form-row > .zuc-form-group > select {
+            width: 40%;
+            margin: 2.1875vw 0;
+        }
+}
+
+@media screen and (min-width:1400px) {
+    .payment-logos img {
+        width: 75%;
+    }
+}
+/*Plans Screen*/
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.planDetails-container {
+    margin-top: 2em;
+}
+
+    .planDetails-container > h5 {
+        color: #434DA0;
+        font-weight: 600;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+.serviceHistory-table {
+    display: grid;
+}
+
+.planDetails-table > .row-heading {
+    display: grid;
+    /*grid-template-columns: auto auto auto auto auto;*/
+    grid-template-columns: 20% 20% 20% 23% 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.historyTable-heading, .planDetails-table-row {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+}
+
+.row-heading > p {
+    text-align: center;
+    border-right: 2px solid #54565A;
+    word-wrap: break-word;
+    /*padding:0 8px;*/
+}
+
+    .row-heading > p > span, .historyTable-heading > p > span {
+        padding: 0 5em;
+    }
+
+.row-data > p {
+    /*margin-top:10px;*/
+    text-align: center;
+}
+
+.row-data a {
+    /*text-decoration: underline;*/
+}
+
+.serviceHistory-table {
+    border: 2px solid #54565A;
+}
+
+.planDetails-table-row {
+    max-width: 99.99%;
+    min-height: 46px;
+}
+
+.historyTable-heading {
+    background: #434DA0;
+    padding: 10px;
+}
+
+    .historyTable-heading p {
+        color: #fff;
+        text-align: center;
+        border-right: 2px solid white;
+    }
+
+.tableRow-borderBottom {
+    border-bottom: 1px solid #54565A;
+}
+
+.detailsPane-open {
+    background-color: white;
+    padding-top: 5px;
+}
+
+.detailsPane-closed {
+    /*background-color: #C8C8C8;*/
+    background-color: #A3ACFF;
+    padding: 10px;
+}
+
+@media screen and (max-width:767px) {
+    .row-heading > p > span, .historyTable-heading > p > span {
+        padding: 0 2em;
+    }
+
+    .planDetails-table {
+        width: 100%;
+        height: 250px;
+    }
+
+        .planDetails-table > .row-heading:nth-child(1) {
+            grid-template-columns: auto;
+            float: left;
+            grid-template-rows: auto;
+            grid-gap: 15px;
+            padding-bottom: 1em;
+        }
+
+            .planDetails-table > .row-heading:nth-child(1) > p {
+                min-height: 40px;
+            }
+
+        .planDetails-table > .row-heading > p {
+            text-align: left;
+            border-right: none;
+        }
+
+        .planDetails-table > .row-heading:nth-child(2) {
+            float: right;
+            grid-template-rows: auto;
+            grid-gap: 15px;
+            grid-template-columns: auto;
+            margin-top: 0px;
+            padding-bottom: 1em;
+            width: 50%;
+        }
+
+            .planDetails-table > .row-heading:nth-child(2) > .row-data > p {
+                text-align: left;
+                min-height: 40px;
+            }
+
+    .historyTable-heading {
+        padding: 5px;
+    }
+
+        .historyTable-heading p {
+            word-wrap: break-word;
+            padding: 0 5px;
+        }
+}
+
+@media screen and (min-width:768px) {
+}
+
+/*Transaction History page*/
+
+.transactionHistory-table, .rewards-table, .usePoints-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #36384B;
+    padding: 0;
+    table-layout: fixed;
+}
+
+    .usePoints-table tr {
+        border: 1px solid #54565A;
+        padding: 0.35em;
+    }
+
+    .usePoints-table th {
+        color: white;
+        background-color: #434DA0;
+    }
+
+    .usePoints-table th, .usePoints-table td {
+        padding: 0.625em;
+        text-align: left;
+        border: 1px solid #36384B;
+    }
+
+    .paymentInfo-table td, .usePoints-table td {
+        color: #36384B;
+    }
+
+.paymentInfo-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #54565A;
+    padding: 0;
+    table-layout: fixed;
+}
+
+    .paymentInfo-table tr, .rewards-table tr {
+        padding: 0.35em;
+    }
+
+    .paymentInfo-table th, .paymentInfo-table td, .rewards-table th, .rewards-table td {
+        padding: 0.625em;
+        text-align: left;
+        word-wrap: break-word;
+    }
+
+    .paymentInfo-table th {
+        color: #434DA0;
+    }
+/*New Transaction Histry table styling*/
+
+.transactionHistory-heading, .transactionHistory-row {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.4%;
+}
+
+    .transactionHistory-heading p, .transactionHistory-row p {
+        border-right: 1px solid #36384B;
+        border-bottom: 1px solid #36384B;
+        padding: 5px;
+    }
+
+    .transactionHistory-heading p {
+        background-color: #434DA0;
+        color: white;
+    }
+
+        .transactionHistory-heading p:nth-child(3), .transactionHistory-row p:nth-child(3) {
+            border-right: none;
+        }
+
+
+/*Pagination*/
+.pagination {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+    .pagination a {
+        /* color:#898A8D; */
+        color: #36384B;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .pagination > .active {
+        /* border:1px solid #434DA0; */
+        background-color: #434DA0;
+        color: white;
+        transition: all ease-in;
+    }
+
+    .pagination a:hover {
+        background-color: #434DA0;
+        color: white;
+        cursor: pointer;
+    }
+
+/*Rewards screen*/
+
+.rewards-table th {
+    border: 1px solid #36384B;
+    background-color: #434DA0;
+    color: white;
+    font-family: 'aktiv-grotesk',Helvetica,sans-serif;
+}
+
+.rewards-table td {
+    border-right: 1px solid #36384B;
+    /* color:#898A8D; */
+    color: #36384B;
+}
+
+/*FAQ screen*/
+
+.category-box-container, .helpBox-container {
+    display: grid;
+    grid-gap: 2em;
+    justify-content: center;
+}
+
+.category-box-container {
+    grid-template-columns: 30% 30% 30%;
+}
+
+.category-box, .help-box {
+    border: 3px solid #36384B;
+    padding: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+
+    .category-box img {
+        width: 30%;
+    }
+
+    .category-box h4 {
+        color: #434DA0;
+        font-weight: 700;
+        font-family: PublicoHeadline,aktiv-grotesk,Helvetica,sans-serif;
+    }
+
+    .help-box img {
+        width: 25%;
+        margin-top: 3em;
+    }
+
+.helpBox-container {
+    grid-template-columns: 33.3% 33.3% 33.4%;
+}
+
+.help-box {
+    padding: 0;
+    min-height: 250px;
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+    .help-box h6 {
+        text-align: left;
+        border-bottom: 2px solid #36384B;
+        background-color: #434DA0;
+        color: white;
+    }
+
+@media screen and (max-width:767px) {
+
+    .category-box {
+        padding: 10px;
+    }
+
+        .category-box > img {
+            width: 20%;
+        }
+
+    .category-box-container, .helpBox-container {
+        grid-template-columns: 33.3% 33.3% 33.4%;
+    }
+
+    .pagination {
+        justify-content: center;
+    }
+
+    .category-box img, .help-box img {
+        width: 50%;
+    }
+
+    .faq-accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .faq-accordion {
+        width: 100%;
+        /*margin:0 auto;*/
+    }
+}
+
+.faq-accordion hr {
+    margin: 1em 0;
+    border: 0;
+    border-top: 2px solid #E7E8E6;
+    /*border-bottom: 3px solid #FEB9A6;*/
+}
+
+.faq-accordion .accordion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.faq-accordion h4 {
+    color: #434DA0;
+    font-family: PublicoHeadline,aktiv-grotesk,Helvetica,sans-serif;
+}
+
+.accordion h4 {
+    font-family: 'aktiv-grotesk', Helvetica, sans-serif;
+    color: #36384B;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 0px;
+    line-height: 1.55em;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #54565A;
+    font-size: 2rem;
+    margin-left: 1.5em;
+    float: right;
+    font-weight: bold;
+    border: 5px solid;
+    /*width: 5%;*/
+    padding: 0 6px;
+    border-radius: 50%;
+}
+
+.faq-accordion > .active:after {
+    content: "\2212";
+}
+
+.faq-accordion .panel p {
+    font-family: aktiv-grotesk, Helvetica, sans-serif;
+    font-size: 1.15rem;
+    /* color:#6C6C6C; */
+    color: #36384B;
+    margin-top: 10px;
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    -webkit-transition: max-height 0.4s ease-out;
+}
+
+.faq-accordion a {
+    text-decoration: underline;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+/*Membership redeem screen*/
+.gift-card-radioButtons > label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+    .gift-card-radioButtons > label > img {
+        width: 25%;
+    }
+
+    .gift-card-radioButtons > label > .radio-checkmark {
+        top: 2em;
+    }
+
+.imageText-component {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 60%;
+    grid-gap: 1em 3em;
+}
+
+.image-content {
+    /*border:2px solid #54565A;*/
+}
+
+    .image-content h6 {
+        width: auto;
+        padding: 10px;
+        border-bottom: 2px solid #54565A;
+        background-color: #c8c8c8;
+    }
+
+    .image-content > img {
+        width: 100%;
+    }
+
+.text-content {
+    text-align: left;
+}
+
+    .text-content p {
+        /*font-weight: 500;*/
+    }
+
+.usePoints-table th, .usePoints-table td {
+    text-align: left;
+}
+
+@media screen and (max-width:767px) {
+    .gift-card-radioButtons > label > img {
+        width: 40%;
+    }
+
+    .gift-card-radioButtons > label > .radio-checkmark {
+        top: 1em;
+    }
+
+    .imageText-component {
+        grid-template-columns: auto;
+    }
+}
+
+.quantity > input[type="number"] {
+    width: 20%;
+    margin-bottom: 0;
+    height: 26px;
+    text-align: center;
+    padding: 0;
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+}
+
+.quantity > input[type="button"] {
+    border: 2px solid #54565A;
+    background-color: white;
+    color: #54565A;
+    border-radius: 50%;
+    width: 25px;
+}
+
+/*Remove once you get content for faq*/
+
+.mint-color {
+    color: #70E9B2 !important;
+}
+
+/*New Gift card redeem design additions*/
+
+.giftCard-redeem-modal-container, .sendGiftCard-modal-container, .giftCardConfirmation-modal-container {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.giftCard-redeem-modal, .sendGiftCard-modal, .giftCardConfirmation-modal {
+    background: white;
+    width: 50%;
+    margin: 15% auto;
+    border: 2px solid #36384B;
+}
+
+.purple-heading-background {
+    background-color: #434DA0;
+}
+
+    .purple-heading-background p {
+        color: white;
+        font-size: 18px;
+        padding: 1em;
+        font-family: "aktiv-grotesk", Helvetica, sans-serif;
+        font-weight: 700;
+    }
+
+    .purple-heading-background .cross-modal {
+        padding: 0;
+        font-weight: 700;
+        margin-right: 1em;
+        color: #70E9B2;
+        font-size: 1.25em;
+    }
+
+.modal-body {
+    padding: 1.5em 2em;
+    overflow-y: unset;
+    max-height: unset;
+}
+
+.giftCard-table {
+    border-collapse: collapse;
+    margin: 1em auto;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    border: 1px solid #C8C8C8;
+}
+
+    .giftCard-table thead tr {
+        color: #36384B;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .giftCard-table th, .giftCard-table td {
+        padding: 12px;
+        font-size: 16px;
+        color: #36384B;
+        word-break: break-word;
+    }
+
+    .giftCard-table tbody tr:nth-child(odd) {
+        background-color: #A3ACFF;
+    }
+
+    .giftCard-table tbody tr:nth-child(even) {
+        background-color: rgba(163, 172, 255,0.4);
+    }
+
+.giftCard-redeem-modal input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.giftCard-total {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 767px) {
+    .member-login-container {
+        margin: 33% auto;
+        padding: 1.5em;
+    }
+
+    .giftCard-total {
+        grid-template-columns: 100%;
+        grid-row-gap: 1em;
+    }
+
+    .sendGiftEmail-form {
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 1024px) {
+
+    .giftCard-redeem-modal, .sendGiftCard-modal, .giftCardConfirmation-modal {
+        width: 90%;
+        margin: 25% auto;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+
+    .member-login-container {
+        margin: 20% auto;
+        padding: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .member-login-container {
+        margin: 12% auto;
+    }
+
+        .member-login-container > form {
+            width: 30%;
+            margin: 2em auto;
+        }
+}
+
+/* New member login*/
+
+.member-login-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+.memberLogin-links .remember-me {
+    width: auto;
+    margin: 0;
+}
+
+.memberLogin-links .zuc-input-link {
+    top: 0;
+    padding-bottom: 0;
+}
+
+.memberLogin-links {
+    margin: 1em 0;
+}
+
+.width95 {
+    width: 95%;
+    margin: 1em auto;
+}
+
+.u-underline {
+    text-decoration: underline;
+}
+
+.u-zuc-grey {
+    color: #36384B;
+}
+
+.sendGiftEmail-form {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.giftCardConfirmation-modal > .confirmed-message {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 0 2em 0;
+}
+
+    .giftCardConfirmation-modal > .confirmed-message > .body-text {
+        font-size: 2em;
+        color: #36384B;
+        line-height: 40px;
+        font-weight: 500;
+        margin-bottom: 1em;
+    }
+
+.close-modal {
+    font-size: 1.35em;
+    font-weight: 700;
+    padding: 10px;
+    font-family: aktiv-grotesk,Helvetica,sans-serif;
+}
+
+.purple-border-button {
+    border: 2px solid #434da0;
+    border-radius: 30px;
+    width: 150px;
+    text-align: center;
+    color: #434DA0;
+    font-family: aktiv-grotesk,Helvetica,sans-serif;
+}
+
+    .purple-border-button:hover {
+        background-color: #434DA0;
+        color: white;
+        transition: all 0.5 ease-in;
+        -webkit-transition: all 0.4s ease-in;
+    }
+
+/*New styling*/
+
+.member-links > a > .fa-user-circle {
+    font-size: 20px;
+    color: #434DA0;
+    margin: 5px;
+}
+
+.landingPage-scroll > .mainTitle {
+    font-size: 5em;
+    font-weight: 600;
+}
+
+.landingPage-scroll > .subTitle {
+    font-size: 22px;
+    font-weight: 500;
+    width: 90%;
+}
+
+.circle {
+    border: 1px solid #36384B;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin: 10px 5px;
+}
+
+.filled-color {
+    background-color: #FAB8A6;
+}
+
+.blue-hr {
+    border-top: 1px solid #434DA0;
+    width: 100%;
+    height: 2px;
+}
+
+/*New account review page*/
+
+.account-overview {
+    display: grid;
+    grid-template-columns: 25% 70%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.verticalMenu {
+    background-color: #434DA0;
+    color: white;
+    height: 100%;
+    padding: 1em;
+}
+
+    .verticalMenu-forMobile > a, .verticalMenu > a {
+        margin: 15px 0;
+    }
+
+        .verticalMenu-forMobile > a:focus, .verticalMenu > a:focus {
+            color: #70E9B2;
+        }
+
+        .verticalMenu-forMobile > a > .fa-pencil-alt, .verticalMenu > a > .fa-pencil-alt {
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+        }
+
+        .verticalMenu-forMobile > a > i, .verticalMenu > a > i {
+            font-size: 1.5em;
+            margin: 0 5px;
+        }
+
+.accountOverview-content .accountInfo-input {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.overviewAccount-plansBox {
+    border: 2px solid #36384B;
+    padding: 10px;
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+}
+
+    .overviewAccount-plansBox > div {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+@media screen and (max-width: 1024px) {
+    .accountOverview-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .verticalMenu-forMobile {
+        display: block;
+        visibility: visible;
+    }
+
+    .verticalMenu {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width:1679px) {
+    .accountOverview-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .verticalMenu-forMobile {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .accountOverview-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .verticalMenu-forMobile {
+        display: none;
+        visibility: hidden;
+    }
+}

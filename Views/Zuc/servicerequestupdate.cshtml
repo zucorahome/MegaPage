@@ -1,0 +1,68 @@
+@{
+    Layout = "~/Views/Shared/_ZucMarketingLayout.cshtml";
+    ViewBag.Title = "Request Service From Zucora Home";
+}
+
+<!-- Service Request Update Form-->
+
+<section class="zuc-service-form">
+    <div class="zuc-header">
+        <h1>Service Request Update</h1>
+        <br />
+        <div class="zuc-header-line"></div>
+    </div>
+    <div id="frm-content" class="zuc-forms-container flex flex-column --service">
+        <form id="service-request-update" class="flex flex-column">
+            <div class="zuc-form-row flex flex-vert-center flex-hor-between">
+                <div class="flex flex-vert-center width-80 mobile-flexColumn">
+                    <label class="u-bold zuc-form-50">Service Request Number*:</label>
+                    <input type="number"  name="CCE-number" placeholder="Service Request Number" id="field-first-name" required="">
+                </div>
+                <div>
+                    <a href="javascript:void(0)" id="SR-number-icon"><i class="fas fa-question-circle"></i></a>
+                </div>
+                <div class="zuc-form-action mobile-button-center">
+                    <button id="search-button" class="zuc-btn zuc-btn-secondary zuc-btn-xpad u-soft-shadow u-bold" type="button">Search</button>
+                </div>
+            </div>
+            <div class="margin-top-1 margin-bottom-2">
+                <p id="SR-number-fullName" class="u-text-center u-zuc-indigo u-bold">John Doe</p>
+            </div>
+            <div class="zuc-form-row width-80">
+                <div class="zuc-form-group flex flex-vert-start flex-hor-between mobile-flexColumn">
+                    <label class="u-bold zuc-form-50" for="field-description">Inquiry/ Message:</label>
+                    <textarea type="text"  name="inquiry-message" placeholder="Inquiry message" id="field-description"></textarea>
+                </div>
+            </div>
+            <div class="flex flex-vert-center flex-hor-center margin-top-2 zuc-form-action">
+                <button class="zuc-btn zuc-btn-secondary zuc-btn-xpad u-soft-shadow" type="submit">Back</button>
+                <button class="zuc-btn zuc-btn-secondary zuc-btn-xpad u-soft-shadow" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section id="thanks-section" class="width-70 center">
+    <div class="">
+        <h3 class="u-normal">Thank You.</h3>
+        <p class="u-normal">
+            Because of the unprecedented high volume of Service Requests and an overloaded demand for professional repair services, our ability to respond to your existing Service Request has impacted the quality level of service we are known for delivering.
+        </p>
+        <p class="margin-top-1 u-normal">
+            Please be assured that we are processing your Service Request as it remains an important priority for our team. Your Service Request will be reviewed and you will receive an update within 48 hours.
+        </p>
+        <p class="margin-top-1 u-normal">
+            We thank you for your patience and understanding during these challenging times.
+        </p>
+        <p class="margin-top-1 u-normal">
+            Rebeca Lopez
+        </p>
+        <p>Senior Director, Customer Success.</p>
+    </div>
+    <br />
+    <div class="">
+        <button id="done-button" class="zuc-btn zuc-btn-secondary zuc-btn-xpad u-soft-shadow center" type="button"><strong><span>DONE</span></strong></button>
+    </div>
+</section>
+
+<script src="~/Scripts/Zuc/js/Controllers/servicerequestupdate.js"></script>
