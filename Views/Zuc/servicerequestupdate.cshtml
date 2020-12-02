@@ -16,33 +16,38 @@
             <div class="zuc-form-row flex flex-vert-center flex-hor-between">
                 <div class="flex flex-vert-center width-80 mobile-flexColumn">
                     <label class="u-bold zuc-form-50">Service Request Number*:</label>
-                    <input type="number"  name="CCE-number" placeholder="Service Request Number" id="field-first-name" required="">
+                    <input type="number" name="CCE-number" placeholder="Service Request Number" id="field-sr-number" required="">
                 </div>
                 <div>
-                    <a href="javascript:void(0)" id="SR-number-icon"><i class="fas fa-question-circle"></i></a>
+                    <a href="javascript:void(0)" id="SR-number-icon" onclick="toggleModal('[data-info-modal]')"><i class="fas fa-question-circle"></i></a>
                 </div>
                 <div class="zuc-form-action mobile-button-center">
                     <button id="search-button" class="zuc-btn zuc-btn-secondary zuc-btn-xpad u-soft-shadow u-bold" type="button">Search</button>
                 </div>
             </div>
             <div class="margin-top-1 margin-bottom-2">
-                <p id="SR-number-fullName" class="u-text-center u-zuc-indigo u-bold">John Doe</p>
+                <p id="SR-number-fullName" class="u-text-center u-zuc-indigo u-bold"></p>
             </div>
-            <div class="zuc-form-row width-80">
+            <div class="zuc-form-row width-80 non-visible inquiry-container">
                 <div class="zuc-form-group flex flex-vert-start flex-hor-between mobile-flexColumn">
                     <label class="u-bold zuc-form-50" for="field-description">Inquiry/ Message:</label>
-                    <textarea type="text"  name="inquiry-message" placeholder="Inquiry message" id="field-description"></textarea>
+                    <textarea disabled type="text" name="inquiry-message" placeholder="Inquiry message" id="field-description" required=""></textarea>
                 </div>
             </div>
-            <div class="flex flex-vert-center flex-hor-center margin-top-2 zuc-form-action">
-                <button class="zuc-btn zuc-btn-secondary zuc-btn-xpad u-soft-shadow" type="submit">Back</button>
+            <div class="flex flex-vert-center flex-hor-center margin-top-2 zuc-form-action non-visible inquiry-mainButtons">
+                <button id="back-button" class="zuc-btn zuc-btn-secondary zuc-btn-xpad u-soft-shadow" type="button">Back</button>
                 <button class="zuc-btn zuc-btn-secondary zuc-btn-xpad u-soft-shadow" type="submit">Submit</button>
             </div>
         </form>
     </div>
+    <div class="zuc-modal" data-info-modal onclick="toggleModal('[data-info-modal]')">
+        <div class="zuc-modal-content SR-info-modal" onclick="event.stopPropagation()">
+            <p style="padding:1em;">The service request number appears in the subject line in all email communications you have received from us regarding existing service request.</p>
+        </div>
+    </div>
 </section>
 
-<section id="thanks-section" class="width-70 center">
+<section id="thanks-section" class="width-60 center non-visible">
     <div class="">
         <h3 class="u-normal">Thank You.</h3>
         <p class="u-normal">
@@ -60,7 +65,7 @@
         <p>Senior Director, Customer Success.</p>
     </div>
     <br />
-    <div class="">
+    <div class="margin-top-1">
         <button id="done-button" class="zuc-btn zuc-btn-secondary zuc-btn-xpad u-soft-shadow center" type="button"><strong><span>DONE</span></strong></button>
     </div>
 </section>

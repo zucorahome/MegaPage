@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // console.log('dom called');
     let currentPath = window.location.pathname;
-    if (currentPath.indexOf('smarterpartner') > 0) {
+    if (currentPath.indexOf('smarterpartner') > 0 || currentPath.indexOf('mega') > 0) {
         playVideo();
     }
 

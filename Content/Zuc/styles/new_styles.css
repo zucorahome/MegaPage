@@ -43,6 +43,10 @@
     position: relative;
 }
 
+.width-60{
+    width:60%;
+    position:relative;
+}
 .u-zuc-lightGrey {
     color: #c8c8c8;
 }
@@ -1291,35 +1295,42 @@
 
 /*Service Request Update new page*/
 
-#SR-number-icon{
+#SR-number-icon {
     font-size: 2em;
-    color: #70E9B2;   
+    color: #70E9B2;
 }
 
-#SR-number-icon > i{
-    margin-bottom: 10px;
-}
+    #SR-number-icon > i {
+        margin-bottom: 10px;
+    }
 
-#field-description{
+#field-description {
     border-radius: 10px;
-    border:2px solid #54565a;
+    border: 2px solid #54565a;
 }
 
-#SR-number-fullName{
+#SR-number-fullName {
     text-transform: uppercase;
     font-weight: 500;
     /*color: #c8c8c8;*/
     font-size: 1.5em;
 }
 
-#thanks-section{
-    border:2px solid #54565a;
-    padding: 20px;
-    margin:2em auto;
-
+#thanks-section {
+    margin: 2em auto;
 }
 
-/*Mega Page*/
+    #thanks-section > div:nth-child(1) {
+        border: 2px solid #54565a;
+        padding: 20px;
+    }
+
+ #service-request-update > input:invalid, #service-request-update > textarea:invalid{
+   box-shadow: 0 0 4px 1px red !important;
+    background-color: #ffe0e0 !important;
+ } 
+
+ /*Mega Page*/
 
 .mega-border{
     border-left: 3px solid #36384B;
@@ -1331,6 +1342,38 @@
 .mega-logo{
     width: 30%;
 }
+
+.mega-title{
+    font-size: 2em;
+} 
+
+.font-size-20{
+    font-size: 20px;
+}
+
+.mega-border{
+    border-left: 3px solid #36384B;
+    height: 140px;
+    margin:0 auto;
+    display: block;
+}
+
+.mega-logo{
+    width: 30%;
+}
+
+.video-back6{
+    background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-3-background.jpg');
+}
+
+.video-back7{
+    background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-5-background.jpg');
+}
+
+.video-back8{
+    background-image: url('../../../Images/Zuc/images/smart-protection-plan/zucorahome-team-min.jpg');
+}
+
 /*MOBILE QUERIES */
 
 @media only screen and (max-width: 350px) {
@@ -1564,7 +1607,7 @@
         width: 100%
     }
 
-    .width-80, .width-70 {
+    .width-80, .width-70, .width-60 {
         width: 90%;
     }
 
@@ -1939,30 +1982,42 @@
 }
 
 
-@media screen and (max-width: 1024px){
-    .mobile-flexColumn{
+@media screen and (max-width: 1024px) {
+    .mobile-flexColumn {
         display: flex;
         flex-direction: column;
-    }   
-
-    #field-first-name {
-        margin-top:10px;
     }
 
-    .mobile-button-center{
+    #field-first-name {
+        margin-top: 10px;
+    }
+
+        .mobile-button-center{
         display: flex;
         justify-content: center;
         align-items: center;
         margin:1em auto;
     }
 
-    .hide-for-smallDevice{
+    /*.hide-for-smallDevice{
         display: none;
         visibility: hidden;
+    }*/
+
+    .mega-border{
+        border-left: none;
+        border-top:3px solid #36384B;
+        height: 5px;
+        width: 100%;
     }
 
     .mega-logo{
         width: 80%;
+    }
+
+    .megaPage-container{
+        width: 95%;
+        margin:0 auto;
     }
 }
 
@@ -2008,6 +2063,10 @@
     .background-image {
         height: 800px
     }
+    .megaPage-container{
+        width: 90%;
+        margin:10em auto;
+    }
 }
 
 @media only screen and (min-width:1441px) {
@@ -2047,6 +2106,11 @@
     .becomeSP-formOpen {
         position: relative;
         top: 5em;
+    }
+
+    .megaPage-container{
+        width: 85%;
+        margin:10em auto;
     }
 }
 
@@ -2095,5 +2159,3 @@
         bottom: 40em;
     }
 }
-
-
